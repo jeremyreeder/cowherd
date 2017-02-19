@@ -7,19 +7,25 @@ The release number is 1. Release along with the source text, a library card, and
 
 Chapter 0 - Preamble
 
-Use the serial comma. Use no scoring. Use brief room descriptions.
+Use the American dialect and the serial comma. Use no scoring. Use brief room descriptions.
 
 A thing can be poetically examined or poetically unexamined. A thing is usually poetically unexamined.
 
-A room can be poetic or prosaic. A room is usually prosaic.
+A poetic room is a kind of room.
 
-A room has a list of texts called the poem. A thing has a text called the stanza.
+To decide whether a room is prosaic:
+	if the room is a poetic room:
+		decide no;
+	otherwise:
+		decide yes.
+
+A poetic room has a list of texts called the poem. A thing has a text called the stanza.
 
 A pause is a kind of open door.
 
 Rule for choosing notable locale objects for a room (called the place):
 	repeat with item running through things in the place:
-		if the place is poetic or the item is a pause:
+		if the place is a poetic room or the item is a pause:
 			set the locale priority of the item to 0. [It's not notable.]
 
 Before going right through a pause:
@@ -49,10 +55,25 @@ Left is a direction. The opposite of left is right. Understand "left" or "l" as 
 
 Right is a direction. The opposite of right is left. Understand "right" or "r" as right.
 
+
 [For testing]
+
 Teleporting to is an action applying to one thing. Understand "teleport to [somewhere]"as teleporting to.
+
 Carry out teleporting to a room (called the place):
 	now the location is the place. [TODO: fix the bug where this doesn't work unless you can see the location.]
+
+When play begins:
+	repeat with the item running through all things:
+		if [the item is in a prosaic room and] the description of the item is "":
+			say "/!\ No description is given for [the item].";
+		[otherwise:]
+		if [the item is in a poetic room and] the stanza of the item is "":
+			say "/!\ No stanza is given for [the item].";
+		[TODO: fix the invalid conditions that are commented out.]
+	repeat with the poetic place running through all the poetic rooms:
+		if the poem of the poetic place is {}:
+			say "/!\ No poem is given for [the poetic place]."  
 
 
 Chapter 1 - Finding Work
@@ -76,21 +97,21 @@ A1 is a poetic room [about poverty]. The poem is {
 		Nor is shelter."
 }.
 
-A head is a kind of thing. It is a part of each person. Understand "dream" or "dreams" as the head of the player. The stanza of the head of the player is
+A head is a kind of thing. It is a part of each person. Understand "dream" or "dreams" as the head of the player when the location is A1. The stanza of the head of the player is
 	"My head is filled with wonder oft-times.[line break]
 		Of all the fine things that exist in the world,[line break]
 		Why must it all be so hard to acquire?[line break]
 		What can I do to make it mine?"
 
-The heavens are a backdrop which is everywhere. Understand "cloth", "sky", and "heaven" as the heavens. The stanza of the heavens is
+The heavens are a backdrop which is everywhere. Understand "sky", and "heaven" as the heavens. Understand "cloth" and "cloths" as the heavens when the location is A1. The stanza of the heavens is
 	"I pray to anyone up there[line break]
 		That I may end this life of misery,[line break]
 		Earn a living,[line break]
 		And eat a healthy meal."
 
-Poverty is a backdrop which is everywhere. Understand "world", "road", "dust", and "dusty road" as poverty.
+The poverty is a backdrop which is everywhere. Understand "world", "road", "dust", and "dusty road" as poverty.
 
-Riches are a backdrop which is everywhere. Understand "riches", "money", and "job" as riches. Understand "cottage" and "shelter" as riches when the location is poetic. The stanza is "My, oh my!" 
+The riches are a backdrop which is everywhere. Understand "riches", "money", and "job" as riches. Understand "cottage" and "shelter" as riches when the location is a poetic room. The stanza is "My, oh my!" 
 
 B1 is a poetic room [about dreams]. It is right of A1. The poem is {
 	"Oh, If it be thy will I shall endure,[line break] 
@@ -111,11 +132,11 @@ B1 is a poetic room [about dreams]. It is right of A1. The poem is {
 		Caught the last tresses of the Sun God’s hair."
 }.
 
-Dreams are a backdrop which is everywhere. Understand "ambition", "heart" as dreams. Understand "failure", "stone", and "bonds" as poverty. Understand "feast", "lofty air", and "air" as riches.
+The dreams are a backdrop which is everywhere. Understand "ambition", "heart" as dreams. Understand "failure", "stone", and "bonds" as poverty. Understand "feast", "lofty air", and "air" as riches.
 
-Beauty is a backdrop that is everywhere. Understand "forest", "tresses", and "sun" as beauty. The stanza is "Astonishing!" 
+The beauty is a backdrop that is everywhere. Understand "forest", "tresses", and "sun" as beauty. The stanza is "Astonishing!" 
 
-Freedom is a backdrop that is everywhere. Understand "liberty", "air", "lofty air", "bird", "hawk", and "spotted hawk" as freedom. The stanza is "Oh, to be free!"
+The freedom is a backdrop that is everywhere. Understand "liberty", "air", "lofty air", "bird", "hawk", and "spotted hawk" as freedom. The stanza is "Oh, to be free!"
 
 God is a backdrop that is everywhere. Understand "god", "prayer", "sun god", "sun god's hair", and "god's hair" as God.
 
