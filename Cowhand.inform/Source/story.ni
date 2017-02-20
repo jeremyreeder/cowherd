@@ -202,6 +202,16 @@ Chapter 3 - Herding Asses
 
 [ A3 B3 // A4 B4 ]
 
+[The Ass Stable is east of A1.]     [### This is a debug Statement so I can get to my room. ###]
+
+The Ass Stable is a room.
+
+The rock is in The Ass Stable
+
+Understand "Steve" as the rock.
+
+Instead of examining the rock,
+	say "You are compeled to pick up the rock and name it Steve"
 
 Chapter 4 - Herding Pigs
 
