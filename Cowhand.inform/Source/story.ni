@@ -202,9 +202,9 @@ Chapter 3 - Herding Asses
 
 [ A3 B3 // A4 B4 ]
 
-[The Ass Stable is east of A1.]     [### This is a debug Statement so I can get to my room. ###]
+[The Ass Stable is east of A1.]      [### This is a debug Statement so I can get to my room. ###]
 
-The Ass Stable is a room.
+The Ass Stable is a room. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of the Asses here had a sad glint in their eyes. It was not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too."
 
 The rock is in The Ass Stable
 
