@@ -15,7 +15,7 @@
 	<key>IFMiscSettings</key>
 	<dict>
 		<key>IFSettingElasticTabs</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>IFOutputSettings</key>
 	<dict>

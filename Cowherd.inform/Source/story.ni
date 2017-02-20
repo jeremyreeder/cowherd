@@ -1,4 +1,4 @@
-"Cowhand" by "Jeremy Reeder, Jesse Evans, and Hunter Evans".
+"Cowherd" by "Jeremy Reeder, Jesse Evans, and Hunter Evans"
 [Based on an old Spanish fairy tale known as "The Wounded Lion".]
 The story headline is "An interactive epic poem".
 The story genre is "Epic Poem".
