@@ -192,6 +192,23 @@ Chapter 2 - Herding Cows
 
 [Poetic map: C1 D1 // C2 D2]
 
+A herd is a kind of animal.
+
+The lion is a kind of animal.
+
+after examining the cows,
+	say "you hear a loud groan that almost sounds human from the east."
+
+The Corral is northwest of the Thatched Cottage. The cows are a herd. They are here. Understand "cow" as the cows.
+
+the Meadows is east of the Corral. "a corral is to the west.  A lion is right in front of you."
+
+instead of examining the lion:
+	say "It looks like it is injured."
+
+an animal called the lion is in the meadows
+
+The lion is either hurt or healthy
 
 Chapter 3 - Herding Asses
 
