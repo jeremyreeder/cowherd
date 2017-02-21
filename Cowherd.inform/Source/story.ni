@@ -1,4 +1,4 @@
-"Cowherd" by "Jeremy Reeder, Jesse Evans, and Hunter Evans"
+"Cowhand" by "Jeremy Reeder, Jesse Evans, and Hunter Evans".
 [Based on an old Spanish fairy tale known as "The Wounded Lion".]
 The story headline is "An interactive epic poem".
 The story genre is "Epic Poem".
@@ -221,7 +221,19 @@ Chapter 3 - Herding Asses
 
 [The Ass Stable is east of A1.]      [### This is a debug Statement so I can get to my room. ###]
 
-The Ass Stable is a room. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of the Asses here had a sad glint in their eyes. It was not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too."
+The Ass Stable is a room. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of the Asses here had a sad glint in their eyes. It was not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A latter leads up to the loft"
+
+The Loft is above the Ass Stable. "Even less pleasent than the stable it self. It is very warm, humid and putrid here. A latter leads down to the Ass Stable"
+
+Carrots is edible.
+
+Carrots is in the Loft
+
+Instead of eating Carrots,
+	say "You just ate brakefast. Maybe they will come in handy later."
+	
+Instead of examining Carrots,
+	say "They are long, orange, edible vegetables. Animals generaly like to eat carrots."
 
 The rock is in The Ass Stable
 
@@ -229,6 +241,9 @@ Understand "Steve" as the rock.
 
 Instead of examining the rock,
 	say "You are compeled to pick up the rock and name it Steve"
+	
+Instead of eating the rock,
+	say "Why would I wanna eat Steve? He's meh pal, bruh."
 
 Chapter 4 - Herding Pigs
 
