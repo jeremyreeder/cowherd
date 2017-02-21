@@ -1,9 +1,9 @@
-"Cowherd" by "Jeremy Reeder, Jesse Evans, and Hunter Evans"
+"Cowhand" by "Jeremy Reeder, Jesse Evans, and Hunter Evans".
 [Based on an old Spanish fairy tale known as "The Wounded Lion".]
 The story headline is "An interactive epic poem".
 The story genre is "Epic Poem".
 The release number is 1. Release along with the source text, a library card, and an introductory booklet.
-
+[
 
 Chapter 0 - Preamble
 
@@ -192,23 +192,55 @@ Chapter 2 - Herding Cows
 
 [Poetic map: C1 D1 // C2 D2]
 
+
+]
+
 A herd is a kind of animal.
 
 The lion is a kind of animal.
 
-after examining the cows,
-	say "you hear a loud groan that almost sounds human from the east."
+before of examining the cows,
+	say "Cows without a herd leader are useless [line break]
+	The farmer asked me to farm these cows."
 
+instead of examining the cows,
+	say "I hear a loud groan that almost sounds human. [line break]
+	I must see what this is. [line break]
+	I heard the sound from the south. [line break]
+	He pays well and is kind, [line break]
+	but this groan I must find"  [might be too cheesy]
+	
 The Corral is northwest of the Thatched Cottage. The cows are a herd. They are here. Understand "cow" as the cows.
 
-the Meadows is east of the Corral. "a corral is to the west.  A lion is right in front of you."
+[to see cows instead of to see a cows]
+
+The meadow1 is north of the corral.  [add description]
+
+The meadow2 is south of the corral.  "Continue to go south to follow the groan. [line break]
+[Line break]
+'I must find who is hurt!'"
+
+meadows3 is south of meadows2. "Far down is a ditch you can see a shape of an animal, [line break]
+the animal that is groaning."
+
+The ditch is down of the meadows3. the description is "I scale the thing and desid to not take my chances, I walk around around and down to see a lion laying on the bare rock. [line break]
+He is down the hill a bit farther [line break]
+[line break]
+The animal continues to groan." 
+
+ The deep ditch is down of the ditch.
+
+the Meadows is east of the Corral. "a corral is to the west.  A lion lies in front of me."
 
 instead of examining the lion:
-	say "It looks like it is injured."
+	say "laying in the empty medows, [line break]
+	lays a grounded lion on the ground."
 
-an animal called the lion is in the meadows
+an animal called the lion is in the meadows3
 
 The lion is either hurt or healthy
+
+The lion is usually hurt [untill healed]
 
 Chapter 3 - Herding Asses
 
