@@ -63,6 +63,21 @@ Teleporting to is an action applying to one thing. Understand "teleport to [some
 Carry out teleporting to a room (called the place):
 	now the location is the place. [TODO: fix the bug where this doesn't work unless you can see the location.]
 
+An object can be literal or figurative. An object is usually literal. An abstract noun is a figurative backdrop.
+
+Check taking a figurative object (called the whatnot) when the location is a poetic room:
+	now the whatnot is nowhere [removing it even as a backdrop];
+	now the actor carries the whatnot. [even though this may seem impossible].
+
+[Instead of going from a poetic room to a prosaic room when the player has a figurative object (called the whatnot):
+	now the whatnot is nowhere;
+	choose the row with Signifier (whatnot) from the Table of Analogies;
+	if (entry Signified) is a backdrop:
+		now (entry Signified) is everywhere;
+	otherwise:
+		now the player has (entry Signified).]
+	[TODO: switch to another approach because tables can only handle constants, not variables.]
+
 When play begins:
 	repeat with the item running through all things:
 		if [the item is in a prosaic room and] the description of the item is "":
@@ -73,7 +88,14 @@ When play begins:
 		[TODO: fix the invalid conditions that are commented out.]
 	repeat with the poetic place running through all the poetic rooms:
 		if the poem of the poetic place is {}:
-			say "/!\ No poem is given for [the poetic place]."  
+			say "/!\ No poem is given for [the poetic place]." 
+
+[When play begins:
+	repeat through the Table of Analogies:
+		if entry Signifier is literal:
+			say "/!\ Literal object '[entry Signifier]' found as a Signifier in [the Table of Analogies]."
+		if entry Signified is figurative:
+			say "/!\ Figurative object '[entry Signified]' found as a Signified in [the Table of Analogies]."]
 
 
 Chapter 1 - Finding Work
