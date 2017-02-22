@@ -244,7 +244,6 @@ Chapter 2 - Herding Cows
 Section 1 - Poetry
 [Poetic map: C1 D1 // C2 D2]
 
-
 Section 2 - Prose
 
 A herd is a kind of animal.
@@ -262,26 +261,38 @@ instead of examining the cows,
 	He pays well and is kind, [line break]
 	but this groan I must find"  [might be too cheesy]
 	
-The Corral is northwest of the Thatched Cottage. The cows are a herd. They are here. Understand "cow" as the cows.
+The Corral is northwest of the Thatched Cottage.  "Their is a field that is worn from cows running over the grass."
+
+The cows are a herd. They are here. Understand "cow" as the cows.
 
 [to see cows instead of to see a cows]
 
-The meadow1 is north of the corral.  [add description]
+The meadow1 is north of the corral.  "I come back and see that my herd is gone, [line break]
+why was I so foolish to leave them. [line break]
+I looked for hours and had no such luck to find my herd. [line break]
+I must return without them"
 
-The meadow2 is south of the corral.  "Continue to go south to follow the groan. [line break]
-[Line break]
-'I must find who is hurt!'"
+The meadow2 is south of the corral. "I have been walking for 5 minutes, I realize that I have past my destonation. [line break]
+It is coming from the northwest[Line break]
+'I must find that sound!'"
 
-meadows3 is south of meadows2. "Far down is a ditch you can see a shape of an animal, [line break]
+meadows3 is northeast of meadows2. "Far down is a ditch you can see a shape of an animal, [line break]
 the animal that is groaning."
 
 The ditch is down of the meadows3. the description is "I scale the thing and desid to not take my chances, I walk around around and down to see a lion laying on the bare rock. [line break]
-He is down the hill a bit farther [line break]
-[line break]
-The animal continues to groan." 
+He is down the hill a bit farther"
 
- The deep ditch is down of the ditch.
+[if loin is in deep ditch:
+	say " You hear the groan."]
+	
+[learn to do if loin is here and how to make cows go away]
 
+ The deep ditch is down of the ditch.  "the cave is dark and damp, [line break]
+there are bats swarming around me,"
+
+[if loin is in deep ditch:
+	say "A loin is on the ground , it is injiered, you must find something to heal it."]
+	
 the Meadows is east of the Corral. "a corral is to the west.  A lion lies in front of me."
 
 instead of examining the lion:
