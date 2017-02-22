@@ -8,7 +8,6 @@ The story genre is "Epic Poem / Fairy Tale".
 The release number is 1. Release along with the source text, a library card, and an introductory booklet.
 
 
-[
 Volume 1 - Infrastructure
 
 
@@ -305,7 +304,8 @@ an animal called the lion is in the meadows3
 The lion is either hurt or healthy
 
 The lion is usually hurt [untill healed]
-]
+
+
 Chapter 3 - Herding Asses
 
 [So every day she had to take the asses to the woods to feed, until one morning, exactly a year after she had found the lion, she heard a groan which sounded quite human. She went straight to the place from which the noise came, and, to her great surprise, beheld the same lion stretched on the ground with a deep wound across his face.
