@@ -1,7 +1,10 @@
 "Cowherd" by "Jeremy Reeder, Jesse Evans, and Hunter Evans".
 [Based on an old Spanish fairy tale known as "The Wounded Lion".]
-The story headline is "An interactive epic poem".
-The story genre is "Epic Poem".
+
+The story headline is "An interactive tale both poetic and prosaic".
+
+The story genre is "Epic Poem / Fairy Tale".
+
 The release number is 1. Release along with the source text, a library card, and an introductory booklet.
 
 
@@ -10,7 +13,7 @@ Book 1 - Infrastructure
 
 Part 1 - Configuration
 
-Use the American dialect and the serial comma. Use no scoring. Use brief room descriptions.
+Use the serial comma. Use no scoring. Use brief room descriptions.
 
 
 Part 2 - Definitions
