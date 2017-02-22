@@ -8,6 +8,7 @@ The story genre is "Epic Poem / Fairy Tale".
 The release number is 1. Release along with the source text, a library card, and an introductory booklet.
 
 
+[
 Volume 1 - Infrastructure
 
 
@@ -304,7 +305,7 @@ an animal called the lion is in the meadows3
 The lion is either hurt or healthy
 
 The lion is usually hurt [untill healed]
-
+]
 Chapter 3 - Herding Asses
 
 [So every day she had to take the asses to the woods to feed, until one morning, exactly a year after she had found the lion, she heard a groan which sounded quite human. She went straight to the place from which the noise came, and, to her great surprise, beheld the same lion stretched on the ground with a deep wound across his face.
@@ -343,6 +344,21 @@ Instead of examining the rock,
 	
 Instead of eating the rock,
 	say "Why would I wanna eat Steve? He's meh pal, bruh."
+	
+A Stubborn is a kind of animal. A Stubborn called Donkey is in the Ass Stable
+
+Understand "Donkey" as Stubborn.
+
+Instead of examining Donkey,
+	say "A poor smelly old animal. But he is what your here for."
+	
+Instead of taking Donkey,
+	say "Donkey is very stubborn and refuses to go with you. You hear it's stomach growl, maybe it's hungry."
+
+Donkey can be fed Carrots.
+
+Instead of giving the carrots to Donkey,
+	say "Donkey make a sound of indignation and out of sheer hunger desides to follow you."
 
 Chapter 4 - Herding Pigs
 
