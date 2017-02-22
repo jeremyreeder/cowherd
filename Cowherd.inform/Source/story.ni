@@ -5,9 +5,15 @@ The story genre is "Epic Poem".
 The release number is 1. Release along with the source text, a library card, and an introductory booklet.
 
 
-Chapter 0 - Preamble
+Book 1 - Infrastructure
+
+
+Part 1 - Configuration
 
 Use the American dialect and the serial comma. Use no scoring. Use brief room descriptions.
+
+
+Part 2 - Definitions
 
 A thing can be poetically examined or poetically unexamined. A thing is usually poetically unexamined.
 
@@ -55,11 +61,6 @@ Left is a direction. The opposite of left is right. Understand "left" or "l" as 
 
 Right is a direction. The opposite of right is left. Understand "right" or "r" as right.
 
-
-[For testing]
-
-Teleporting to is an action applying to one thing. Understand "teleport to [somewhere]"as teleporting to.
-
 Carry out teleporting to a room (called the place):
 	now the location is the place. [TODO: fix the bug where this doesn't work unless you can see the location.]
 
@@ -77,6 +78,13 @@ Check taking a figurative object (called the whatnot) when the location is a poe
 	otherwise:
 		now the player has (entry Signified).]
 	[TODO: switch to another approach because tables can only handle constants, not variables.]
+
+
+Part 3 - Testing
+
+
+Section 1 - Specifications
+[For testing]
 
 When play begins:
 	repeat with the item running through all things:
@@ -97,6 +105,21 @@ When play begins:
 		if entry Signified is figurative:
 			say "/!\ Figurative object '[entry Signified]' found as a Signified in [the Table of Analogies]."]
 
+
+Section 2 - Debugging
+[For testing]
+
+Section 3 - Test Cases
+
+Teleporting to is an action applying to one thing. Understand "teleport to [somewhere]"as teleporting to.
+
+Carry out teleporting to a room (called the place):
+	now the location is the place.
+
+[TODO: put all rooms in scope, or do whatever it takes to make teleporting will work.]
+
+
+Book 2 - Story
 
 Chapter 1 - Finding Work
 
