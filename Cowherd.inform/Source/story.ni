@@ -8,7 +8,7 @@ The story genre is "Epic Poem / Fairy Tale".
 The release number is 1. Release along with the source text, a library card, and an introductory booklet.
 
 
-Book 1 - Infrastructure
+Volume 1 - Infrastructure
 
 
 Part 1 - Configuration
@@ -64,9 +64,6 @@ Left is a direction. The opposite of left is right. Understand "left" or "l" as 
 
 Right is a direction. The opposite of right is left. Understand "right" or "r" as right.
 
-Carry out teleporting to a room (called the place):
-	now the location is the place. [TODO: fix the bug where this doesn't work unless you can see the location.]
-
 An object can be literal or figurative. An object is usually literal. An abstract noun is a figurative backdrop.
 
 Check taking a figurative object (called the whatnot) when the location is a poetic room:
@@ -112,22 +109,25 @@ When play begins:
 Section 2 - Debugging
 [For testing]
 
-Section 3 - Test Cases
-
 Teleporting to is an action applying to one thing. Understand "teleport to [somewhere]"as teleporting to.
 
 Carry out teleporting to a room (called the place):
 	now the location is the place.
+	[TODO: put all rooms in scope, or do whatever it takes to make teleporting will work.]
 
-[TODO: put all rooms in scope, or do whatever it takes to make teleporting will work.]
+Section 3 - Test Cases
+[For testing]
 
 
-Book 2 - Story
+Volume 2 - Story
+
 
 Chapter 1 - Finding Work
 
 [There was once a girl so poor that she had nothing to live on, and wandered about the world asking for charity. One day she arrived at a thatched cottage, and inquired if they could give her any work. The farmer said he wanted a cowherd, as his own had left him, and if the girl liked the place she might take it. So she became a cowherd.]
 
+
+Section 1 - Poetry
 [Poetic map: A1 B1 // A2 B2]
 
 A1 is a poetic room [about poverty]. The poem is {
@@ -200,7 +200,9 @@ B2 is a poetic room [about a town]. It is right of A2. The poem is {
 		[apostrophe]Cross whence I have come."
 }.
 
-[Prosaic map: Wandering the World → Dusty Road ↑→ Cottage] 
+
+Section 2 - Prose
+[Prosaic map: Wandering the World → Dusty Road → Cottage] 
 
 Wandering the World is right of B2. "Having nothing to live on, you have wandered about the world asking for charity. Now you seek something better."
 
@@ -238,7 +240,12 @@ Chapter 2 - Herding Cows
 	You can guess how frightened she was! But the lion seemed in such pain that she was sorry for him, and drew nearer and nearer till she saw he had a large thorn in one foot. She pulled out the thorn and bound up the place, and the lion was grateful, and licked her hand by way of thanks with his big rough tongue.
 	When the girl had finished she went back to find the cows, but they had gone, and though she hunted everywhere she never found them; and she had to return home and confess to her master, who scolded her bitterly, and afterwards beat her. Then he said, 'Now you will have to look after the asses.']
 
+
+Section 1 - Poetry
 [Poetic map: C1 D1 // C2 D2]
+
+
+Section 2 - Prose
 
 A herd is a kind of animal.
 
@@ -294,7 +301,11 @@ Chapter 3 - Herding Asses
 	After that she returned to her flock, but they were nowhere to be seen. She searched here and she searched there, but they had vanished completely!
 	Then she had to go home and confess to her master, who first scolded her and afterwards beat her. 'Now go,' he ended, 'and look after the pigs!']
 
+Section 1 - Poetry
 [ A3 B3 // A4 B4 ]
+
+
+Section 2 - Prose
 
 [The Ass Stable is east of A1.]      [### This is a debug Statement so I can get to my room. ###]
 
@@ -330,6 +341,11 @@ Chapter 4 - Herding Pigs
 	So she ran to the place where she had left them, but they had vanished as if the earth had swallowed them up. She whistled and called, but only the birds answered her.
 	Then she sank down on the ground and wept bitterly, not daring to return home until some hours had passed away.]
 
+Section 1 - Poetry
+
+
+Section 2 - Prose
+
 
 Chapter 5 - Solving the Mystery
 
@@ -346,6 +362,12 @@ Chapter 5 - Solving the Mystery
 	'Very well,' answered the girl, 'I will go to the city, and knock at the door of the king's palace, and ask the princess to take me as a servant.']
 
 
+Section 1 - Poetry
+
+
+Section 2 - Prose
+
+
 Chapter 6 - Making a Coat for the Giant
 
 [So they parted, and when she arrived at the city she walked about the streets crying, 'Who will hire me for a servant? Who will hire me for a servant?' But, though many people liked her looks, for she was clean and neat, the maiden would listen to none, and still continued crying, 'Who will hire me for a servant? Who will hire me for a servant?'
@@ -360,6 +382,12 @@ Chapter 6 - Making a Coat for the Giant
 	He tried on the coat, but it was too short, and he threw it off, and declared it was no use. And the girl picked it up sadly, and returned quite in despair to the king's palace.]
 
 
+Section 1 - Poetry
+
+
+Section 2 - Prose
+
+
 Chapter 7 - Making the Coat Longer
 
 [The next morning, when she was combing the princess's hair, she begged leave to cut off another lock. At first the princess said no, but the girl begged so hard that at length she gave in on condition that she should find her a prince as bridegroom.
@@ -367,6 +395,12 @@ Chapter 7 - Making the Coat Longer
 	This time it fitted him, and he was quite pleased, and asked her what he could give her in return. And she said that the only reward he could give her was to take the spell off the lion and bring him back to his own shape.
 	For a long time the giant would not hear of it, but in the end he gave in, and told her exactly how it must all be done. She was to kill the lion herself and cut him up very small; then she must burn him, and cast his ashes into the water, and out of the water the prince would come free from enchantment for ever.
 	But the maiden went away weeping, lest the giant should have deceived her, and that after she had killed the lion she would find she had also slain the prince.]
+
+
+Section 1 - Poetry
+
+
+Section 2 - Prose
 
 
 Chapter 8 - Killing the Lion
@@ -377,7 +411,19 @@ Chapter 8 - Killing the Lion
 	But the prince replied, 'If it is the princess, we must go quickly. Come with me.']
 
 
+Section 1 - Poetry
+
+
+Section 2 - Prose
+
+
 Chapter 9 - Getting the Prince Hitched
 
 [So they went together to the king's palace. And when the king and queen and princess saw the young man a great joy filled their hearts, for they knew him for the eldest son, who had long ago been enchanted by a giant and lost to them.
 	And he asked his parents' consent that he might marry the girl who had saved him, and a great feast was made, and the maiden became a princess, and in due time a queen, and she richly deserved all the honours showered upon her.]
+
+
+Section 1 - Poetry
+
+
+Section 2 - Prose
