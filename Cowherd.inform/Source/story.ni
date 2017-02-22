@@ -8,6 +8,7 @@ The story genre is "Epic Poem / Fairy Tale".
 The release number is 1. Release along with the source text, a library card, and an introductory booklet.
 
 
+[
 Volume 1 - Infrastructure
 
 
@@ -244,7 +245,6 @@ Chapter 2 - Herding Cows
 Section 1 - Poetry
 [Poetic map: C1 D1 // C2 D2]
 
-
 Section 2 - Prose
 
 A herd is a kind of animal.
@@ -262,26 +262,38 @@ instead of examining the cows,
 	He pays well and is kind, [line break]
 	but this groan I must find"  [might be too cheesy]
 	
-The Corral is northwest of the Thatched Cottage. The cows are a herd. They are here. Understand "cow" as the cows.
+The Corral is northwest of the Thatched Cottage.  "Their is a field that is worn from cows running over the grass."
+
+The cows are a herd. They are here. Understand "cow" as the cows.
 
 [to see cows instead of to see a cows]
 
-The meadow1 is north of the corral.  [add description]
+The meadow1 is north of the corral.  "I come back and see that my herd is gone, [line break]
+why was I so foolish to leave them. [line break]
+I looked for hours and had no such luck to find my herd. [line break]
+I must return without them"
 
-The meadow2 is south of the corral.  "Continue to go south to follow the groan. [line break]
-[Line break]
-'I must find who is hurt!'"
+The meadow2 is south of the corral. "I have been walking for 5 minutes, I realize that I have past my destonation. [line break]
+It is coming from the northwest[Line break]
+'I must find that sound!'"
 
-meadows3 is south of meadows2. "Far down is a ditch you can see a shape of an animal, [line break]
+meadows3 is northeast of meadows2. "Far down is a ditch you can see a shape of an animal, [line break]
 the animal that is groaning."
 
 The ditch is down of the meadows3. the description is "I scale the thing and desid to not take my chances, I walk around around and down to see a lion laying on the bare rock. [line break]
-He is down the hill a bit farther [line break]
-[line break]
-The animal continues to groan." 
+He is down the hill a bit farther"
 
- The deep ditch is down of the ditch.
+[if loin is in deep ditch:
+	say " You hear the groan."]
+	
+[learn to do if loin is here and how to make cows go away]
 
+ The deep ditch is down of the ditch.  "the cave is dark and damp, [line break]
+there are bats swarming around me,"
+
+[if loin is in deep ditch:
+	say "A loin is on the ground , it is injiered, you must find something to heal it."]
+	
 the Meadows is east of the Corral. "a corral is to the west.  A lion lies in front of me."
 
 instead of examining the lion:
@@ -293,7 +305,7 @@ an animal called the lion is in the meadows3
 The lion is either hurt or healthy
 
 The lion is usually hurt [untill healed]
-
+]
 Chapter 3 - Herding Asses
 
 [So every day she had to take the asses to the woods to feed, until one morning, exactly a year after she had found the lion, she heard a groan which sounded quite human. She went straight to the place from which the noise came, and, to her great surprise, beheld the same lion stretched on the ground with a deep wound across his face.
@@ -332,6 +344,21 @@ Instead of examining the rock,
 	
 Instead of eating the rock,
 	say "Why would I wanna eat Steve? He's meh pal, bruh."
+	
+A Stubborn is a kind of animal. A Stubborn called Donkey is in the Ass Stable
+
+Understand "Donkey" as Stubborn.
+
+Instead of examining Donkey,
+	say "A poor smelly old animal. But he is what your here for."
+	
+Instead of taking Donkey,
+	say "Donkey is very stubborn and refuses to go with you. You hear it's stomach growl, maybe it's hungry."
+
+Donkey can be fed Carrots.
+
+Instead of giving the carrots to Donkey,
+	say "Donkey make a sound of indignation and out of sheer hunger desides to follow you."
 
 Chapter 4 - Herding Pigs
 
