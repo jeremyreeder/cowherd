@@ -1,9 +1,9 @@
-"Cowhand" by "Jeremy Reeder, Jesse Evans, and Hunter Evans".
+"Cowherd" by "Jeremy Reeder, Jesse Evans, and Hunter Evans".
 [Based on an old Spanish fairy tale known as "The Wounded Lion".]
 The story headline is "An interactive epic poem".
 The story genre is "Epic Poem".
 The release number is 1. Release along with the source text, a library card, and an introductory booklet.
-[
+
 
 Chapter 0 - Preamble
 
@@ -191,9 +191,6 @@ Chapter 2 - Herding Cows
 	When the girl had finished she went back to find the cows, but they had gone, and though she hunted everywhere she never found them; and she had to return home and confess to her master, who scolded her bitterly, and afterwards beat her. Then he said, 'Now you will have to look after the asses.']
 
 [Poetic map: C1 D1 // C2 D2]
-
-
-]
 
 A herd is a kind of animal.
 
