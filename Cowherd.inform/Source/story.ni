@@ -109,11 +109,11 @@ When play begins:
 Section 2 - Debugging
 [For testing]
 
-Teleporting to is an action applying to one thing. Understand "teleport to [somewhere]"as teleporting to.
+Teleporting to is an action applying to one thing. Understand "teleport to [any room]" as teleporting to.
 
-Carry out teleporting to a room (called the place):
-	now the location is the place.
-	[TODO: put all rooms in scope, or do whatever it takes to make teleporting will work.]
+Carry out teleporting to a room (called the destination):
+	move the actor to the destination.
+
 
 Section 3 - Test Cases
 [For testing]
