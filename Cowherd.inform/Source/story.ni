@@ -22,11 +22,7 @@ A thing can be examined or unexamined. A thing is usually unexamined.
 
 A poetic room is a kind of room.
 
-To decide whether a room is prosaic:
-	if the room is a poetic room:
-		decide no;
-	otherwise:
-		decide yes.
+Definition: a room is prosaic if it is not a poetic room.
 
 A poetic room has a list of texts called the poem.
 
