@@ -87,23 +87,22 @@ Section 1 - Specifications
 [For testing]
 
 When play begins:
-	repeat with the item running through all things:
-		if [the item is in a prosaic room and] the description of the item is "":
-			say "/!\ No description is given for [the item].";
-		[otherwise:]
-		if [the item is in a poetic room and] the stanza of the item is "":
-			say "/!\ No stanza is given for [the item].";
-		[TODO: fix the invalid conditions that are commented out.]
-	repeat with the poetic place running through all the poetic rooms:
-		if the poem of the poetic place is {}:
-			say "/!\ No poem is given for [the poetic place]." 
-
-[When play begins:
-	repeat through the Table of Analogies:
-		if entry Signifier is literal:
-			say "/!\ Literal object '[entry Signifier]' found as a Signifier in [the Table of Analogies]."
-		if entry Signified is figurative:
-			say "/!\ Figurative object '[entry Signified]' found as a Signified in [the Table of Analogies]."]
+	say "[bold type]Specification Compliance Report[roman type][paragraph break]";
+	say "All things should be described. ";
+	if the list of undescribed things is empty:
+		say "And they are.";
+	otherwise:
+		say "But I found [number of entries in the list of undescribed things in words] undescribed thing[s]: [list of undescribed things].";
+	say "All poetic rooms should have poems. ";
+	let L be the list of poetic rooms;
+	repeat with the place running through all the poetic rooms:
+		if the poem of the place is not empty:
+			remove the place from L;
+	if L is not empty:
+		say "And they do.";
+	otherwise:
+		say "But I found [number of entries in L in words] without.";
+	say "[paragraph break]"
 
 
 Section 2 - Debugging
