@@ -80,11 +80,11 @@ Check taking a figurative object (called the whatnot) when the location is a poe
 	[TODO: switch to another approach because tables can only handle constants, not variables.]
 
 
-Part 3 - Testing
+Part 3 - Testing (not for release)
 
 
 Section 1 - Specifications
-[For testing]
+[For automated testing]
 
 When play begins:
 	say "[bold type]Specification Compliance Report[roman type][paragraph break]";
@@ -105,17 +105,17 @@ When play begins:
 	say "[paragraph break]"
 
 
-Section 2 - Debugging
-[For testing]
+Section 2 - Test Cases
+[For semi-automated testing: automated steps followed by manual review of responses]
+
+
+Section 3 - Debugging
+[For manual, exploratory testing]
 
 Teleporting to is an action applying to one thing. Understand "teleport to [any room]" as teleporting to.
 
 Carry out teleporting to a room (called the destination):
 	move the actor to the destination.
-
-
-Section 3 - Test Cases
-[For testing]
 
 
 Volume 2 - Story
