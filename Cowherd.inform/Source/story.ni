@@ -60,7 +60,7 @@ Every turn when the location is a poetic room:
 		say the stanza;
 		remove the stanza from the poem of the location.
 
-Left is a direction. The opposite of left is right. Understand "left" or "l" as left. [TODO: resolve bug where "l" is interpreted as "look".]
+Left is a direction. The opposite of left is right. Understand the command "l" as something new. Understand "left" or "l" as left.
 
 Right is a direction. The opposite of right is left. Understand "right" or "r" as right.
 
