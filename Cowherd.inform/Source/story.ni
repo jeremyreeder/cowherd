@@ -1,9 +1,9 @@
 "Cowherd" by "Jeremy Reeder, Jesse Evans, and Hunter Evans".
 [Based on an old Spanish fairy tale known as "The Wounded Lion".]
 
-The story headline is "An interactive tale both poetic and prosaic".
+The story headline is "A metapoetic fairy-tale adventure".
 
-The story genre is "Epic Poem / Fairy Tale".
+The story genre is "Epic Poem".
 
 The release number is 1. Release along with the source text, a library card, and an introductory booklet.
 
