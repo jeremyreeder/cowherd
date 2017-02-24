@@ -46,7 +46,7 @@ Carry out examining an unexamined thing in a poetic room:
 
 After examining an unexamined thing, now the noun is examined.
 
-Instead of examining an examined thing, do nothing.
+Instead of examining an examined thing, try waiting.
 
 Every turn when the location is a poetic room:
 	if the poem of the location is empty:
@@ -238,6 +238,12 @@ Chapter 2 - Herding Cows
 Section 1 - Poetry
 [Poetic map: C1 D1 // C2 D2]
 
+C1 is a poetic room. Right of C1 is a poetic room called D1.
+
+C2 is a poetic room. Right of C2 is a poetic room called D2.
+
+Right of D1 and left of C2 is a pause called the line-2 pause.
+
 Section 2 - Prose
 
 A herd is a kind of animal.
@@ -255,49 +261,47 @@ instead of examining the cows,
 	He pays well and is kind, [line break]
 	but this groan I must find"  [might be too cheesy]
 	
-The Corral is northwest of the Thatched Cottage.  "Their is a field that is worn from cows running over the grass."
+The Corral is south of the Thatched Cottage and right of D2.  "Their is a field that is worn from cows running over the grass."
 
 The cows are a herd. They are here. Understand "cow" as the cows.
 
 [to see cows instead of to see a cows]
 
-The meadow1 is north of the corral.  "I come back and see that my herd is gone, [line break]
+The West Meadow is east of the Corral. "A corral is to the west.  A lion lies in front of me."
+
+The Middle Meadow is east of the West Meadow.  "I come back and see that my herd is gone, [line break]
 why was I so foolish to leave them. [line break]
 I looked for hours and had no such luck to find my herd. [line break]
 I must return without them"
 
-The meadow2 is south of the corral. "I have been walking for 5 minutes, I realize that I have past my destonation. [line break]
+The East Meadow is east of Middle Meadow. "I have been walking for 5 minutes, I realize that I have past my destination. [line break]
 It is coming from the northwest[Line break]
 'I must find that sound!'"
 
-meadows3 is northeast of meadows2. "Far down is a ditch you can see a shape of an animal, [line break]
+The Far East Meadow is east of the East Meadow. "Far down is a ditch you can see a shape of an animal, [line break]
 the animal that is groaning."
 
-The ditch is down of the meadows3. the description is "I scale the thing and desid to not take my chances, I walk around around and down to see a lion laying on the bare rock. [line break]
+The ditch is south of the Far East Meadow. The description is "I scale the thing and desid to not take my chances, I walk around around and down to see a lion laying on the bare rock. [line break]
 He is down the hill a bit farther"
 
-[if loin is in deep ditch:
+[if lion is in deep ditch:
 	say " You hear the groan."]
 	
-[learn to do if loin is here and how to make cows go away]
+[learn to do if lion is here and how to make cows go away]
 
- The deep ditch is down of the ditch.  "the cave is dark and damp, [line break]
+ The deep ditch is down from the ditch.  "the cave is dark and damp, [line break]
 there are bats swarming around me,"
 
-[if loin is in deep ditch:
-	say "A loin is on the ground , it is injiered, you must find something to heal it."]
-	
-the Meadows is east of the Corral. "a corral is to the west.  A lion lies in front of me."
+[if lion is in deep ditch:
+	say "A lion is on the ground , it is injiered, you must find something to heal it."]
 
-instead of examining the lion:
+Instead of examining the lion:
 	say "laying in the empty medows, [line break]
 	lays a grounded lion on the ground."
 
-an animal called the lion is in the meadows3
+An animal called the lion is in the Far East Meadow.
 
-The lion is either hurt or healthy
-
-The lion is usually hurt [untill healed]
+The lion is either hurt or healthy. The lion is usually hurt [untill healed].
 
 
 Chapter 3 - Herding Asses
@@ -310,14 +314,18 @@ Chapter 3 - Herding Asses
 Section 1 - Poetry
 [ A3 B3 // A4 B4 ]
 
+A3 is a poetic room. Right of A3 is a poetic room called B3.
+
+A4 is a poetic room. Right of A4 is a poetic room called B4.
+
+Right of B3 and left of A4 is a pause called the line-3 pause.
+
 
 Section 2 - Prose
 
-[The Ass Stable is east of A1.]      [### This is a debug Statement so I can get to my room. ###]
+The Stable is right of B4. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of the Asses here had a sad glint in their eyes. It was not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A latter leads up to the loft"
 
-The Ass Stable is a room. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of the Asses here had a sad glint in their eyes. It was not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A latter leads up to the loft"
-
-The Loft is above the Ass Stable. "Even less pleasent than the stable it self. It is very warm, humid and putrid here. A latter leads down to the Ass Stable"
+The Loft is above the Stable. "Even less pleasent than the stable it self. It is very warm, humid and putrid here. A latter leads down to the Stable"
 
 Carrots is edible.
 
