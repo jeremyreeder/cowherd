@@ -28,7 +28,7 @@ To decide whether a room is prosaic:
 	otherwise:
 		decide yes.
 
-A poetic room has a list of texts called the poem. A thing has a text called the stanza.
+A poetic room has a list of texts called the poem.
 
 A pause is a kind of open door.
 
@@ -46,9 +46,11 @@ Before going left through a pause:
 Carry out examining an unexamined thing in a poetic room:
 	if the description of the noun is "":
 		now the description of the noun is "<insert stanza>";
-	add the description of the noun at entry one in the poem of the location.
+	add the description of the noun at entry one in the poem of the location instead.
 
 After examining an unexamined thing, now the noun is examined.
+
+Instead of examining an examined thing, do nothing.
 
 Every turn when the location is a poetic room:
 	if the poem of the location is empty:
@@ -142,13 +144,12 @@ A1 is a poetic room [about poverty]. The poem is {
 		Nor is shelter."
 }.
 
-A head is a kind of thing. It is a part of each person. Understand "dream" or "dreams" as the head of the player when the location is A1. The stanza of the head of the player is
-	"My head is filled with wonder oft-times.[line break]
+A head is a kind of thing. It is a part of each person. Understand "dream" or "dreams" as the head of the player when the location is A1. The description of the head of the player is "My head is filled with wonder oft-times.[line break]
 		Of all the fine things that exist in the world,[line break]
 		Why must it all be so hard to acquire?[line break]
 		What can I do to make it mine?"
 
-The heavens are a backdrop which is everywhere. Understand "sky", and "heaven" as the heavens. Understand "cloth" and "cloths" as the heavens when the location is A1. The stanza of the heavens is
+The heavens are a backdrop which is everywhere. Understand "sky", and "heaven" as the heavens. Understand "cloth" and "cloths" as the heavens when the location is A1. The description is
 	"I pray to anyone up there[line break]
 		That I may end this life of misery,[line break]
 		Earn a living,[line break]
@@ -156,7 +157,7 @@ The heavens are a backdrop which is everywhere. Understand "sky", and "heaven" a
 
 The poverty is a backdrop which is everywhere. Understand "world", "road", "dust", and "dusty road" as poverty.
 
-The riches are a backdrop which is everywhere. Understand "riches", "money", and "job" as riches. Understand "cottage" and "shelter" as riches when the location is a poetic room. The stanza is "My, oh my!" 
+The riches are a backdrop which is everywhere. Understand "riches", "money", and "job" as riches. Understand "cottage" and "shelter" as riches when the location is a poetic room. The description is "My, oh my!" 
 
 B1 is a poetic room [about dreams]. It is right of A1. The poem is {
 	"Oh, If it be thy will I shall endure,[line break] 
@@ -179,9 +180,9 @@ B1 is a poetic room [about dreams]. It is right of A1. The poem is {
 
 The dreams are a backdrop which is everywhere. Understand "ambition", "heart" as dreams. Understand "failure", "stone", and "bonds" as poverty. Understand "feast", "lofty air", and "air" as riches.
 
-The beauty is a backdrop that is everywhere. Understand "forest", "tresses", and "sun" as beauty. The stanza is "Astonishing!" 
+The beauty is a backdrop that is everywhere. Understand "forest", "tresses", and "sun" as beauty. The description is "Astonishing!" 
 
-The freedom is a backdrop that is everywhere. Understand "liberty", "air", "lofty air", "bird", "hawk", and "spotted hawk" as freedom. The stanza is "Oh, to be free!"
+The freedom is a backdrop that is everywhere. Understand "liberty", "air", "lofty air", "bird", "hawk", and "spotted hawk" as freedom. The description is "Oh, to be free!"
 
 God is a backdrop that is everywhere. Understand "god", "prayer", "sun god", "sun god's hair", and "god's hair" as God.
 
