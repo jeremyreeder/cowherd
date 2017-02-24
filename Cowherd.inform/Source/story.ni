@@ -18,7 +18,7 @@ Use the serial comma. Use no scoring. Use brief room descriptions.
 
 Part 2 - Definitions
 
-A thing can be poetically examined or poetically unexamined. A thing is usually poetically unexamined.
+A thing can be examined or unexamined. A thing is usually unexamined.
 
 A poetic room is a kind of room.
 
@@ -43,14 +43,12 @@ Before going right through a pause:
 Before going left through a pause:
 	say "[bold type]\\[roman type]".
 
-Carry out examining a poetically unexamined thing (called the object) in a poetic room:
-	if the stanza of the object is "":
-		now the stanza of the object is "<insert stanza>";
-	add the stanza of the object at entry one in the poem of the location;
-	now the object is poetically examined instead.
+Carry out examining an unexamined thing in a poetic room:
+	if the description of the noun is "":
+		now the description of the noun is "<insert stanza>";
+	add the description of the noun at entry one in the poem of the location.
 
-Carry out examining a poetically examined thing in a poetic room:
-	do nothing instead.
+After examining an unexamined thing, now the noun is examined.
 
 Every turn when the location is a poetic room:
 	if the poem of the location is empty:
