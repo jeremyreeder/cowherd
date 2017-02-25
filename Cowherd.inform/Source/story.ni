@@ -1,11 +1,13 @@
-"Cowherd" by "Jeremy Reeder, Jesse Evans, and Hunter Evans".
-[Based on an old Spanish fairy tale known as "The Wounded Lion".]
+"Cowherd" by "Jeremy John Reeder, along with Jesse and Hunter Evans".
+[Based on "Lo Lleó", by Francesc Maspons i Labrós. It's an old Catalonian fairy tale. Each chapter is prefaced with the text of Andrew Lang's English translation, titled "The Wounded Lion".]
 
-The story headline is "A metapoetic fairy-tale adventure".
+The story headline is "A metapoetic fairy-tale adventure". The story genre is "Epic Poem".
 
-The story genre is "Epic Poem".
+The story description is "There was once a girl . . ."
 
-The release number is 1. Release along with the source text, a library card, and an introductory booklet.
+Release along with the source text, a library card, and an introductory booklet.
+
+The release number is 1.
 
 
 Volume 1 - Infrastructure
