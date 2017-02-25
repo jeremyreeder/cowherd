@@ -11,26 +11,41 @@ The release number is 1. Release along with the source text, a library card, and
 Volume 1 - Infrastructure
 
 
-Part 1 - Configuration
+Part 1 - Story Configuration
 
 Use the serial comma. Use no scoring. Use brief room descriptions.
 
 
 Part 2 - Definitions
 
+
+Section 1 - General Definitions
+
 A thing can be examined or unexamined. A thing is usually unexamined.
 
-A poetic room is a kind of room.
+After examining an unexamined thing, now the noun is examined.
 
-Definition: a room is prosaic if it is not a poetic room.
+Instead of examining an examined thing, do nothing.
 
-A poetic room has a list of texts called the poem.
+Understand the command "l" as something new.
 
-A pause is a kind of open door.
+Instead of looking, do nothing. Instead of looking for the first time, say "That's a passive action. Don't worry. If the room changes, you'll know it."
 
-Rule for choosing notable locale objects for a room (called the place):
-	repeat with item running through things in the place:
-		if the place is a poetic room or the item is a pause:
+An object can be literal or figurative. An object is usually literal. An abstract noun is a figurative backdrop.
+
+
+Section 2 - Definitions for the Poetic World
+
+Left is a direction. The opposite of left is right. Understand "left" or "l" as left.
+
+Right is a direction. The opposite of right is left. Understand "right" or "r" as right.
+
+A poetic room is a kind of room. A poetic room has a list of texts called the poem.
+
+A pause is a kind of open door [for passage between poetic rooms].
+Rule for choosing notable locale objects for a room:
+	repeat with item running through things in the noun:
+		if the noun is a poetic room or the item is a pause:
 			set the locale priority of the item to 0. [It's not notable.]
 
 Before going right through a pause:
@@ -44,10 +59,6 @@ Carry out examining an unexamined thing in a poetic room:
 		now the description of the noun is "<insert stanza>";
 	add the description of the noun at entry one in the poem of the location instead.
 
-After examining an unexamined thing, now the noun is examined.
-
-Instead of examining an examined thing, try waiting.
-
 Every turn when the location is a poetic room:
 	if the poem of the location is empty:
 		say "→";
@@ -56,15 +67,14 @@ Every turn when the location is a poetic room:
 		say the stanza;
 		remove the stanza from the poem of the location.
 
-Left is a direction. The opposite of left is right. Understand the command "l" as something new. Understand "left" or "l" as left.
-
-Right is a direction. The opposite of right is left. Understand "right" or "r" as right.
-
-An object can be literal or figurative. An object is usually literal. An abstract noun is a figurative backdrop.
-
 Check taking a figurative object (called the whatnot) when the location is a poetic room:
 	now the whatnot is nowhere [removing it even as a backdrop];
 	now the actor carries the whatnot. [even though this may seem impossible].
+
+
+Section 3 - Definitions for the Prosaic World
+
+Definition: a room is prosaic if it is not a poetic room.
 
 [Instead of going from a poetic room to a prosaic room when the player has a figurative object (called the whatnot):
 	now the whatnot is nowhere;
@@ -108,7 +118,7 @@ Section 2 - Test Cases
 Section 3 - Debugging
 [For manual, exploratory testing]
 
-Teleporting to is an action applying to one thing. Understand "teleport to [any room]" as teleporting to.
+Teleporting to is an action applying to one thing. Understand "teleport to/into [any room]" as teleporting to. Understand "orb to/into [any room]" as teleporting to.
 
 Carry out teleporting to a room (called the destination):
 	move the actor to the destination.
@@ -122,7 +132,7 @@ Chapter 1 - Finding Work
 [There was once a girl so poor that she had nothing to live on, and wandered about the world asking for charity. One day she arrived at a thatched cottage, and inquired if they could give her any work. The farmer said he wanted a cowherd, as his own had left him, and if the girl liked the place she might take it. So she became a cowherd.]
 
 
-Section 1 - Poetry
+Section 1 - Poetry about Finding Work
 [Poetic map: A1 B1 // A2 B2]
 
 A1 is a poetic room [about poverty]. The poem is {
@@ -195,7 +205,7 @@ B2 is a poetic room [about a town]. It is right of A2. The poem is {
 }.
 
 
-Section 2 - Prose
+Section 2 - Prose about Finding Work
 [Prosaic map: Wandering the World → Dusty Road → Cottage] 
 
 Wandering the World is right of B2. "Having nothing to live on, you have wandered about the world asking for charity. Now you seek something better."
@@ -235,7 +245,7 @@ Chapter 2 - Herding Cows
 	When the girl had finished she went back to find the cows, but they had gone, and though she hunted everywhere she never found them; and she had to return home and confess to her master, who scolded her bitterly, and afterwards beat her. Then he said, 'Now you will have to look after the asses.']
 
 
-Section 1 - Poetry
+Section 1 - Poetry about Herding Cows
 [Poetic map: C1 D1 // C2 D2]
 
 C1 is a poetic room. Right of C1 is a poetic room called D1.
@@ -244,7 +254,7 @@ C2 is a poetic room. Right of C2 is a poetic room called D2.
 
 Right of D1 and left of C2 is a pause called the line-2 pause.
 
-Section 2 - Prose
+Section 2 - Prose about Herding Cows
 
 A herd is a kind of animal.
 
@@ -311,7 +321,7 @@ Chapter 3 - Herding Asses
 	After that she returned to her flock, but they were nowhere to be seen. She searched here and she searched there, but they had vanished completely!
 	Then she had to go home and confess to her master, who first scolded her and afterwards beat her. 'Now go,' he ended, 'and look after the pigs!']
 
-Section 1 - Poetry
+Section 1 - Poetry about Herding Asses
 [ A3 B3 // A4 B4 ]
 
 A3 is a poetic room. Right of A3 is a poetic room called B3.
@@ -321,7 +331,7 @@ A4 is a poetic room. Right of A4 is a poetic room called B4.
 Right of B3 and left of A4 is a pause called the line-3 pause.
 
 
-Section 2 - Prose
+Section 2 - Prose about Herding Asses
 
 The Stable is right of B4. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of the Asses here had a sad glint in their eyes. It was not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A latter leads up to the loft"
 
@@ -370,10 +380,10 @@ Chapter 4 - Herding Pigs
 	So she ran to the place where she had left them, but they had vanished as if the earth had swallowed them up. She whistled and called, but only the birds answered her.
 	Then she sank down on the ground and wept bitterly, not daring to return home until some hours had passed away.]
 
-Section 1 - Poetry
+Section 1 - Poetry about Herding Pigs
 
 
-Section 2 - Prose
+Section 2 - Prose about Herding Pigs
 
 
 Chapter 5 - Solving the Mystery
@@ -391,10 +401,10 @@ Chapter 5 - Solving the Mystery
 	'Very well,' answered the girl, 'I will go to the city, and knock at the door of the king's palace, and ask the princess to take me as a servant.']
 
 
-Section 1 - Poetry
+Section 1 - Poetry about Solving the Mystery
 
 
-Section 2 - Prose
+Section 2 - Prose about Solving the Mystery
 
 
 Chapter 6 - Making a Coat for the Giant
@@ -411,10 +421,10 @@ Chapter 6 - Making a Coat for the Giant
 	He tried on the coat, but it was too short, and he threw it off, and declared it was no use. And the girl picked it up sadly, and returned quite in despair to the king's palace.]
 
 
-Section 1 - Poetry
+Section 1 - Poetry about Making a Coat for the Giant
 
 
-Section 2 - Prose
+Section 2 - Prose about Making a Coat for the Giant
 
 
 Chapter 7 - Making the Coat Longer
@@ -426,10 +436,10 @@ Chapter 7 - Making the Coat Longer
 	But the maiden went away weeping, lest the giant should have deceived her, and that after she had killed the lion she would find she had also slain the prince.]
 
 
-Section 1 - Poetry
+Section 1 - Poetry about Making the Coat Longer
 
 
-Section 2 - Prose
+Section 2 - Prose about Making the Coat Longer
 
 
 Chapter 8 - Killing the Lion
@@ -440,10 +450,10 @@ Chapter 8 - Killing the Lion
 	But the prince replied, 'If it is the princess, we must go quickly. Come with me.']
 
 
-Section 1 - Poetry
+Section 1 - Poetry about Killing the Lion
 
 
-Section 2 - Prose
+Section 2 - Prose about Killing the Lion
 
 
 Chapter 9 - Getting the Prince Hitched
@@ -452,7 +462,7 @@ Chapter 9 - Getting the Prince Hitched
 	And he asked his parents' consent that he might marry the girl who had saved him, and a great feast was made, and the maiden became a princess, and in due time a queen, and she richly deserved all the honours showered upon her.]
 
 
-Section 1 - Poetry
+Section 1 - Poetry about Getting the Prince Hitched
 
 
-Section 2 - Prose
+Section 2 - Prose about Getting the Prince Hitched
