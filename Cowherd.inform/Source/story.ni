@@ -340,19 +340,17 @@ Right of B3 and left of A4 is a pause called the line-3 pause.
 
 Section 2 - Prose about Herding Asses
 
-The Stable is right of B4. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of the Asses here had a sad glint in their eyes. It was not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A latter leads up to the loft"
+The Stable is right of B4. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft."
 
-The Loft is above the Stable. "Even less pleasent than the stable it self. It is very warm, humid and putrid here. A latter leads down to the Stable"
+The Loft is above the Stable. "Even less pleasant than the stable it self. It is very warm, humid, and putrid here. A ladder leads down to the stable."
 
-Carrots is edible.
+Some carrots are in the Loft. They are edible. Understand "carrot" as the carrots.
 
-Carrots is in the Loft
-
-Instead of eating Carrots,
+Instead of eating the carrots,
 	say "You just ate breakfast. Maybe they will come in handy later."
 	
-Instead of examining Carrots,
-	say "They are long, orange, edible vegetables. Animals generally like to eat carrots."
+Instead of examining the carrots,
+	say "They are long, orange, edible vegetables. Animals generally like to eat [carrots]."
 
 The rock is in the Stable.
 
@@ -363,21 +361,23 @@ Instead of examining the rock,
 	
 Instead of eating the rock,
 	say "Why would I wanna eat Steve? He's meh pal, bruh."
-	
-A Stubborn is a kind of animal. A Stubborn called Donkey is in the Ass Stable
 
-Understand "Donkey" as Stubborn.
+An animal can be stubborn. An animal is usually not stubborn.
 
-Instead of examining Donkey,
+A stubborn animal called some asses is in the Stable.
+
+Understand "ass", "donkey", "mule", or "burro" as the asses.
+
+Instead of examining the asses,
 	say "A poor smelly old animal. But he is what your here for."
 	
-Instead of taking Donkey,
-	say "Donkey is very stubborn and refuses to go with you. You hear it's stomach growl, maybe it's hungry."
+Instead of taking the asses,
+	say "[The asses] are very stubborn and refuse to go with you. You hear stomachs growling. Maybe they're hungry."
 
-Donkey can be fed Carrots.
+The asses can be fed carrots.
 
-Instead of giving the carrots to Donkey,
-	say "Donkey make a sound of indignation and out of sheer hunger decides to follow you."
+Instead of giving carrots to the asses,
+	say "[The asses] make a sound of indignation and out of sheer hunger decide to follow you."
 
 Chapter 4 - Herding Pigs
 
