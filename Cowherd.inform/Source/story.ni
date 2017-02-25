@@ -27,11 +27,11 @@ After examining an unexamined thing, now the noun is examined.
 
 Instead of examining an examined thing, do nothing.
 
-Understand the command "l" as something new.
+Understand the command "look" or "l" as something new.
 
-Instead of looking, do nothing. Instead of looking for the first time, say "That's a passive action. Don't worry. If the room changes, you'll know it."
+The standard report waiting rule does nothing.
 
-An object can be literal or figurative. An object is usually literal. An abstract noun is a figurative backdrop.
+An object can be literal or figurative. An object is usually literal. An abstract noun is a kind of figurative backdrop.
 
 
 Section 2 - Definitions for the Poetic World
@@ -89,16 +89,23 @@ Definition: a room is prosaic if it is not a poetic room.
 Part 3 - Testing (not for release)
 
 
-Section 1 - Specifications
+Section 1 - Design Specifications
 [For automated testing]
+
+To decide what list of things is the list of things with blank descriptions:
+	let the result be the list of things;
+	repeat with the noun running through the result:
+		if the description of the noun is not "":
+			remove the noun from the result;
+	decide on the result.
 
 When play begins:
 	say "[bold type]Specification Compliance Report[roman type][paragraph break]";
-	say "All things should be described. ";
-	if the list of undescribed things is empty:
-		say "And they are.";
+	say "Each thing should have a description. ";
+	if the list of things with blank descriptions is empty:
+		say "And it does.";
 	otherwise:
-		say "But I found [number of entries in the list of undescribed things in words] undescribed thing[s]: [list of undescribed things].";
+		say "But I found [number of entries in the list of things with blank descriptions] undescribed thing[s]: [the list of things with blank descriptions].";
 	say "All poetic rooms should have poems. ";
 	let L be the list of poetic rooms;
 	repeat with the place running through all the poetic rooms:
@@ -108,7 +115,7 @@ When play begins:
 		say "And they do.";
 	otherwise:
 		say "But I found [number of entries in L in words] without.";
-	say "[paragraph break]"
+	say "[paragraph break]".
 
 
 Section 2 - Test Cases
@@ -303,15 +310,15 @@ He is down the hill a bit farther"
 there are bats swarming around me,"
 
 [if lion is in deep ditch:
-	say "A lion is on the ground , it is injiered, you must find something to heal it."]
+	say "A lion is on the ground , it is injured, you must find something to heal it."]
 
 Instead of examining the lion:
-	say "laying in the empty medows, [line break]
+	say "laying in the empty meadows, [line break]
 	lays a grounded lion on the ground."
 
 An animal called the lion is in the Far East Meadow.
 
-The lion is either hurt or healthy. The lion is usually hurt [untill healed].
+The lion is either hurt or healthy. The lion is usually hurt [until healed].
 
 
 Chapter 3 - Herding Asses
@@ -342,17 +349,17 @@ Carrots is edible.
 Carrots is in the Loft
 
 Instead of eating Carrots,
-	say "You just ate brakefast. Maybe they will come in handy later."
+	say "You just ate breakfast. Maybe they will come in handy later."
 	
 Instead of examining Carrots,
-	say "They are long, orange, edible vegetables. Animals generaly like to eat carrots."
+	say "They are long, orange, edible vegetables. Animals generally like to eat carrots."
 
-The rock is in The Ass Stable
+The rock is in the Stable.
 
 Understand "Steve" as the rock.
 
 Instead of examining the rock,
-	say "You are compeled to pick up the rock and name it Steve"
+	say "You are compelled to pick up the rock and name it Steve"
 	
 Instead of eating the rock,
 	say "Why would I wanna eat Steve? He's meh pal, bruh."
@@ -370,7 +377,7 @@ Instead of taking Donkey,
 Donkey can be fed Carrots.
 
 Instead of giving the carrots to Donkey,
-	say "Donkey make a sound of indignation and out of sheer hunger desides to follow you."
+	say "Donkey make a sound of indignation and out of sheer hunger decides to follow you."
 
 Chapter 4 - Herding Pigs
 
