@@ -85,6 +85,8 @@ Definition: a room is prosaic if it is not a poetic room.
 		now the player has (entry Signified).]
 	[TODO: switch to another approach because tables can only handle constants, not variables.]
 
+A herd is a kind of animal.
+
 
 Part 3 - Testing (not for release)
 
@@ -261,28 +263,25 @@ C2 is a poetic room. Right of C2 is a poetic room called D2.
 
 Right of D1 and left of C2 is a pause called the line-2 pause.
 
+
 Section 2 - Prose about Herding Cows
 
-A herd is a kind of animal.
+The cows are a herd. They are here. Understand "cow" as the cows.
 
 The lion is a kind of animal.
 
-before of examining the cows,
+Before examining the cows,
 	say "Cows without a herd leader are useless [line break]
 	The farmer asked me to farm these cows."
 
-instead of examining the cows,
+Instead of examining the cows,
 	say "I hear a loud groan that almost sounds human. [line break]
 	I must see what this is. [line break]
 	I heard the sound from the south. [line break]
 	He pays well and is kind, [line break]
-	but this groan I must find"  [might be too cheesy]
+	but this groan I must find"  [might be too cheesy].
 	
 The Corral is south of the Thatched Cottage and right of D2.  "Their is a field that is worn from cows running over the grass."
-
-The cows are a herd. They are here. Understand "cow" as the cows.
-
-[to see cows instead of to see a cows]
 
 The West Meadow is east of the Corral. "A corral is to the west.  A lion lies in front of me."
 
@@ -362,9 +361,7 @@ Instead of examining the rock,
 Instead of eating the rock,
 	say "Why would I wanna eat Steve? He's meh pal, bruh."
 
-An animal can be stubborn. An animal is usually not stubborn.
-
-A stubborn animal called some asses is in the Stable.
+A herd called the asses is in the Stable.
 
 Understand "ass", "donkey", "mule", or "burro" as the asses.
 
