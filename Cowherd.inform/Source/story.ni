@@ -15,6 +15,8 @@ Volume 1 - Infrastructure
 
 Part 1 - Story Configuration
 
+Include Basic Help Menu by Emily Short.
+
 Use the serial comma. Use no scoring. Use brief room descriptions.
 
 
