@@ -1,12 +1,6 @@
 "Cowherd" by "Jeremy John Reeder, along with Jesse and Hunter Evans".
 [Based on "Lo Lleó", by Francesc Maspons i Labrós. It's an old Catalonian fairy tale. Each chapter is prefaced with the text of Andrew Lang's English translation, titled "The Wounded Lion".]
 
-The story headline is "A metapoetic fairy-tale adventure". The story genre is "Epic Poem".
-
-The story description is "There was once a girl . . ."
-
-Release along with the source text, a library card, and an introductory booklet.
-
 The release number is 1.
 
 
@@ -15,9 +9,15 @@ Volume 1 - Infrastructure
 
 Part 1 - Story Configuration
 
-Include Basic Help Menu by Emily Short.
+The story headline is "A metapoetic fairy-tale adventure". The story genre is "Epic Poem".
+
+The story description is "There was once a girl . . ."
 
 Use the serial comma. Use no scoring. Use brief room descriptions.
+
+Include Basic Help Menu by Emily Short.
+
+Release along with the source text, a library card, and an introductory booklet.
 
 
 Part 2 - Definitions
@@ -47,6 +47,7 @@ Right is a direction. The opposite of right is left. Understand "right" or "r" a
 A poetic room is a kind of room. A poetic room has a list of texts called the poem.
 
 A pause is a kind of open door [for passage between poetic rooms].
+
 Rule for choosing notable locale objects for a room:
 	repeat with item running through things in the noun:
 		if the noun is a poetic room or the item is a pause:
