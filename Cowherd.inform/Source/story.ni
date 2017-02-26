@@ -330,6 +330,7 @@ An animal called the lion is in the Far East Meadow.
 The lion is either hurt or healthy. The lion is usually hurt [until healed].
 
 
+The lion is usually hurt [untill healed]
 Chapter 3 - Herding Asses
 
 [So every day she had to take the asses to the woods to feed, until one morning, exactly a year after she had found the lion, she heard a groan which sounded quite human. She went straight to the place from which the noise came, and, to her great surprise, beheld the same lion stretched on the ground with a deep wound across his face.
