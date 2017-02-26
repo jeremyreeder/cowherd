@@ -273,10 +273,11 @@ C2 is a poetic room. Right of C2 is a poetic room called D2.
 
 Right of D1 and left of C2 is a pause called the line-2 pause.
 
-
+[The poem of C1 is {
+	};]
 Section 2 - Prose about Herding Cows
 
-The cows are a herd. They are here. Understand "cow" as the cows.
+The cows are a herd. Understand "cow" as the cows.
 
 The lion is a kind of animal.
 
@@ -291,9 +292,22 @@ Instead of examining the cows,
 	He pays well and is kind, [line break]
 	but this groan I must find"  [might be too cheesy].
 	
-The Corral is south of the Thatched Cottage and right of D2.  "Their is a field that is worn from cows running over the grass."
+The Corral is south of the Thatched Cottage and right of D2. "Their is a field that is worn from cows living on the land.  A gate is in front of me."
+
+The gate is an openable container in the corral. There are cows in the gate. The gate is closed.
+
+After going from a room when the gate is open:
+	say "the cows follow you with loyalty";
+	now the cows are in the noun.
+
+After opening the gate:
+	say "The cows are starving, I have to get them to the meadows. the forest surrounds the meadows, I have to go through the forest. the forest is to the west";
 
 The West Meadow is east of the Corral. "A corral is to the west.  A lion lies in front of me."
+
+The Forest is west of the Corral. "The forest is dark and the trees are thick, yet light still comes through easily."
+
+
 
 The Middle Meadow is east of the West Meadow.  "I come back and see that my herd is gone, [line break]
 why was I so foolish to leave them. [line break]
@@ -311,12 +325,26 @@ The ditch is south of the Far East Meadow. The description is "I scale the thing
 He is down the hill a bit farther"
 
 [if lion is in deep ditch:
-	say " You hear the groan."]
+	say " I hear the groan."]
+	
+The bats are animals.  
+
+The bats are in the deep ditch.
+
+Understand "bat" as bats.
+
+Instead of taking the bats:
+	Say "I snatch for one in the air,I get bit on the finger and the bats are scared out of the cave";
+	now the bats are nowhere
+
+Instead of examining the bats:
+	say "The bats are black are hurt my ears with their squils.  They swirl away from the cave";
+	now the bats are nowhere.
 	
 [learn to do if lion is here and how to make cows go away]
 
  The deep ditch is down from the ditch.  "the cave is dark and damp, [line break]
-there are bats swarming around me,"
+there are bats swarming all around me."
 
 [if lion is in deep ditch:
 	say "A lion is on the ground , it is injured, you must find something to heal it."]
@@ -330,7 +358,7 @@ An animal called the lion is in the Far East Meadow.
 The lion is either hurt or healthy. [The lion is usually hurt] [until healed].
 
 
-[The lion is usually hurt ][untill healed]
+[The lion is usually hurt ][until healed]
 Chapter 3 - Herding Asses
 
 [So every day she had to take the asses to the woods to feed, until one morning, exactly a year after she had found the lion, she heard a groan which sounded quite human. She went straight to the place from which the noise came, and, to her great surprise, beheld the same lion stretched on the ground with a deep wound across his face.
