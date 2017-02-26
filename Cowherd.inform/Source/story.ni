@@ -7,12 +7,7 @@ The release number is 1.
 Volume 1 - Infrastructure
 
 
-
 Part 1 - Story Configuration
-
-
-Volume 1 - Infrastructure
-
 
 The story headline is "A metapoetic fairy-tale adventure". The story genre is "Epic Poem".
 
