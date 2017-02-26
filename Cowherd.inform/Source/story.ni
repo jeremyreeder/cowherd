@@ -375,45 +375,68 @@ A4 is a poetic room. Right of A4 is a poetic room called B4.
 
 Right of B3 and left of A4 is a pause called the line-3 pause.
 
+The poem of A3 is {
+	""
+}.
 
 Section 2 - Prose about Herding Asses
 
-The Stable is right of B4. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft."
+The Stable is right of B4. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft. A rock is on the ground. The asses are standing, looking at me tiredly"
 
-The Loft is above the Stable. "Even less pleasant than the stable it self. It is very warm, humid, and putrid here. A ladder leads down to the stable."
+The Loft is above the Stable. "Even less pleasant than the stable it self. It is very warm, humid, and putrid here. A ladder leads down to the stable. Some carrots are on the the floor."
 
 Some carrots are in the Loft. They are edible. Understand "carrot" as the carrots.
 
 Instead of eating the carrots,
-	say "You just ate breakfast. Maybe they will come in handy later."
+	say "I just ate breakfast. Maybe they will come in handy later."
 	
 Instead of examining the carrots,
 	say "They are long, orange, edible vegetables. Animals generally like to eat [carrots]."
 
-The rock is in the Stable.
+[↓↓↓↓↓ is the beginning of "Steve" ↓↓↓↓↓]
 
-Understand "Steve" as the rock.
+Steve is in the Stable.
 
-Instead of examining the rock,
-	say "You are compelled to pick up the rock and name it Steve"
+Understand "rock" as the Steve.
+
+Understand "my precious" as the Steve.
+
+Instead of examining the Steve,
+	say "The rock looks friendly. Maybe it wants to be friends with me."
+
+Before taking the Steve,
+	say "I am compelled to pick up the rock and name it Steve"
 	
-Instead of eating the rock,
+Instead of eating the Steve,
 	say "Why would I wanna eat Steve? He's meh pal, bruh."
+	
+Instead of dropping the Steve,
+	say "NO!!! Steve is my Precious"
+	
+[Instead of asking Steve a question,
+	say "Steve just sits there. He looks happy but not in the mood for conversation."]
+
+[↑↑↑↑↑ is the end of "Steve" ↑↑↑↑↑]
 
 A herd called the asses is in the Stable.
 
 Understand "ass", "donkey", "mule", or "burro" as the asses.
 
 Instead of examining the asses,
-	say "A poor smelly old animal. But he is what your here for."
+	say "A poor smelly old animal. But they are what I'm here for."
 	
 Instead of taking the asses,
-	say "[The asses] are very stubborn and refuse to go with you. You hear stomachs growling. Maybe they're hungry."
+	say "[The asses] are very stubborn and refuse to go with you. I hear stomachs growling. Maybe they're hungry."
 
 The asses can be fed carrots.
 
-Instead of giving carrots to the asses,
-	say "[The asses] make a sound of indignation and out of sheer hunger decide to follow you."
+Instead of giving carrots to the asses:
+	say "[The asses] make a sound of indignation and out of sheer hunger decide to follow me.";
+	now the asses have the carrots.
+	
+After going from a room when the asses have the carrots:
+	say "The asses follow me, somewhat reluctantly.";
+	now the asses are in the noun.
 
 Chapter 4 - Herding Pigs
 
