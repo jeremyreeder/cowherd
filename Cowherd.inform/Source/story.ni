@@ -228,7 +228,7 @@ B2 is a poetic room [about a town]. It is right of A2. The poem is {
 Section 2 - Prose about Finding Work
 [Prosaic map: Wandering the World → Dusty Road → Cottage] 
 
-Wandering the World is right of B2. "Having nothing to live on, you have wandered about the world asking for charity. Now you seek something better."
+Wandering the World is right of B2. "Having nothing to live on, I have wandered about the world asking for charity. Now I seek something better."
 
 
 The Dusty Road is east of Wandering the World.
@@ -293,12 +293,12 @@ Instead of examining the cows,
 	He pays well and is kind, [line break]
 	but this groan I must find"  [might be too cheesy].
 	
-The Corral is south of the Thatched Cottage and right of D2. "Their is a field that is worn from cows living on the land.  A gate is in front of me."
+The Corral is south of the Thatched Cottage and right of D2. "There is a field that is worn from animals living on the land.  A gate is in front of me."
 
 The gate is an openable container in the corral. There are cows in the gate. The gate is closed.
 
 After going from a room when the gate is open:
-	say "the cows follow you with loyalty";
+	say "the cows follow me with loyalty.";
 	now the cows are in the noun.
 
 After opening the gate:
@@ -311,31 +311,40 @@ The Forest is west of the Corral. "The forest is dark and the trees are thick, y
 
 
 The Middle Meadow is east of the West Meadow.  "I come back and see that my herd is gone, [line break]
-why was I so foolish to leave them. [line break]
-I looked for hours and had no such luck to find my herd. [line break]
-I must return without them"
+why was I so foolish to leave them."
+
+The deep ditch is down of the ditch.  "The cave is dark and damp, [line break]
+there are bats swarming all around me."
 
 The East Meadow is east of Middle Meadow. "I have been walking for 5 minutes, I realize that I have past my destination. [line break]
-It is coming from the northwest[Line break]
-'I must find that sound!'"
+It is coming from the northwest"
 
-The Far East Meadow is east of the East Meadow. "Far down is a ditch you can see a shape of an animal, [line break]
+The Far East Meadow is east of the East Meadow. "Far down is a ditch I see a shape of an animal, [line break]
 the animal that is groaning."
 
-The ditch is south of the Far East Meadow. The description is "I scale the thing and desid to not take my chances, I walk around around and down to see a lion laying on the bare rock. [line break]
-He is down the hill a bit farther"
+[instead of eating the lion:
+	say "you healed the lion!";
+	now the lion is nowhere.]
+
+The ditch is south of the Far East Meadow. "I scale the thing and deside to not take my chances, I walk around around and down."
+
+After entering the ditch:
+	if the lion is in the deep ditch:
+		say "I see the animal a bit farther down."
+		
+An animal called the lion is in the deep ditch.
 
 [if lion is in deep ditch:
 	say " I hear the groan."]
 	
 The bats are animals.  
 
-The bats are in the deep ditch.
+The bats are in the Deep Ditch.
 
 Understand "bat" as bats.
 
 Instead of taking the bats:
-	Say "I snatch for one in the air,I get bit on the finger and the bats are scared out of the cave";
+	Say "I snatch for one in the air, I get bit on the finger and the bats are scared out of the cave";
 	now the bats are nowhere
 
 Instead of examining the bats:
@@ -344,22 +353,20 @@ Instead of examining the bats:
 	
 [learn to do if lion is here and how to make cows go away]
 
- The deep ditch is down from the ditch.  "the cave is dark and damp, [line break]
-there are bats swarming all around me."
+
+After entering the Middle Meadow:
+	Say "I brought the cows to where they can graze, I will watch over them."
 
 [if lion is in deep ditch:
 	say "A lion is on the ground , it is injured, you must find something to heal it."]
 
 Instead of examining the lion:
-	say "laying in the empty meadows, [line break]
-	lays a grounded lion on the ground."
+	say "The lion has sharp claws and a long mane. It is hurt, I stare at it intensly."
 
-An animal called the lion is in the Far East Meadow.
-
-The lion is either hurt or healthy. [The lion is usually hurt] [until healed].
+The lion is either hurt or healthy. The lion is usually hurt [until healed].
 
 
-[The lion is usually hurt ][until healed]
+
 Chapter 3 - Herding Asses
 
 [So every day she had to take the asses to the woods to feed, until one morning, exactly a year after she had found the lion, she heard a groan which sounded quite human. She went straight to the place from which the noise came, and, to her great surprise, beheld the same lion stretched on the ground with a deep wound across his face.
