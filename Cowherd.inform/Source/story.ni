@@ -96,8 +96,26 @@ A herd is a kind of animal.
 Part 3 - Testing (not for release)
 
 
-Section 1 - Design Specifications
+Section 1 - Compliance Rules
 [For automated testing]
+
+The compliance rules are a rulebook.
+
+The list of violations is a list of objects that varies.
+
+First compliance rule (this is the compliance report heading rule):
+	say "[bold type]Specification Compliance Report[roman type][paragraph break]".
+	
+Last compliance rule (this is the reporting compliance violations rule):
+	if the list of violations is empty:
+		say "Everything is in compliance.";
+	otherwise:
+		say "Violations: [the list of violations]."
+
+When play begins, follow the compliance rules.
+
+Compliance rule (this is the things should have non-blank descriptions rule):
+	add the list of things with blank descriptions to the list of violations.
 
 To decide what list of things is the list of things with blank descriptions:
 	let the result be the list of things;
@@ -106,23 +124,15 @@ To decide what list of things is the list of things with blank descriptions:
 			remove the noun from the result;
 	decide on the result.
 
-When play begins:
-	say "[bold type]Specification Compliance Report[roman type][paragraph break]";
-	say "Each thing should have a description. ";
-	if the list of things with blank descriptions is empty:
-		say "And it does.";
-	otherwise:
-		say "But I found [number of entries in the list of things with blank descriptions] undescribed thing[s]: [the list of things with blank descriptions].";
-	say "All poetic rooms should have poems. ";
-	let L be the list of poetic rooms;
+Compliance rule (this is the poetic rooms should have poems rule):
+	add the list of poetic rooms without poems to the list of violations.
+
+To decide what list of poetic rooms is the list of poetic rooms without poems: 
+	let the result be the list of poetic rooms;
 	repeat with the place running through all the poetic rooms:
 		if the poem of the place is not empty:
-			remove the place from L;
-	if L is not empty:
-		say "And they do.";
-	otherwise:
-		say "But I found [number of entries in L in words] without.";
-	say "[paragraph break]".
+			remove the place from the result;
+	decide on the result.
 
 
 Section 2 - Test Cases
