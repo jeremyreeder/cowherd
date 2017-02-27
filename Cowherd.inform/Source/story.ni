@@ -1,5 +1,5 @@
 "Cowherd" by "Jeremy John Reeder, along with Jesse and Hunter Evans".
-[Based on "Lo Lleó", by Francesc Maspons i Labrós. It's an old Catalonian fairy tale. Each chapter is prefaced with the text of Andrew Lang's English translation, titled "The Wounded Lion".]
+[Based on "Lo Lleó", by Francesc Maspons i Labrós. It's an old Catalonian fairy tale.]
 
 The release number is 1.
 
@@ -72,9 +72,9 @@ Every turn when the location is a poetic room:
 		say the stanza;
 		remove the stanza from the poem of the location.
 
-Check taking a figurative object (called the whatnot) when the location is a poetic room:
-	now the whatnot is nowhere [removing it even as a backdrop];
-	now the actor carries the whatnot. [even though this may seem impossible].
+Check taking a figurative object when the location is a poetic room:
+	remove the noun from play;
+	now the actor carries the noun.
 
 
 Section 3 - Definitions for the Prosaic World
@@ -134,8 +134,8 @@ Section 3 - Debugging
 
 Teleporting to is an action applying to one thing. Understand "teleport to/into [any room]" as teleporting to. Understand "orb to/into [any room]" as teleporting to.
 
-Carry out teleporting to a room (called the destination):
-	move the actor to the destination.
+Carry out teleporting to a room:
+	move the actor to the noun.
 
 
 Volume 2 - Story
