@@ -99,6 +99,10 @@ Part 3 - Testing (not for release)
 Section 1 - Compliance Rules
 [For automated testing]
 
+The compliance rules are a rulebook. When play begins, follow the compliance rules.
+
+The name of the compliance rule is a text that varies. The list of violations is a list of objects that varies.
+
 Initializing the compliance rule state is an action out of world.
 Carry out initializing the compliance rule state:
 	now the name of the compliance rule is "unnamed rule";
@@ -110,12 +114,6 @@ Carry out reporting violations:
 		say "Compliance rule: [bold type][Name of the compliance rule][roman type][line break]";
 		say "Violations: [the list of violations][paragraph break]";
 	try initializing the compliance rule state.
-
-The compliance rules are a rulebook. When play begins, follow the compliance rules.
-
-The name of the compliance rule is a text that varies. 
-
-The list of violations is a list of objects that varies.
 
 First compliance rule:
 	try initializing the compliance rule state.
