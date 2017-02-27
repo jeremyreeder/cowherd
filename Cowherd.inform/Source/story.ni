@@ -99,40 +99,38 @@ Part 3 - Testing (not for release)
 Section 1 - Compliance Rules
 [For automated testing]
 
-The compliance rules are a rulebook.
+Initializing the compliance rule is an action out of world.
+Carry out initializing the compliance rule:
+	now the name of the compliance rule is "unnamed rule";
+	truncate the list of violations to zero entries.
+
+Reporting violations is an action out of world.
+Carry out reporting violations:
+	if the list of violations is not empty:
+		say "Compliance rule: [bold type][Name of the compliance rule][roman type][line break]";
+		say "Violations: [the list of violations][paragraph break]".
+
+The compliance rules are a rulebook. When play begins, follow the compliance rules.
+
+The name of the compliance rule is a text that varies. 
 
 The list of violations is a list of objects that varies.
 
-First compliance rule (this is the compliance report heading rule):
-	say "[bold type]Specification Compliance Report[roman type][paragraph break]".
-	
-Last compliance rule (this is the reporting compliance violations rule):
-	if the list of violations is empty:
-		say "Everything is in compliance.";
-	otherwise:
-		say "Violations: [the list of violations]."
+Compliance rule:
+	try initializing the compliance rule;
+	now the name of the compliance rule is "Things should have non-blank descriptions.";
+	add the list of blankly described things to the list of violations;
+	try reporting violations.
 
-When play begins, follow the compliance rules.
+Definition: a thing (called the item) is blankly described if the description of the item is "".
 
-Compliance rule (this is the things should have non-blank descriptions rule):
-	add the list of things with blank descriptions to the list of violations.
+Compliance rule:
+	try initializing the compliance rule;
+	now the name of the compliance rule is "Poetic rooms should have poems.";
+	add the list of poemless poetic rooms [list of poetic rooms without poems] to the list of violations;
+	try reporting violations.
 
-To decide what list of things is the list of things with blank descriptions:
-	let the result be the list of things;
-	repeat with the noun running through the result:
-		if the description of the noun is not "":
-			remove the noun from the result;
-	decide on the result.
-
-Compliance rule (this is the poetic rooms should have poems rule):
-	add the list of poetic rooms without poems to the list of violations.
-
-To decide what list of poetic rooms is the list of poetic rooms without poems: 
-	let the result be the list of poetic rooms;
-	repeat with the place running through all the poetic rooms:
-		if the poem of the place is not empty:
-			remove the place from the result;
-	decide on the result.
+Definition: a poetic room (called the place) is poemless if the poem of the place is {}.
 
 
 Section 2 - Test Cases
