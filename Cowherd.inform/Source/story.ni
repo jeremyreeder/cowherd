@@ -15,8 +15,6 @@ The story description is "There was once a girl . . ."
 
 Use the serial comma. Use no scoring. Use brief room descriptions.
 
-Include Basic Help Menu by Emily Short.
-
 Release along with the source text, a library card, and an introductory booklet.
 
 
