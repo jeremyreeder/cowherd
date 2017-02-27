@@ -99,8 +99,8 @@ Part 3 - Testing (not for release)
 Section 1 - Compliance Rules
 [For automated testing]
 
-Initializing the compliance rule is an action out of world.
-Carry out initializing the compliance rule:
+Initializing the compliance rule state is an action out of world.
+Carry out initializing the compliance rule state:
 	now the name of the compliance rule is "unnamed rule";
 	truncate the list of violations to zero entries.
 
@@ -108,7 +108,8 @@ Reporting violations is an action out of world.
 Carry out reporting violations:
 	if the list of violations is not empty:
 		say "Compliance rule: [bold type][Name of the compliance rule][roman type][line break]";
-		say "Violations: [the list of violations][paragraph break]".
+		say "Violations: [the list of violations][paragraph break]";
+	try initializing the compliance rule state.
 
 The compliance rules are a rulebook. When play begins, follow the compliance rules.
 
@@ -116,8 +117,10 @@ The name of the compliance rule is a text that varies.
 
 The list of violations is a list of objects that varies.
 
+First compliance rule:
+	try initializing the compliance rule state.
+
 Compliance rule:
-	try initializing the compliance rule;
 	now the name of the compliance rule is "Things should have non-blank descriptions.";
 	add the list of blankly described things to the list of violations;
 	try reporting violations.
@@ -125,7 +128,6 @@ Compliance rule:
 Definition: a thing (called the item) is blankly described if the description of the item is "".
 
 Compliance rule:
-	try initializing the compliance rule;
 	now the name of the compliance rule is "Poetic rooms should have poems.";
 	add the list of poemless poetic rooms [list of poetic rooms without poems] to the list of violations;
 	try reporting violations.
