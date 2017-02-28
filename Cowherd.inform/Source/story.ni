@@ -131,11 +131,29 @@ Compliance rule:
 Definition: a poetic room (called the place) is poemless if the poem of the place is {}.
 
 Compliance rule:
-	now the name of the compliance rule is "Prosaic room descriptions must be in the first person.";
+	now the name of the compliance rule is "Prosaic room descriptions should be in the first person.";
 	add the list of second-person prosaic rooms to the list of violations;
 	try reporting violations.
 
-Definition: a room (called the place) is second-person if the description of the place matches the regular expression "you". 
+Definition: a room (called the place) is second-person if the description of the place matches the regular expression "you".
+
+Compliance rule:
+	now the name of the compliance rule is "Cardinal directions should not apply to poetic rooms.";
+	let the acceptable directions be {left, right, up, down};
+	repeat with the place in question running through the poetic rooms:
+		repeat with the neighbouring place running through the rooms adjacent to the place in question:
+			if the best route from the place in question to the neighbouring place is not listed in the acceptable directions:
+				add the place in question to the list of violations;
+	try reporting violations.
+
+Compliance rule:
+	now the name of the compliance rule is "Lateral directions should not apply to prosaic rooms.";
+	let the acceptable directions be {north, south, east, west, up, down};
+	repeat with the place in question running through the prosaic rooms:
+		repeat with the neighbouring place running through the rooms adjacent to the place in question:
+			if the best route from the place in question to the neighbouring place is not listed in the acceptable directions:
+				add the place in question to the list of violations;
+	try reporting violations.
 
 
 Section 2 - Test Cases
