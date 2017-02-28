@@ -35,6 +35,8 @@ The standard report waiting rule does nothing.
 
 An object can be literal or figurative. An object is usually literal. An abstract noun is a kind of figurative backdrop.
 
+The find what to enter rule is not listed in the for supplying a missing noun rulebook.
+
 
 Section 2 - Definitions for the Poetic World
 
