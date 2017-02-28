@@ -125,10 +125,17 @@ Definition: a thing (called the item) is blankly described if the description of
 
 Compliance rule:
 	now the name of the compliance rule is "Poetic rooms should have poems.";
-	add the list of poemless poetic rooms [list of poetic rooms without poems] to the list of violations;
+	add the list of poemless poetic rooms to the list of violations;
 	try reporting violations.
 
 Definition: a poetic room (called the place) is poemless if the poem of the place is {}.
+
+Compliance rule:
+	now the name of the compliance rule is "Prosaic room descriptions must be in the first person.";
+	add the list of second-person prosaic rooms to the list of violations;
+	try reporting violations.
+
+Definition: a room (called the place) is second-person if the description of the place matches the regular expression "you". 
 
 
 Section 2 - Test Cases
