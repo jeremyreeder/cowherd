@@ -37,6 +37,8 @@ An object can be literal or figurative. An object is usually literal. An abstrac
 
 The find what to enter rule is not listed in the for supplying a missing noun rulebook.
 
+When play begins, now the story viewpoint is the first person singular.
+
 
 Section 2 - Definitions for the Poetic World
 
