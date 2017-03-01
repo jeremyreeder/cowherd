@@ -94,6 +94,8 @@ After entering a poetic room, now the story viewpoint is the first person singul
 		now the player has (entry Signified).]
 	[TODO: switch to another approach because tables can only handle constants, not variables.]
 
+Mood is a kind of value. The moods are angry and calm. A person has a mood.
+
 A herd is a kind of animal.
 
 
@@ -267,7 +269,19 @@ The Cottage Porch is east of the Dusty Road. "You step onto a squeaky porch. Bef
 
 A door called the cottage front door is north of the Cottage Porch.
 
-The Cottage Interior is north of the cottage front door. "Simple pine-log furniture and a cast-iron stove fill the small space of this one-room cottage. A shotgun leans against the wall beside a rocking chair." A supporter called a table and a supporter called a stove are here. A backdrop called a bunk bed is here. The bottom bunk and the top bunk are supporter parts of the bunk bed. A supporter called a rocking chair is here. A man called a farmer is on the rocking chair. The description of the rocking chair is "It looks like it's made of pine." The description of the farmer is "Ugly as sin." Understand "master" or "boss" as the farmer. A shotgun is here. On the table is a pair of spectacles. The pair of spectacles can be worn. Understand "glasses" as the pair of spectacles.
+The Cottage Interior is north of the cottage front door. "Simple pine-log furniture and a cast-iron stove fill the small space of this one-room cottage. A shotgun leans against the wall beside a rocking chair." A supporter called a table and a supporter called a stove are here.
+
+A backdrop called a bunk bed is here. The bottom bunk and the top bunk are supporter parts of the bunk bed. An enterable supporter called a rocking chair is here. The description of the rocking chair is "It looks like it's made of pine."
+
+A man called a farmer is on the rocking chair. The description of the farmer is "Ugly as sin." Understand "master" or "boss" as the farmer. A shotgun is here. Understand "gun" as the shotgun. On the table is a pair of spectacles. The pair of spectacles can be worn. Understand "glasses" as the pair of spectacles.
+
+Instead of examining the shotgun:
+	say "It's pointing at me now. The man behind the gun doesn't seem to appreciate the liberties that I am taking with his belongings.";
+	now the mood of the farmer is angry.
+
+Instead of entering the chair when the farmer is on the chair:
+	say "'Get off me, dag nabbit!', says the farmer on whom I have sat. He expels me from the chair in disgust.";
+	now the mood of the farmer is angry.
 
 A person can be employed or jobless. A person is usually jobless.
 
