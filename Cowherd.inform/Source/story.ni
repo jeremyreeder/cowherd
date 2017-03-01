@@ -143,7 +143,7 @@ Compliance rule:
 	add the list of second-person prosaic rooms to the list of violations;
 	try reporting violations.
 
-Definition: a room (called the place) is second-person if the description of the place matches the regular expression "you".
+Definition: a room (called the place) is second-person if the description of the place matches the regular expression "You|you".
 
 Compliance rule:
 	now the name of the compliance rule is "Cardinal directions should not apply to poetic rooms.";
@@ -261,11 +261,11 @@ B2 is a poetic room [about a town]. It is right of A2. The poem is {
 Section 2 - Prose about Finding Work
 [Prosaic map: Wandering the World → Dusty Road → Cottage] 
 
-Wandering the World is right of B2. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east."
+Wandering the World is right of B2. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east." Left of Wandering the World is nowhere. [The way from the poetic world is one-way.]
 
 The Dusty Road is east of Wandering the World. "I've traveled far on this dusty road to escape a life of dependence. No more charity. I see a a cottage to the east."
 
-The Cottage Porch is east of the Dusty Road. "You step onto a squeaky porch. Before you to the north lies an old cottage, its roof thatched with reeds."
+The Cottage Porch is east of the Dusty Road. "Stepping onto a squeaky porch, I see before me an old cottage. It lies to north, its roof thatched with reeds."
 
 A door called the cottage front door is north of the Cottage Porch.
 
@@ -310,8 +310,7 @@ C2 is a poetic room. Right of C2 is a poetic room called D2.
 
 Right of D1 and left of C2 is a pause called the line-2 pause.
 
-[The poem of C1 is {
-	};]
+
 Section 2 - Prose about Herding Cows
 
 The cows are a herd. Understand "cow" as the cows.
@@ -329,7 +328,7 @@ Instead of examining the cows,
 	He pays well and is kind, [line break]
 	but this groan I must find"  [might be too cheesy].
 	
-The Corral is south of the Cottage Porch and right of D2. "There is a field that is worn from animals living on the land.  A gate is in front of me."
+The Corral is south of the Cottage Porch and right of D2. "There is a field that is worn from animals living on the land.  A gate is in front of me." Left of the Corral is nowhere. [The way from the poetic world is one-way.]
 
 The gate is an openable container in the corral. There are cows in the gate. The gate is closed.
 
@@ -343,8 +342,6 @@ After opening the gate:
 The West Meadow is east of the Corral. "A corral is to the west.  A lion lies in front of me."
 
 The Forest is west of the Corral. "The forest is dark and the trees are thick, yet light still comes through easily."
-
-
 
 The Middle Meadow is east of the West Meadow.  "I come back and see that my herd is gone, [line break]
 why was I so foolish to leave them."
@@ -384,11 +381,10 @@ Instead of taking the bats:
 	now the bats are nowhere
 
 Instead of examining the bats:
-	say "The bats are black are hurt my ears with their squils.  They swirl away from the cave";
+	say "The bats are black are hurt my ears with their squealls.  They swirl away from the cave";
 	now the bats are nowhere.
 	
 [learn to do if lion is here and how to make cows go away]
-
 
 After entering the Middle Meadow:
 	Say "I brought the cows to where they can graze, I will watch over them."
@@ -402,13 +398,13 @@ Instead of examining the lion:
 The lion is either hurt or healthy. The lion is usually hurt [until healed].
 
 
-
 Chapter 3 - Herding Asses
 
 [So every day she had to take the asses to the woods to feed, until one morning, exactly a year after she had found the lion, she heard a groan which sounded quite human. She went straight to the place from which the noise came, and, to her great surprise, beheld the same lion stretched on the ground with a deep wound across his face.
 	This time she was not afraid at all, and ran towards him, washing the wound and laying soothing herbs upon it; and when she had bound it up the lion thanked her in the same manner as before.
 	After that she returned to her flock, but they were nowhere to be seen. She searched here and she searched there, but they had vanished completely!
 	Then she had to go home and confess to her master, who first scolded her and afterwards beat her. 'Now go,' he ended, 'and look after the pigs!']
+
 
 Section 1 - Poetry about Herding Asses
 [ A3 B3 // A4 B4 ]
@@ -423,9 +419,10 @@ The poem of A3 is {
 	""
 }.
 
+
 Section 2 - Prose about Herding Asses
 
-The Stable is right of B4. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft. A rock is on the ground. The asses are standing, looking at me tiredly"
+The Stable is right of B4. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft. A rock is on the ground. The asses are standing, looking at me tiredly." Left of the Stable is nowhere. [The way from the poetic world is one-way.]
 
 The Loft is above the Stable. "Even less pleasant than the stable it self. It is very warm, humid, and putrid here. A ladder leads down to the stable. Some carrots are on the the floor."
 
