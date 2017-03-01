@@ -94,9 +94,9 @@ After entering a poetic room, now the story viewpoint is the first person singul
 		now the player has (entry Signified).]
 	[TODO: switch to another approach because tables can only handle constants, not variables.]
 
-Mood is a kind of value. The moods are angry and calm. A person has a mood. The mood of a person is usually calm.
+Mood is a kind of value. The moods are angry and calm. A person has a mood. A person is usually calm.
 
-Job is a kind of value. The jobs are none and cowherd. The player has a job. The job of the player is usually none.
+Employment is a kind of value. The employments are employed and unemployed. A person has an employment. A person is usually unemployed.
 
 A herd is a kind of animal.
 
@@ -287,10 +287,10 @@ Instead of entering the chair when the farmer is on the chair:
 
 A person can be dirty or clean. A person is usually clean. The player is a dirty female. She is wearing some dirty clothes. Instead of examining the player when the player is dirty, say "I am covered in the excrement of the long, dusty road from whence I came."
 
-[Instead of talking to the farmer when the mood of the farmer is angry and the job of the player is none:
+[Instead of talking to an angry farmer when the actor is unemployed:
 	say "I open my mouth to speak, but the farmer[']s furrowed brow and grimacing jaw give me pause."
 
-Instead of talking to the farmer when the mood of the farmer is angry and the job of the player is cowherd:
+Instead of talking to an angry farmer when the actor is employed:
 	say "I tell him what I've done. He beats me thoroughly and directs me to get back to work."]
 
 [Instead of asking the farmer about "job" when the player is jobless:
