@@ -37,8 +37,6 @@ An object can be literal or figurative. An object is usually literal. An abstrac
 
 The find what to enter rule is not listed in the for supplying a missing noun rulebook.
 
-When play begins, now the story viewpoint is the first person singular.
-
 
 Section 2 - Definitions for the Poetic World
 
@@ -47,6 +45,8 @@ Left is a direction. The opposite of left is right. Understand "left" or "l" as 
 Right is a direction. The opposite of right is left. Understand "right" or "r" as right.
 
 A poetic room is a kind of room. A poetic room has a list of texts called the poem.
+
+After entering a poetic room, now the story viewpoint is the second person singular.
 
 A pause is a kind of open door [for passage between poetic rooms].
 
@@ -82,6 +82,8 @@ Check taking a figurative object when the location is a poetic room:
 Section 3 - Definitions for the Prosaic World
 
 Definition: a room is prosaic if it is not a poetic room.
+
+After entering a poetic room, now the story viewpoint is the first person singular.
 
 [Instead of going from a poetic room to a prosaic room when the player has a figurative object (called the whatnot):
 	now the whatnot is nowhere;
@@ -257,30 +259,21 @@ B2 is a poetic room [about a town]. It is right of A2. The poem is {
 Section 2 - Prose about Finding Work
 [Prosaic map: Wandering the World → Dusty Road → Cottage] 
 
-Wandering the World is right of B2. "Having nothing to live on, I have wandered about the world asking for charity. Now I seek something better."
+Wandering the World is right of B2. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east."
 
+The Dusty Road is east of Wandering the World. "I've traveled far on this dusty road to escape a life of dependence. No more charity. I see a a cottage to the east."
 
-The Dusty Road is east of Wandering the World.
+The Cottage Porch is east of the Dusty Road. "You step onto a squeaky porch. Before you to the north lies an old cottage, its roof thatched with reeds."
 
-The Cottage is east of the Dusty Road. The description is "[one of]Arriving at a familiar-looking cottage, you wonder if this might be the answer to your prayers.[or][stopping]".
+A door called the cottage front door is north of the Cottage Porch.
 
-["and inquired if they could give her any work. The farmer said he wanted a cowherd, as his own had left him, and if the girl liked the place she might take it. So she became a cowherd."]
-
-The Cottage Interior is north of the Cottage.
+The Cottage Interior is north of the cottage front door. "Simple pine-log furniture and a cast-iron stove fill the small space of this one-room cottage. A shotgun leans against the wall beside a rocking chair." A supporter called a table and a supporter called a stove are here. A backdrop called a bunk bed is here. The bottom bunk and the top bunk are supporter parts of the bunk bed. A supporter called a rocking chair is here. A man called a farmer is on the rocking chair. The description of the rocking chair is "It looks like it's made of pine." The description of the farmer is "Ugly as sin." Understand "master" or "boss" as the farmer. A shotgun is here. On the table is a pair of spectacles. The pair of spectacles can be worn. Understand "glasses" as the pair of spectacles.
 
 A person can be employed or jobless. A person is usually jobless.
 
 A person can be dirty or clean. A person is usually clean. The player is a dirty, jobless female. She is wearing some filthy clothes. Instead of examining the player when the player is dirty, say "I'm sure there's a lovely girl under all that dirt."
 
-[The Dusty Road is a room. The End of the Road is east of it.
-
-A door called the wooden door is north of the End of the Road and south of a Thatched Cottage.
-
-In the Thatched Cottage is a rocking chair. Understand "chair" as the rocking chair. The description of the rocking chair is "It looks like it's made of pine."
-
-A man called the farmer is on the rocking chair. The description of the farmer is "Ugly as sin." Understand "master" as the farmer. A shotgun and a table are here. On the table is a pair of spectacles. The pair of spectacles can be worn. Understand "glasses" as the pair of spectacles.
-
-Instead of asking the farmer about "job" when the player is jobless:
+[Instead of asking the farmer about "job" when the player is jobless:
 	say "I want a cowherd, as my own has left me. If you like this place, then you can have the job.";
 	now the player is employed.
 
@@ -322,7 +315,7 @@ Instead of examining the cows,
 	He pays well and is kind, [line break]
 	but this groan I must find"  [might be too cheesy].
 	
-The Corral is south of the Thatched Cottage and right of D2. "There is a field that is worn from animals living on the land.  A gate is in front of me."
+The Corral is south of the Cottage Porch and right of D2. "There is a field that is worn from animals living on the land.  A gate is in front of me."
 
 The gate is an openable container in the corral. There are cows in the gate. The gate is closed.
 
