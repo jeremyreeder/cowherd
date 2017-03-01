@@ -94,7 +94,9 @@ After entering a poetic room, now the story viewpoint is the first person singul
 		now the player has (entry Signified).]
 	[TODO: switch to another approach because tables can only handle constants, not variables.]
 
-Mood is a kind of value. The moods are angry and calm. A person has a mood.
+Mood is a kind of value. The moods are angry and calm. A person has a mood. The mood of a person is usually calm.
+
+Job is a kind of value. The jobs are none and cowherd. The player has a job. The job of the player is usually none.
 
 A herd is a kind of animal.
 
@@ -146,7 +148,7 @@ Compliance rule:
 Definition: a room (called the place) is second-person if the description of the place matches the regular expression "You|you".
 
 Compliance rule:
-	now the name of the compliance rule is "Cardinal directions should not apply to poetic rooms.";
+	now the name of the compliance rule is "Cardinal directions should not be allowed from poetic rooms.";
 	let the acceptable directions be {left, right, up, down};
 	repeat with the place in question running through the poetic rooms:
 		repeat with the neighbouring place running through the rooms adjacent to the place in question:
@@ -155,7 +157,7 @@ Compliance rule:
 	try reporting violations.
 
 Compliance rule:
-	now the name of the compliance rule is "Lateral directions should not apply to prosaic rooms.";
+	now the name of the compliance rule is "Lateral directions should not be allowed from prosaic rooms.";
 	let the acceptable directions be {north, south, east, west, up, down};
 	repeat with the place in question running through the prosaic rooms:
 		repeat with the neighbouring place running through the rooms adjacent to the place in question:
@@ -283,9 +285,13 @@ Instead of entering the chair when the farmer is on the chair:
 	say "'Get off me, dag nabbit!', says the farmer on whom I have sat. He expels me from the chair in disgust.";
 	now the mood of the farmer is angry.
 
-A person can be employed or jobless. A person is usually jobless.
+A person can be dirty or clean. A person is usually clean. The player is a dirty female. She is wearing some dirty clothes. Instead of examining the player when the player is dirty, say "I am covered in the excrement of the long, dusty road from whence I came."
 
-A person can be dirty or clean. A person is usually clean. The player is a dirty, jobless female. She is wearing some filthy clothes. Instead of examining the player when the player is dirty, say "I'm sure there's a lovely girl under all that dirt."
+[Instead of talking to the farmer when the mood of the farmer is angry and the job of the player is none:
+	say "I open my mouth to speak, but the farmer[']s furrowed brow and grimacing jaw give me pause."
+
+Instead of talking to the farmer when the mood of the farmer is angry and the job of the player is cowherd:
+	say "I tell him what I've done. He beats me thoroughly and directs me to get back to work."]
 
 [Instead of asking the farmer about "job" when the player is jobless:
 	say "I want a cowherd, as my own has left me. If you like this place, then you can have the job.";
