@@ -171,6 +171,10 @@ Compliance rule:
 Section 2 - Test Cases
 [For semi-automated testing: automated steps followed by manual review of responses]
 
+[Expecting is an action applying to one text. Understand "expect [text]" as expecting.
+Carry out expecting a text:
+	say "Whatevs."]
+
 Test 1:2 [Chapter 1 prose] with "orb to B2 / r / e / e / n / x chair / x farmer / x shotgun / talk to farmer".
 Test 2:2 [Chapter 2 prose] with "orb to D2 / r".
 Test 3:2 [Chapter 3 prose] with "orb to B4 / r".
