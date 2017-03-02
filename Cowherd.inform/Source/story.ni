@@ -109,18 +109,23 @@ Section 1 - Compliance Rules
 
 The compliance rules are a rulebook. When play begins, follow the compliance rules.
 
-The name of the compliance rule is a text that varies. The list of violations is a list of objects that varies.
+The name of the compliance rule is a text that varies. The list of violations is a list of objects that varies. The list of violation descriptions is a list of texts that varies.
 
 Initializing the compliance rule state is an action out of world.
 Carry out initializing the compliance rule state:
 	now the name of the compliance rule is "unnamed rule";
-	truncate the list of violations to zero entries.
+	truncate the list of violations to zero entries;
+	truncate the list of violation descriptions to zero entries.
 
 Reporting violations is an action out of world.
 Carry out reporting violations:
-	if the list of violations is not empty:
+	if the list of violations is not empty or the list of violation descriptions is not empty:
 		say "Compliance rule: [bold type][Name of the compliance rule][roman type][line break]";
-		say "Violations: [the list of violations][paragraph break]";
+		if the list of violations is not empty:
+			say "Violations: [the list of violations]";
+		if the list of violation descriptions is not empty:
+			say "Violation descriptions: [the list of violation descriptions]";
+		say "[paragraph break]";
 	try initializing the compliance rule state.
 
 First compliance rule:
@@ -165,6 +170,12 @@ Compliance rule:
 				add the place in question to the list of violations;
 	try reporting violations.
 
+Compliance rule:
+	now the name of the compliance rule is "All rooms should be reachable.";
+	repeat with the destination running through the rooms that are not A1:
+		if the best route from A1 to the destination is nothing:
+			add the destination to the list of violations;
+	try reporting violations.
 
 Section 2 - Test Cases
 [For semi-automated testing: automated steps followed by manual review of responses]
