@@ -85,15 +85,6 @@ Definition: a room is prosaic if it is not a poetic room.
 
 After entering a poetic room, now the story viewpoint is the first person singular.
 
-[Instead of going from a poetic room to a prosaic room when the player has a figurative object (called the whatnot):
-	now the whatnot is nowhere;
-	choose the row with Signifier (whatnot) from the Table of Analogies;
-	if (entry Signified) is a backdrop:
-		now (entry Signified) is everywhere;
-	otherwise:
-		now the player has (entry Signified).]
-	[TODO: switch to another approach because tables can only handle constants, not variables.]
-
 Mood is a kind of value. The moods are angry and calm. A person has a mood. A person is usually calm.
 
 Employment is a kind of value. The employments are employed and unemployed. A person has an employment. A person is usually unemployed.
