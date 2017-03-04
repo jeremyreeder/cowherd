@@ -274,7 +274,7 @@ Section 2 - Prose about Finding Work
 
 Wandering the World is right of B2. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east." Left of Wandering the World is nowhere. [The way from the poetic world is one-way.]
 
-The Dusty Road is east of Wandering the World. "I've traveled far on this dusty road to escape a life of dependence. No more charity. I see a a cottage to the east."
+The Dusty Road is east of Wandering the World. "I've traveled far on this dusty road to escape a life of dependence. No more charity. I see a cottage to the east."
 
 The Cottage Porch is east of the Dusty Road. "Stepping onto a squeaky porch, I see before me an old cottage. It lies to north, its roof thatched with reeds."
 
@@ -304,9 +304,9 @@ Instead of talking to an angry farmer when the actor is employed:
 
 [Instead of asking the farmer about "job" when the player is jobless:
 	say "I want a cowherd, as my own has left me. If you like this place, then you can have the job.";
-	now the player is employed.
+	now the player is employed.]
 
-The Bathroom is north of the Thatched Cottage. A bathtub and some clean clothes are here. Understand "tub" as the bathtub. A faucet is in the bathtub.]
+[The Bathroom is north of the Thatched Cottage. A bathtub and some clean clothes are here. Understand "tub" as the bathtub. A faucet is in the bathtub.]
 
 
 Chapter 2 - Herding Cows
@@ -315,18 +315,43 @@ Chapter 2 - Herding Cows
 	You can guess how frightened she was! But the lion seemed in such pain that she was sorry for him, and drew nearer and nearer till she saw he had a large thorn in one foot. She pulled out the thorn and bound up the place, and the lion was grateful, and licked her hand by way of thanks with his big rough tongue.
 	When the girl had finished she went back to find the cows, but they had gone, and though she hunted everywhere she never found them; and she had to return home and confess to her master, who scolded her bitterly, and afterwards beat her. Then he said, 'Now you will have to look after the asses.']
 
+A hand is a kind of thing. a hand is worn by every person.
+
+A hand is edible
+
+After eating a hand:
+	say "I now crave human fleash, my goal is to eat everyone"
+
+a doda is a thing.
+
+understand "everyone" as doda.
+
+After eating doda:
+	say "I everyone and now I die alone with my own sad thoughts";
+	end the story
 
 Section 1 - Poetry about Herding Cows
 [Poetic map: C1 D1 // C2 D2]
 
-C1 is a poetic room. Right of C1 is a poetic room called D1.
+C1 is a poetic room [About cattle]. The poem is {
+"Cattle"
+}.
+ Right of C1 is a poetic room called D1.
 
-C2 is a poetic room. Right of C2 is a poetic room called D2.
+C2 is a poetic room. Right of C2 is a poetic room called D2.  The poem of C2 is {
+"Cattle are loyal."
+}.
 
 Right of D1 and left of C2 is a pause called the line-2 pause.
 
 
 Section 2 - Prose about Herding Cows
+
+after entering the corral when the farmer is not angry,
+	now the actor is employed.
+
+Instead of entering the corral when the farmer is angry,
+	do nothing
 
 The cows are a herd. Understand "cow" as the cows.
 
@@ -343,6 +368,22 @@ Instead of examining the cows,
 	He pays well and is kind, [line break]
 	but this groan I must find"  [might be too cheesy].
 	
+the nown Animals is in the corral.
+
+Instead of examining the animals,
+	say "The animals all cows and look hungery."
+	
+Instead of examining the gate:
+	say "The gate is white with paint that is flacking out. A fence sorrownds the animals."
+
+After dropping the clothes:
+	say "I pull off my clothes and I am now naked."
+
+A fence is in the corral.
+
+Instead of examining the fence:
+	Say "The fence is white just like the gate.  It is conected to the gate to keep the amimals"
+
 The Corral is south of the Cottage Porch and right of D2. "There is a field that is worn from animals living on the land.  A gate is in front of me." Left of the Corral is nowhere. [The way from the poetic world is one-way.]
 
 The gate is an openable container in the corral. There are cows in the gate. The gate is closed.
@@ -353,6 +394,7 @@ After going from a room when the gate is open:
 
 After opening the gate:
 	say "The cows are starving, I have to get them to the meadows. the forest surrounds the meadows, I have to go through the forest. the forest is to the west";
+	
 
 The West Meadow is east of the Corral. "A corral is to the west.  A lion lies in front of me."
 
