@@ -1,4 +1,4 @@
-"Cowherd" by "Jeremy John Reeder, along with Jesse and Hunter Evans".
+"Cowherd" [Boring name?] by "Jeremy John Reeder, along with Jesse and Hunter Evans".
 [Based on "Lo Lleó", by Francesc Maspons i Labrós. It's an old Catalonian fairy tale.]
 
 The release number is 1.
@@ -171,11 +171,11 @@ Compliance rule:
 Section 2 - Test Cases
 [For semi-automated testing: automated steps followed by manual review of responses]
 
-[Expecting is an action applying to one text. Understand "expect [text]" as expecting.
-Carry out expecting a text:
-	say "Whatevs."]
+Expecting is an action out of world applying to one value. Understand "expect [text]" as expecting.
+Carry out expecting text:
+	say "Please verify manually that the responses above and the resulting game state meet your the expectations."
 
-Test 1:2 [Chapter 1 prose] with "orb to B2 / r / e / e / n / x chair / x farmer / x shotgun / talk to farmer".
+Test 1:2 [Chapter 1 prose] with "orb to B2 / r / e / e / n / x chair / x farmer / x shotgun / talk to farmer / s / n / talk to farmer / expect a job".
 Test 2:2 [Chapter 2 prose] with "orb to D2 / r".
 Test 3:2 [Chapter 3 prose] with "orb to B4 / r".
 
@@ -286,25 +286,32 @@ A backdrop called a bunk bed is here. The bottom bunk and the top bunk are suppo
 
 A man called a farmer is on the rocking chair. The description of the farmer is "Ugly as sin." Understand "master" or "boss" as the farmer. A shotgun is here. Understand "gun" as the shotgun. On the table is a pair of spectacles. The pair of spectacles can be worn. Understand "glasses" as the pair of spectacles.
 
-Instead of examining the shotgun:
+Instead of examining or taking the shotgun:
 	say "It's pointing at me now. The man behind the gun doesn't seem to appreciate the liberties that I am taking with his belongings.";
-	now the mood of the farmer is angry.
+	now the farmer has the shotgun;
+	now the farmer is angry.
 
 Instead of entering the chair when the farmer is on the chair:
 	say "'Get off me, dag nabbit!', says the farmer on whom I have sat. He expels me from the chair in disgust.";
-	now the mood of the farmer is angry.
+	now the farmer is angry.
 
 A person can be dirty or clean. A person is usually clean. The player is a dirty female. She is wearing some dirty clothes. Instead of examining the player when the player is dirty, say "I am covered in the excrement of the long, dusty road from whence I came."
 
-[Instead of talking to an angry farmer when the actor is unemployed:
-	say "I open my mouth to speak, but the farmer[']s furrowed brow and grimacing jaw give me pause."
+Talking to is an action applying to one thing. Understand "talk to [someone]" as talking to.
+
+Instead of talking to an angry person when the actor is unemployed:
+	say "I open my mouth to speak, but [the noun][']s furrowed brow and grimacing jaw give me pause."
+
+Instead of talking to a calm farmer when the actor is unemployed:
+	say "I ask the old grump if he knows where I might find employment. He says he wants a cowherd, as his own had left him, and that if I like this place I might take it. I suppose I will.";
+	now the actor is employed.
 
 Instead of talking to an angry farmer when the actor is employed:
-	say "I tell him what I've done. He beats me thoroughly and directs me to get back to work."]
+	say "I tell him what I've done. He beats me thoroughly and directs me to get back to work."
 
-[Instead of asking the farmer about "job" when the player is jobless:
-	say "I want a cowherd, as my own has left me. If you like this place, then you can have the job.";
-	now the player is employed.]
+After going from a room when the farmer has the shotgun:
+	now the farmer is calm;
+	try the farmer dropping the shotgun.
 
 [The Bathroom is north of the Thatched Cottage. A bathtub and some clean clothes are here. Understand "tub" as the bathtub. A faucet is in the bathtub.]
 
