@@ -44,11 +44,11 @@ Include version 1/100607 of Real-Time Delays by Erik Temple.
 
 Speed is a kind of value. The speeds are normal and fast. A speed is usually normal. Typewriter speed is a speed.
 
-Typing is an action out of world applying to one value.
-Carry out typing some text (called the stanza):
-	play the sound of typing;
+typewriting is an action out of world applying to one value.
+Carry out typewriting some text (called the stanza):
+	play the sound of typewriting;
 	repeat with N running from one to the number of lines in the stanza:
-		let the duration be (the number of characters in line number N in the stanza) times (a random number from 9 to 14);
+		let the duration be 10 * (number of characters in line number N in the stanza);
 		if the typewriter speed is fast:
 			now the duration is zero;
 		wait (duration / 2) milliseconds before continuing, strictly;
@@ -57,7 +57,7 @@ Carry out typing some text (called the stanza):
 	play the sound of silence.
 
 Sound of silence is the file "silence.ogg".
-Sound of typing is the file "typing.ogg".
+Sound of typewriting is the file "typewriting.ogg".
 Sound of the typewriter bell is the file "typewriter_bell.ogg".
 Sound of the carriage return is the file "carriage_return.ogg".
 
@@ -95,7 +95,7 @@ Every turn when the location is a poetic room:
 	otherwise:
 		let the stanza be entry one in the poem of the location;
 		if the stanza is not "END OF POEM":
-			try typing the stanza;
+			try typewriting the stanza;
 			remove the stanza from the poem of the location.
 
 Check taking a figurative object when the location is a poetic room:
