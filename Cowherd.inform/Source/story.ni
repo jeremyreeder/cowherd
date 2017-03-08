@@ -40,6 +40,27 @@ The find what to enter rule is not listed in the for supplying a missing noun ru
 
 Section 2 - Definitions for the Poetic World
 
+Include version 1/100607 of Real-Time Delays by Erik Temple.
+
+Speed is a kind of value. The speeds are normal and fast. A speed is usually normal. Typewriter speed is a speed.
+
+Typing is an action out of world applying to one value.
+Carry out typing some text (called the stanza):
+	play the sound of typing;
+	repeat with N running from one to the number of lines in the stanza:
+		let the duration be (the number of characters in line number N in the stanza) times (a random number from 9 to 14);
+		if the typewriter speed is fast:
+			now the duration is zero;
+		wait (duration / 2) milliseconds before continuing, strictly;
+		say line number N in the stanza;
+		wait (duration / 2) milliseconds before continuing, strictly;
+	play the sound of silence.
+
+Sound of silence is the file "silence.ogg".
+Sound of typing is the file "typing.ogg".
+Sound of the typewriter bell is the file "typewriter_bell.ogg".
+Sound of the carriage return is the file "carriage_return.ogg".
+
 Left is a direction. The opposite of left is right. Understand "left" or "l" as left.
 
 Right is a direction. The opposite of right is left. Understand "right" or "r" as right.
@@ -68,11 +89,14 @@ Carry out examining an unexamined thing in a poetic room:
 
 Every turn when the location is a poetic room:
 	if the poem of the location is empty:
+		play the sound of the typewriter bell;
+		add "END OF POEM" to the poem of the location;
 		say "→";
 	otherwise:
 		let the stanza be entry one in the poem of the location;
-		say the stanza;
-		remove the stanza from the poem of the location.
+		if the stanza is not "END OF POEM":
+			try typing the stanza;
+			remove the stanza from the poem of the location.
 
 Check taking a figurative object when the location is a poetic room:
 	remove the noun from play;
