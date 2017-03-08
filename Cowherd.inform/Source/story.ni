@@ -42,19 +42,23 @@ Section 2 - Definitions for the Poetic World
 
 Include version 1/100607 of Real-Time Delays by Erik Temple.
 
-Speed is a kind of value. The speeds are normal and fast. A speed is usually normal. Typewriter speed is a speed.
+Speed is a kind of value. The speeds are normal and fast. A speed is usually normal. typewriting speed is a speed that varies.
 
-typewriting is an action out of world applying to one value.
+Typewriting is an action out of world applying to one value.
 Carry out typewriting some text (called the stanza):
 	play the sound of typewriting;
 	repeat with N running from one to the number of lines in the stanza:
-		let the duration be 10 * (number of characters in line number N in the stanza);
-		if the typewriter speed is fast:
-			now the duration is zero;
-		wait (duration / 2) milliseconds before continuing, strictly;
+		let the time margin be 5 * (number of characters in line number N in the stanza);
+		if the typewriting speed is fast:
+			now the time margin is one;
+		wait (time margin) milliseconds before continuing, strictly;
 		say line number N in the stanza;
-		wait (duration / 2) milliseconds before continuing, strictly;
+		wait (time margin) milliseconds before continuing, strictly;
 	play the sound of silence.
+
+Setting typewriting speed to is an action applying to one speed. Understand "speed [a speed]" as setting typewriting speed to.
+Carry out setting typewriting speed to a speed (called the new speed):
+	now the typewriting speed is the new speed.
 
 Sound of silence is the file "silence.ogg".
 Sound of typewriting is the file "typewriting.ogg".
