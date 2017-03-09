@@ -128,73 +128,74 @@ Section 1 - Compliance Rules
 
 The compliance rules are a rulebook. When play begins, follow the compliance rules.
 
-The name of the compliance rule is a text that varies. The list of violations is a list of objects that varies. The list of violation descriptions is a list of texts that varies.
+The name of the compliance rule is a text that varies. The violations are a list of objects that varies. The violation descriptions are a list of texts that varies.
 
-Initializing the compliance rule state is an action out of world.
-Carry out initializing the compliance rule state:
-	now the name of the compliance rule is "unnamed rule";
-	truncate the list of violations to zero entries;
-	truncate the list of violation descriptions to zero entries.
+To name the/-- rule (name - text):
+	now the name of the compliance rule is (name).
 
-Reporting violations is an action out of world.
-Carry out reporting violations:
-	if the list of violations is not empty or the list of violation descriptions is not empty:
+To initialize the/-- state of the/-- compliance rule:
+	name the rule "unnamed rule";
+	truncate the violations to zero entries;
+	truncate the violation descriptions to zero entries.
+
+To report violations:
+	if the violations is not empty or the violation descriptions is not empty:
 		say "Compliance rule: [bold type][Name of the compliance rule][roman type][line break]";
-		if the list of violations is not empty:
-			say "Violations: [the list of violations]";
-		if the list of violation descriptions is not empty:
-			say "Violation descriptions: [the list of violation descriptions]";
+		if the violations is not empty:
+			say "Violations: [the violations]";
+		if the violation descriptions is not empty:
+			say "Violation descriptions: [the violation descriptions]";
 		say "[paragraph break]";
-	try initializing the compliance rule state.
+	initialize the state of the compliance rule.
 
 First compliance rule:
-	try initializing the compliance rule state.
+	initialize the state of the compliance rule.
 
 Compliance rule:
-	now the name of the compliance rule is "Things should have non-blank descriptions.";
-	add the list of blankly described things to the list of violations;
-	try reporting violations.
+	name the rule "Things should have non-blank descriptions.";
+	add the list of blankly described things to the violations;
+	report violations.
 
 Definition: a thing (called the item) is blankly described if the description of the item is "".
 
 Compliance rule:
-	now the name of the compliance rule is "Poetic rooms should have poems.";
-	add the list of poemless poetic rooms to the list of violations;
-	try reporting violations.
+	name the rule "Poetic rooms should have poems.";
+	add the list of poemless poetic rooms to the violations;
+	report violations.
 
 Definition: a poetic room (called the place) is poemless if the poem of the place is {}.
 
 Compliance rule:
-	now the name of the compliance rule is "Prosaic room descriptions should be in the first person.";
-	add the list of second-person prosaic rooms to the list of violations;
-	try reporting violations.
+	name the rule "Prosaic room descriptions should be in the first person.";
+	add the list of second-person prosaic rooms to the violations;
+	report violations.
 
 Definition: a room (called the place) is second-person if the description of the place matches the regular expression "You|you".
 
 Compliance rule:
-	now the name of the compliance rule is "Cardinal directions should not be allowed from poetic rooms.";
+	name the rule "Cardinal directions should not be allowed from poetic rooms.";
 	let the acceptable directions be {left, right, up, down};
 	repeat with the place in question running through the poetic rooms:
 		repeat with the neighbouring place running through the rooms adjacent to the place in question:
 			if the best route from the place in question to the neighbouring place is not listed in the acceptable directions:
-				add the place in question to the list of violations;
-	try reporting violations.
+				add the place in question to the violations;
+	report violations.
 
 Compliance rule:
-	now the name of the compliance rule is "Lateral directions should not be allowed from prosaic rooms.";
+	name the rule "Lateral directions should not be allowed from prosaic rooms.";
 	let the acceptable directions be {north, south, east, west, up, down};
 	repeat with the place in question running through the prosaic rooms:
 		repeat with the neighbouring place running through the rooms adjacent to the place in question:
 			if the best route from the place in question to the neighbouring place is not listed in the acceptable directions:
-				add the place in question to the list of violations;
-	try reporting violations.
+				add the place in question to the violations;
+	report violations.
 
 Compliance rule:
-	now the name of the compliance rule is "All rooms should be reachable.";
+	name the rule "All rooms should be reachable.";
 	repeat with the destination running through the rooms that are not A1:
 		if the best route from A1 to the destination is nothing:
-			add the destination to the list of violations;
-	try reporting violations.
+			add the destination to the violations;
+	report violations.
 
 Section 2 - Test Cases
 [For semi-automated testing: automated steps followed by manual review of responses]
