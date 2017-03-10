@@ -15,7 +15,7 @@ The story description is "There was once a girl . . ."
 
 Use the serial comma. Use no scoring. Use brief room descriptions.
 
-Release along with the source text, a library card, and an introductory booklet.
+Release along with the source text, a library card, an introductory booklet, and a website.
 
 
 Part 2 - Definitions
@@ -44,17 +44,17 @@ Include version 1/100607 of Real-Time Delays by Erik Temple.
 
 Speed is a kind of value. The speeds are normal and fast. A speed is usually normal. typewriting speed is a speed that varies.
 
-Typewriting is an action out of world applying to one value.
-Carry out typewriting some text (called the stanza):
+To typewrite (message - some text):
 	play the sound of typewriting;
-	repeat with N running from one to the number of lines in the stanza:
-		let the time margin be 5 * (number of characters in line number N in the stanza);
-		if the typewriting speed is fast:
-			now the time margin is one;
-		wait (time margin) milliseconds before continuing, strictly;
-		say line number N in the stanza;
-		wait (time margin) milliseconds before continuing, strictly;
-	play the sound of silence.
+	if glulx timekeeping is supported and the typewriting speed is normal:
+		repeat with N running from 1 to the number of lines in the message:
+			let the surrounding delay be 5 * (number of characters in line number N in message);
+			wait (surrounding delay) milliseconds before continuing, strictly;
+			say line number N in the message;
+			wait (surrounding delay) milliseconds before continuing, strictly;
+		play the sound of silence;
+	otherwise:
+		say the message.
 
 Setting typewriting speed to is an action applying to one speed. Understand "speed [a speed]" as setting typewriting speed to.
 Carry out setting typewriting speed to a speed (called the new speed):
@@ -99,7 +99,7 @@ Every turn when the location is a poetic room:
 	otherwise:
 		let the stanza be entry one in the poem of the location;
 		if the stanza is not "END OF POEM":
-			try typewriting the stanza;
+			typewrite the stanza;
 			remove the stanza from the poem of the location.
 
 Check taking a figurative object when the location is a poetic room:
@@ -121,6 +121,9 @@ A herd is a kind of animal.
 
 
 Part 3 - Testing (not for release)
+
+At 9:00 AM:
+	now the typewriting speed is fast.
 
 
 Section 1 - Compliance Rules
