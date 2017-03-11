@@ -312,6 +312,9 @@ God is a backdrop that is everywhere. Understand "god", "prayer", "sun god", "su
 A pause called the line-1 pause is right of B1 and left of A2.
  
 A2 is a poetic room [about a road]. The poem is {
+	"AFOOT and light-hearted I take to the open road![line break]
+	Healthy, free, the world before me![line break]
+	The long brown path before me, leading wherever I choose!"
 }.
 
 B2 is a poetic room [about a town]. It is right of A2. The poem is {
