@@ -1,7 +1,7 @@
 "Cowherd" [Boring name?] by "Jeremy John Reeder, along with Jesse and Hunter Evans".
 [Based on "Lo Lleó", by Francesc Maspons i Labrós. It's an old Catalonian fairy tale.]
 
-The release number is 1.
+The story creation year is 2017. The release number is 1.
 
 
 Volume 1 - Infrastructure
