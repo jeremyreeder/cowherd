@@ -25,7 +25,9 @@ Section 1 - General Definitions
 
 A thing can be examined or unexamined. A thing is usually unexamined.
 
-After examining an unexamined thing, now the noun is examined.
+After examining an unexamined thing:
+	if the noun is not a person [which can always use further examination]:
+		now the noun is examined.
 
 Instead of examining an examined thing, do nothing.
 
@@ -63,7 +65,7 @@ Carry out setting typewriting speed to a speed (called the new speed):
 Sound of silence is the file "silence.ogg".
 Sound of typewriting is the file "typewriting.ogg".
 Sound of the typewriter bell is the file "typewriter_bell.ogg".
-Sound of the carriage return is the file "carriage_return.ogg".
+Sound of a carriage return is the file "carriage_return.ogg".
 
 Left is a direction. The opposite of left is right. Understand "left" or "l" as left.
 
@@ -71,14 +73,21 @@ Right is a direction. The opposite of right is left. Understand "right" or "r" a
 
 A poetic room is a kind of room. A poetic room has a list of texts called the poem.
 
-After entering a poetic room, now the story viewpoint is the second person singular.
+The distinguished gentleman is a man. The description is "As [one of]good-looking[or]handsome[or]beautiful[or]gorgeous[or]magnificent[in random order] as ever."
+
+The player is the distinguished gentleman.
+
+Before going to a poetic room when the player is not the distinguished gentleman (this is the entry into the poetic world rule):
+	move the distinguished gentleman to the location;
+	now the player is the distinguished gentleman;
+	now the story viewpoint is the second person singular.
 
 A pause is a kind of open door [for passage between poetic rooms].
 
 Rule for choosing notable locale objects for a room:
 	repeat with item running through things in the noun:
 		if the noun is a poetic room or the item is a pause:
-			set the locale priority of the item to 0. [It's not notable.]
+			set the locale priority of the item to zero. [It's not notable.]
 
 Before going right through a pause:
 	say "[bold type]//[roman type]".
@@ -111,7 +120,12 @@ Section 3 - Definitions for the Prosaic World
 
 Definition: a room is prosaic if it is not a poetic room.
 
-After entering a poetic room, now the story viewpoint is the first person singular.
+The little girl is a woman.
+
+Before going to a prosaic room when the player is not the little girl (this is the entry into the prosaic world rule):
+	move the little girl to the location;
+	now the player is the little girl;
+	now the story viewpoint is the second person singular.
 
 Mood is a kind of value. The moods are angry and calm. A person has a mood. A person is usually calm.
 
@@ -334,7 +348,7 @@ Instead of entering the chair when the farmer is on the chair:
 	say "'Get off me, dag nabbit!', says the farmer on whom I have sat. He expels me from the chair in disgust.";
 	now the farmer is angry.
 
-A person can be dirty or clean. A person is usually clean. The player is a dirty female. She is wearing some dirty clothes. Instead of examining the player when the player is dirty, say "I am covered in the excrement of the long, dusty road from whence I came."
+A person can be dirty or clean. A person is usually clean. The little girl is dirty. She is wearing some dirty clothes. Instead of examining a dirty little girl, say "I am covered in the excrement of the long, dusty road from whence I came."
 
 Talking to is an action applying to one thing. Understand "talk to [someone]" as talking to.
 
@@ -352,8 +366,18 @@ After going from a room when the farmer has the shotgun:
 	now the farmer is calm;
 	try the farmer dropping the shotgun.
 
-[The Bathroom is north of the Thatched Cottage. A bathtub and some clean clothes are here. Understand "tub" as the bathtub. A faucet is in the bathtub.]
+An Overgrown Field is south of the Cottage Porch. "The grass is three feet tall. In it lies a small iron carriage, quite rusted and missing a wheel. The carriage door is ajar." An open, enterable container called the carriage is here. Understand "iron carriage" or "carriage door" as the carriage. Below the Overgrown Field is A1.
 
+Instead of entering the carriage, try going down.
+
+Before going down to a poetic room:
+	play the sound of a carriage return;
+	if glulx timekeeping is supported:
+		wait 500 milliseconds before continuing, strictly.
+
+After going down to a poetic room (called the destination):
+	if the poem of the destination is {"END OF POEM"}:
+		try going down.
 
 Chapter 2 - Herding Cows
 
@@ -379,7 +403,7 @@ After eating doda:
 Section 1 - Poetry about Herding Cows
 [Poetic map: C1 D1 // C2 D2]
 
-C1 is a poetic room [About cattle]. The poem is {
+C1 is a poetic room [About cattle]. It is below A1. The poem is {
 "Cattle"
 }.
  Right of C1 is a poetic room called D1.
@@ -430,7 +454,7 @@ A fence is in the corral.
 Instead of examining the fence:
 	Say "The fence is white just like the gate.  It is conected to the gate to keep the amimals"
 
-The Corral is south of the Cottage Porch and right of D2. "There is a field that is worn from animals living on the land.  A gate is in front of me." Left of the Corral is nowhere. [The way from the poetic world is one-way.]
+The Corral is south of the Overgrown Field and right of D2. "There is a field that is worn from animals living on the land.  A gate is in front of me." Left of the Corral is nowhere. [The way from the poetic world is one-way.]
 
 The gate is an openable container in the corral. There are cows in the gate. The gate is closed.
 
@@ -512,7 +536,7 @@ Chapter 3 - Herding Asses
 Section 1 - Poetry about Herding Asses
 [ A3 B3 // A4 B4 ]
 
-A3 is a poetic room. Right of A3 is a poetic room called B3.
+A3 is a poetic room. It is below C1. Right of A3 is a poetic room called B3.
 
 A4 is a poetic room. Right of A4 is a poetic room called B4.
 
