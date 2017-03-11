@@ -122,12 +122,12 @@ A herd is a kind of animal.
 
 Part 3 - Testing (not for release)
 
-At 9:00 AM:
+At 9:00 AM [after the first turn]:
 	now the typewriting speed is fast.
 
 
 Section 1 - Compliance Rules
-[For automated testing]
+[For automated testing of initial state]
 
 The compliance rules are a rulebook. When play begins, follow the compliance rules.
 
@@ -141,7 +141,7 @@ To initialize the/-- state of the/-- compliance rule:
 	truncate the violations to zero entries;
 	truncate the violation descriptions to zero entries.
 
-To report violations:
+To report the/-- violations:
 	if the violations is not empty or the violation descriptions is not empty:
 		say "Compliance rule: [bold type][Name of the compliance rule][roman type][line break]";
 		if the violations is not empty:
@@ -201,15 +201,22 @@ Compliance rule:
 	report violations.
 
 Section 2 - Test Cases
-[For semi-automated testing: automated steps followed by manual review of responses]
+[For automated testing of dynamic state, combined with manual review of textual output]
 
-Expecting is an action out of world applying to one value. Understand "expect [text]" as expecting.
-Carry out expecting text:
-	say "Please verify manually that the responses above and the resulting game state meet your the expectations."
+Expecting is an action out of world applying to one scene. Understand "expect [scene]" as expecting.
+Carry out expecting a scene (called the expectation): say "[italic type][if expectation is happening]Success.[otherwise]Failure."
 
-Test 1:2 [Chapter 1 prose] with "orb to B2 / r / e / e / n / x chair / x farmer / x shotgun / talk to farmer / s / n / talk to farmer / expect a job".
-Test 2:2 [Chapter 2 prose] with "orb to D2 / r".
-Test 3:2 [Chapter 3 prose] with "orb to B4 / r".
+Test 1:2 [Chapter 1 prose] with "orb to B2 / r / e / e / n / x chair / x farmer / x shotgun / talk to farmer / s / n / talk to farmer / expect got a job".
+Got a Job is a scene. Got a Job begins when the player is employed.
+
+Test 2:2 [Chapter 2 prose] with "orb to D2 / r / expect got in trouble for losing a cow".
+Got in Trouble for Losing a Cow is a scene.
+
+Test 3:2 [Chapter 3 prose] with "orb to B4 / r / expect got in trouble for losing an ass".
+Got in Trouble for Losing an Ass is a scene.
+
+Test all with "test 1:2 / test 2:2 / test 3:2".
+
 
 Section 3 - Debugging
 [For manual, exploratory testing]
