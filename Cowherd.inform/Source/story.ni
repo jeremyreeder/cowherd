@@ -56,6 +56,8 @@ Include version 1/100607 of Real-Time Delays by Erik Temple.
 
 Speed is a kind of value. The speeds are normal and fast. A speed is usually normal. typewriting speed is a speed that varies.
 
+Definition: a thing (called the syntagma) is figurative if the syntagma is a backdrop in a poetic room.
+
 To typewrite (message - some text):
 	play the sound of typewriting;
 	if glulx timekeeping is supported and the typewriting speed is normal:
@@ -130,15 +132,18 @@ Every turn when the poem of the location is not empty during Poem Exploration:
 Significance relates various things to various things. The verb to signify means the significance relation. 
 
 [This rule isn't taking effect. TODO: fix it.]
-After the distinguished gentleman examining something, now the little girl carries a random thing signified by the noun.
+After the distinguished gentleman examining something, now the little girl carries everything signified by the noun.
 
 After the little girl dropping something:
-	repeat with the figurative counterpart running through the things that signify the noun:
-		remove the figurative counterpart from play.
+	repeat with the signifier running through the things that signify the noun:
+		remove the signifier from play.
+
 
 Section 3 - Definitions for the Prosaic World
 
-Definition: a room is prosaic if it is not a poetic room.
+Definition: A thing (called the syntagma) is literal if the syntagma is not figurative. 
+
+Definition: A room is prosaic if it is not a poetic room.
 
 The little girl is a woman.
 
@@ -190,24 +195,29 @@ Compliance rule:
 	add the list of blankly described things to the violations;
 	report violations.
 
-Definition: a thing (called the item) is blankly described if the description of the item is "".
+Definition: A thing (called the item) is blankly described if the description of the item is "".
 
 Compliance rule:
 	name the rule "Poetic rooms should have poems.";
 	add the list of poemless poetic rooms to the violations;
 	report violations.
 
-Definition: a poetic room (called the place) is poemless if the poem of the place is {}.
+Definition: A poetic room (called the place) is poemless if the poem of the place is {}.
 
 Compliance rule:
 	name the rule "Prosaic room descriptions should be in the first person.";
 	add the list of second-person prosaic rooms to the violations;
 	report violations.
 
-Definition: a room (called the place) is second-person if the description of the place matches the regular expression "You|you".
+Definition: A room (called the place) is second-person if the description of the place matches the regular expression "You|you" and not (the description of the place matches the regular expression "'" [because a quoted point of view does not represent the narrative point of view]).
 
 Compliance rule:
-	name the rule "Right and down should be the only directions allowed from poetic rooms.";
+	name the rule "Prosaic rooms should have only literal things.";
+	add (the list of prosaic rooms that contain something figurative) to the violations;
+	report violations.
+
+Compliance rule:
+	name the rule "Typewriter directions should be the only directions allowed from poetic rooms.";
 	let the acceptable directions be {right, down};
 	repeat with the place in question running through the poetic rooms:
 		repeat with the neighbouring place running through the rooms adjacent to the place in question:
@@ -216,7 +226,7 @@ Compliance rule:
 	report violations.
 
 Compliance rule:
-	name the rule "Lateral directions should not be allowed from prosaic rooms.";
+	name the rule "Cardinal and vertical directions should be the only directions allowed from prosaic rooms.";
 	let the acceptable directions be {north, south, east, west, up, down};
 	repeat with the place in question running through the prosaic rooms:
 		repeat with the neighbouring place running through the rooms adjacent to the place in question:
@@ -245,7 +255,7 @@ Compliance rule:
 Compliance rule:
 	let the minimum be one;
 	let the maximum be two;
-	name the rule "There should be [minimum] to [maximum] static stanzas in each poetic room.";
+	name the rule "There should be [minimum in words] to [maximum in words] static stanzas in each poetic room.";
 	repeat with the place running through the poetic rooms:
 		let the static stanza count be the number of entries in the poem of the place;
 		if (static stanza count < minimum) or (static stanza count > maximum):
@@ -254,7 +264,7 @@ Compliance rule:
 
 Compliance rule:
 	let the limit be five;
-	name the rule "There should be no more than [limit] stanzas in each poetic room.";
+	name the rule "There should be no more than [limit in words] stanzas in each poetic room.";
 	repeat with the place running through the poetic rooms:
 		let the static stanza count be the number of entries in the poem of the place;
 		let the dynamic stanza count be the number of things in the place;
@@ -265,7 +275,7 @@ Compliance rule:
 
 Compliance rule:
 	let the limit be four;
-	name the rule "There should be no more than [limit] prosaic rooms per chapter on average.";
+	name the rule "There should be no more than [limit in words] prosaic rooms per chapter on average.";
 	let the chapter count be three;
 	let the ratio be (number of prosaic rooms) / (chapter count);
 	if the ratio is greater than the limit:
@@ -276,9 +286,7 @@ Compliance rule:
 
 Compliance rule:
 	name the rule "Each figurative thing should have a literal counterpart.";
-	repeat with the signifier running through the backdrops that are in a poetic room:
-		if nothing is signified by the signifier:
-			add the signifier to the violations;
+	add (the list of figurative things that signify nothing) to the violations;
 	report the violations.
 
 
