@@ -35,8 +35,6 @@ Understand the command "look" or "l" as something new.
 
 The standard report waiting rule does nothing.
 
-An object can be literal or figurative. An object is usually literal. An abstract noun is a kind of figurative backdrop.
-
 The find what to enter rule is not listed in the for supplying a missing noun rulebook.
 
 
@@ -101,35 +99,37 @@ Rule for choosing notable locale objects for a room:
 		if the noun is a poetic room or the item is a pause:
 			set the locale priority of the item to zero. [It's not notable.]
 
-Before going right through a pause:
+Before going down through a pause:
 	say "[bold type]//[roman type]".
 
-Before going left through a pause:
-	say "[bold type]\\[roman type]".
-
-Carry out examining an unexamined thing in a poetic room:
+Instead of examining an unexamined backdrop in a poetic room during Poem Exploration:
 	if the description of the noun is "":
 		now the description of the noun is "<insert stanza>";
-	add the description of the noun at entry one in the poem of the location instead.
+	add the description of the noun at entry one in the poem of the location.
 
-Definition: A poetic room (called the place) is sufficiently explored if the poem of the place is empty and the number of unexamined things in the place is less than the number of examined things in the place.
+Definition: A poetic room (called the place) is mostly unexplored if the poem of the place is not empty or the number of examined backdrops in the place is less than the number of unexamined backdrops in the place.
 
-Definition: A poetic room (called the place) is insufficiently explored if the place is not sufficiently explored.
-
-Poem Exploration is a scene. Poem Exploration begins when the location is an insufficiently explored poetic room. Poem Exploration ends when the location is a sufficiently explored poetic room.
+Poem Exploration is a scene. Poem Exploration begins when the location is a mostly unexplored poetic room. Poem Exploration ends when the location is not a mostly unexplored poetic room.
 
 When Poem Exploration ends:
 	play the sound of the typewriter bell;
-	say "→".
+	say "→";
+	repeat with the item running through the backdrops in the location:
+		remove the item from play.
 
 Every turn when the poem of the location is not empty during Poem Exploration:
-	let the stanza be entry one in the poem of the location;
-	typewrite the stanza;
-	remove the stanza from the poem of the location.
+	if (a random number between one and two) is one:
+		let the stanza be entry one in the poem of the location;
+		typewrite the stanza;
+		remove the stanza from the poem of the location.
 
-Check taking a figurative object when the location is a poetic room:
-	now the actor carries the noun.
+Significance relates various things to various things. The verb to signify means the significance relation. 
 
+After the distinguished gentleman examining something, now the little girl carries a random thing signified by the noun.
+
+After the little girl dropping something:
+	repeat with the figurative counterpart running through the things that signify the noun:
+		remove the figurative counterpart from play.
 
 Section 3 - Definitions for the Prosaic World
 
@@ -151,8 +151,7 @@ A herd is a kind of animal.
 
 Part 3 - Testing (not for release)
 
-At 9:00 AM [after the first turn]:
-	now the typewriting speed is fast.
+At 9:00 AM [after the first turn]: now the typewriting speed is fast.
 
 
 Section 1 - Compliance Rules
@@ -162,8 +161,7 @@ The compliance rules are a rulebook. When play begins, follow the compliance rul
 
 The name of the compliance rule is a text that varies. The violations are a list of objects that varies. The violation descriptions are a list of texts that varies.
 
-To name the/-- rule (name - text):
-	now the name of the compliance rule is (name).
+To name the/-- rule (name - text): now the name of the compliance rule is (name).
 
 To initialize the/-- state of the/-- compliance rule:
 	name the rule "unnamed rule";
@@ -180,8 +178,7 @@ To report the/-- violations:
 		say "[paragraph break]";
 	initialize the state of the compliance rule.
 
-First compliance rule:
-	initialize the state of the compliance rule.
+First compliance rule: initialize the state of the compliance rule.
 
 Compliance rule:
 	name the rule "Things should have non-blank descriptions.";
@@ -205,8 +202,8 @@ Compliance rule:
 Definition: a room (called the place) is second-person if the description of the place matches the regular expression "You|you".
 
 Compliance rule:
-	name the rule "Cardinal directions should not be allowed from poetic rooms.";
-	let the acceptable directions be {left, right, up, down};
+	name the rule "Right and down should be the only directions allowed from poetic rooms.";
+	let the acceptable directions be {right, down};
 	repeat with the place in question running through the poetic rooms:
 		repeat with the neighbouring place running through the rooms adjacent to the place in question:
 			if the best route from the place in question to the neighbouring place is not listed in the acceptable directions:
@@ -272,6 +269,14 @@ Compliance rule:
 		add "[ratio] prosaic room[s] per chapter" to the violation descriptions;
 	report violations.
 
+Compliance rule:
+	name the rule "Each figurative thing should have a literal counterpart.";
+	repeat with the signifier running through the backdrops that are in a poetic room:
+		if nothing is signified by the signifier:
+			add the signifier to the violations;
+	report the violations.
+
+
 Section 2 - Test Cases
 [For automated testing of dynamic state, combined with manual review of textual output]
 
@@ -324,22 +329,22 @@ A1 is a poetic room [about poverty]. The poem is {
 		Nor is shelter."
 }.
 
-A head is a kind of thing. It is a part of each person. Understand "dream" or "dreams" as the head of the player when the location is A1. The description of the head of the player is "My head is filled with wonder oft-times.[line break]
+A backdrop called a dream is here. Understand "dreams" as the dream. The description of the dream is "My head is filled with wonder oft-times.[line break]
 		Of all the fine things that exist in the world,[line break]
 		Why must it all be so hard to acquire?[line break]
 		What can I do to make it mine?"
 
-The heavens are a backdrop which is everywhere. Understand "sky", and "heaven" as the heavens. Understand "cloth" and "cloths" as the heavens when the location is A1. The description is
+The sky is a backdrop which is everywhere. Understand "heaven" and "heavens" as the sky. Understand "cloth", "cloths", "clothes", and "clothing" as the sky when the location is a poetic room. The description is
 	"I pray to anyone up there[line break]
 		That I may end this life of misery,[line break]
 		Earn a living,[line break]
 		And eat a healthy meal."
 
-The poverty is a backdrop which is everywhere. Understand "world", "road", "dust", and "dusty road" as poverty.
+The poverty is a backdrop which is everywhere. Understand "poor", "world", "road", "dust", and "dusty road" as poverty.
 
 The riches are a backdrop which is everywhere. Understand "riches", "money", and "job" as riches. Understand "cottage" and "shelter" as riches when the location is a poetic room. The description is "My, oh my!" 
 
-B1 is a poetic room [about dreams]. It is right of A1. The poem is {
+B1 is a poetic room [about dreams]. It is right of A1.  Left of B1 is nowhere [because the door is one-way]. The poem is {
 	"Oh, If it be thy will I shall endure,[line break] 
 		And sell ambition at the common mart,[line break]
 		And let dull failure be my vestiture,[line break]
@@ -383,7 +388,7 @@ B2 is a poetic room [about a town]. It is right of A2. The poem is {
 Section 2 - Prose about Finding Work
 [Prosaic map: Wandering the World → Dusty Road → Cottage] 
 
-Wandering the World is right of B1. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east." Left of Wandering the World is nowhere. [The way from the poetic world is one-way.]
+Wandering the World is right of B1. Left of it is nowhere [because the door is one-way]. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east."
 
 The Dusty Road is east of Wandering the World. "I've traveled far on this dusty road to escape a life of dependence. No more charity. I see a cottage to the east."
 
@@ -424,7 +429,7 @@ After going from a room when the farmer has the shotgun:
 	now the farmer is calm;
 	try the farmer dropping the shotgun.
 
-An Overgrown Field is south of the Cottage Porch. "The grass is three feet tall. In it lies a small iron carriage, quite rusted and missing a wheel. The carriage door is ajar." An open, enterable container called the carriage is here. Understand "iron carriage" or "carriage door" as the carriage. Below the Overgrown Field is A1.
+An Overgrown Field is south of the Cottage Porch. "The grass is three feet tall. In it lies a small iron carriage, quite rusted and missing a wheel. The carriage door is ajar." An open, enterable container called the carriage is here. Understand "iron carriage" or "carriage door" as the carriage. Below the Overgrown Field is A1. Above A1 is nowhere [because the door is one-way].
 
 Instead of entering the carriage, try going down.
 
@@ -460,11 +465,11 @@ After eating doda:
 
 Section 1 - Poetry about Herding Cows
 
-C1 is a poetic room [About cattle]. It is below A1. The poem is {
+C1 is a poetic room [about cattle]. It is below A1. Above C1 is nowhere [because the door is one-way]. The poem is {
 	"Cattle are loyal."
 }.
 
-Right of C1 is a poetic room called D1.
+Right of C1 is a poetic room called D1. Left of D1 is nowhere [because the door is one-way].
 
 
 Section 2 - Prose about Herding Cows
@@ -586,7 +591,7 @@ Chapter 3 - Herding Asses
 
 Section 1 - Poetry about Herding Asses
 
-A2 is a poetic room. It is below C1. Right of A2 is a poetic room called B2.
+A2 is a poetic room. It is below C1. Above A2 is nowhere [because the door is one-way]. Right of A2 is a poetic room called B2. Left of B2 is nowhere [because the door is one-way].
 
 The poem of A2 is {
 	""
