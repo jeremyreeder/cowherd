@@ -285,10 +285,19 @@ Compliance rule:
 	report violations.
 
 Compliance rule:
-	name the rule "Each figurative thing should have a literal counterpart.";
+	name the rule "Each figurative thing should signify something.";
 	add (the list of figurative things that signify nothing) to the violations;
 	report the violations.
 
+Compliance rule:
+	name the rule "All signifiers should be figurative.";
+	add (the list of literal things that signify something) to the violations;
+	report the violations.
+
+Compliance rule:
+	name the rule "All signifieds should be literal.";
+	add (the list of figurative things that are signified by something) to the violations;
+	report the violations.
 
 Section 2 - Test Cases
 [For automated testing of dynamic state, combined with manual review of textual output]
