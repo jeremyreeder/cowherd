@@ -112,16 +112,20 @@ Carry out examining an unexamined thing in a poetic room:
 		now the description of the noun is "<insert stanza>";
 	add the description of the noun at entry one in the poem of the location instead.
 
-Every turn when the location is a poetic room:
-	if the poem of the location is empty:
-		play the sound of the typewriter bell;
-		add "END OF POEM" to the poem of the location;
-		say "→";
-	otherwise:
-		let the stanza be entry one in the poem of the location;
-		if the stanza is not "END OF POEM":
-			typewrite the stanza;
-			remove the stanza from the poem of the location.
+Definition: A poetic room (called the place) is sufficiently explored if the poem of the place is empty and the number of unexamined things in the place is less than the number of examined things in the place.
+
+Definition: A poetic room (called the place) is insufficiently explored if the place is not sufficiently explored.
+
+Poem Exploration is a scene. Poem Exploration begins when the location is an insufficiently explored poetic room. Poem Exploration ends when the location is a sufficiently explored poetic room.
+
+When Poem Exploration ends:
+	play the sound of the typewriter bell;
+	say "→".
+
+Every turn when the poem of the location is not empty during Poem Exploration:
+	let the stanza be entry one in the poem of the location;
+	typewrite the stanza;
+	remove the stanza from the poem of the location.
 
 Check taking a figurative object when the location is a poetic room:
 	now the actor carries the noun.
