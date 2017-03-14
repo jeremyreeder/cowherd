@@ -115,7 +115,7 @@ Poem Exploration is a scene. Poem Exploration begins when the location is a most
 Unsuccessful attempt by the distinguished gentleman going left when the reason the action failed is the can't go that way rule:
 		say "[italic type][one of]Oof! That's not natural.[or]This thing writes from left to right.[or]It's no use fighting the natural direction of the language.[or]When in Catalonia, do as the Catalonians do. Their language flows from left to right, as does this typewriter.[or]Still trying that, I see. The text of the poem flows to the right and down.[or]Whatevs.[stopping][roman type]".
 
-When Poem Exploration ends:
+When Poem Exploration ends when the location is a poetic room:
 	play the sound of the typewriter bell;
 	say "→";
 	repeat with the item running through the backdrops in the location:
@@ -354,7 +354,7 @@ The poverty is a backdrop which is in A1. Understand "poor", "world", "road", "d
 
 The riches are a backdrop which is everywhere. Understand "riches", "money", and "job" as riches. Understand "cottage" and "shelter" as riches when the location is a poetic room. The description is "My, oh my!" 
 
-B1 is a poetic room [about dreams]. It is right of A1.  Left of B1 is nowhere [because the door is one-way]. The poem is {
+B1 is a poetic room [about dreams]. It is right of A1. Left of B1 is nowhere [because the door is one-way]. The poem is {
 	"Oh, If it be thy will I shall endure,[line break] 
 		And sell ambition at the common mart,[line break]
 		And let dull failure be my vestiture,[line break]
@@ -458,20 +458,17 @@ Chapter 2 - Herding Cows
 	You can guess how frightened she was! But the lion seemed in such pain that she was sorry for him, and drew nearer and nearer till she saw he had a large thorn in one foot. She pulled out the thorn and bound up the place, and the lion was grateful, and licked her hand by way of thanks with his big rough tongue.
 	When the girl had finished she went back to find the cows, but they had gone, and though she hunted everywhere she never found them; and she had to return home and confess to her master, who scolded her bitterly, and afterwards beat her. Then he said, 'Now you will have to look after the asses.']
 
-A hand is a kind of thing. a hand is worn by every person.
-
-A hand is edible
+A hand is a kind of edible thing. A hand is a part of every person.
 
 After eating a hand:
-	say "I now crave human fleash, my goal is to eat everyone"
+	say "I now crave human flesh. My goal is to eat everyone!"
 
-a doda is a thing.
+A mob is a person. Understand "everyone" as the mob.
 
-understand "everyone" as doda.
+After eating the mob:
+	say "I eat everyone and now I die alone with my own sad thoughts";
+	end the story.
 
-After eating doda:
-	say "I everyone and now I die alone with my own sad thoughts";
-	end the story
 
 Section 1 - Poetry about Herding Cows
 
@@ -484,44 +481,37 @@ Right of C1 is a poetic room called D1. Left of D1 is nowhere [because the door 
 
 Section 2 - Prose about Herding Cows
 
-after entering the corral when the farmer is not angry,
+After the little girl entering the corral when the farmer is not angry,
 	now the actor is employed.
 
-Instead of entering the corral when the farmer is angry,
-	do nothing
+Instead of the little girl entering the Corral when the farmer is angry,
+	say "Oh, no, I bet the farmer will be mad at me."
 
 The cows are a herd. Understand "cow" as the cows.
 
-The lion is a kind of animal.
+A lion is a kind of animal.
 
-Before examining the cows,
-	say "Cows without a herd leader are useless [line break]
+The description of the cows is "Cows without a herd leader are useless [line break]
 	The farmer asked me to farm these cows."
 
-Instead of examining the cows,
-	say "I hear a loud groan that almost sounds human. [line break]
+After examining the cows for the first time, say "I hear a loud groan that almost sounds human. [line break]
 	I must see what this is. [line break]
 	I heard the sound from the south. [line break]
 	He pays well and is kind, [line break]
-	but this groan I must find"  [might be too cheesy].
+	but this groan I must find" [might be too cheesy].
 	
-the nown Animals is in the corral.
-
-Instead of examining the animals,
-	say "The animals all cows and look hungery."
+After examining the cows for the second time, say "These cows look hungry."
 	
 Instead of examining the gate:
-	say "The gate is white with paint that is flacking out. A fence sorrownds the animals."
+	say "A fence surrounds the cows. The gate is white with paint that is flaking off."
 
-After dropping the clothes:
-	say "I pull off my clothes and I am now naked."
+After dropping the clothes, say "Scandalous!"
 
 A fence is in the corral.
 
-Instead of examining the fence:
-	Say "The fence is white just like the gate.  It is conected to the gate to keep the amimals"
+Instead of examining the fence, say "The fence is white just like the gate. It keeps the cows in."
 
-The Corral is south of the Overgrown Field and right of D1. "There is a field that is worn from animals living on the land.  A gate is in front of me." Left of the Corral is nowhere. [The way from the poetic world is one-way.]
+The Corral is south of the Overgrown Field and right of D1. "There is a field that is worn from animals living on the land. A gate is in front of me." Left of the Corral is nowhere. [The way from the poetic world is one-way.]
 
 The gate is an openable container in the corral. There are cows in the gate. The gate is closed.
 
@@ -532,50 +522,34 @@ After going from a room when the gate is open:
 After opening the gate:
 	say "The cows are starving, I have to get them to the meadows. the forest surrounds the meadows, I have to go through the forest. the forest is to the west";	
 
-The West Meadow is east of the Corral. "A corral is to the west.  A lion lies in front of me."
+The West Meadow is east of the Corral. "A corral is to the west. A lion lies in front of me."
 
 The Forest is west of the Corral. "The forest is dark and the trees are thick, yet light still comes through easily."
 
-The Middle Meadow is east of the West Meadow.  "I come back and see that my herd is gone, [line break]
-why was I so foolish to leave them."
+The Middle Meadow is east of the West Meadow. "I come back and see that my herd is gone. Why was I so foolish to leave them?"
 
-The deep ditch is down of the ditch.  "The cave is dark and damp, [line break]
-there are bats swarming all around me."
+The Deep Ditch is below the Ditch. "The cave is dark and damp. There are bats swarming all around me."
 
-The East Meadow is east of Middle Meadow. "I have been walking for 5 minutes, I realize that I have past my destination. [line break]
-It is coming from the northwest"
+The East Meadow is east of Middle Meadow. "I have been walking for 5 minutes, I realize that I have passed my destination."
 
-The Far East Meadow is east of the East Meadow. "Far down is a ditch I see a shape of an animal, [line break]
-the animal that is groaning."
+The Far East Meadow is east of the East Meadow. "Deep in a ditch I see a shape of an animal. It's too shaded to see well from here."
 
-[instead of eating the lion:
-	say "you healed the lion!";
-	now the lion is nowhere.]
+The ditch is south of the Far East Meadow. "I scale the thing and decide to not take my chances, I walk around around and down."
 
-The ditch is south of the Far East Meadow. "I scale the thing and deside to not take my chances, I walk around around and down."
+A lion called the majestic lion is in the Deep Ditch.
 
-After entering the ditch:
-	if the lion is in the deep ditch:
+After the little girl going to the Ditch when the majestic lion is in the Deep Ditch:
 		say "I see the animal a bit farther down."
 		
-An animal called the lion is in the deep ditch.
-
-[if lion is in deep ditch:
-	say " I hear the groan."]
-	
-The bats are animals.  
-
-The bats are in the Deep Ditch.
-
-Understand "bat" as bats.
+The bats are animals. The bats are in the Deep Ditch. Understand "bat" as bats.
 
 Instead of taking the bats:
-	Say "I snatch for one in the air, I get bit on the finger and the bats are scared out of the cave";
-	now the bats are nowhere
+	say "I snatch for one in the air, I get bit on the finger and the bats are scared out of the cave";
+	remove the bats from play.
 
 Instead of examining the bats:
-	say "The bats are black are hurt my ears with their squealls.  They swirl away from the cave";
-	now the bats are nowhere.
+	say "The bats are black. They hurt my ears with their squeals. They swirl away from the cave.";
+	remove the bats from play.
 	
 [learn to do if lion is here and how to make cows go away]
 
@@ -585,8 +559,7 @@ After entering the Middle Meadow:
 [if lion is in deep ditch:
 	say "A lion is on the ground , it is injured, you must find something to heal it."]
 
-Instead of examining the lion:
-	say "The lion has sharp claws and a long mane. It is hurt, I stare at it intensly."
+Instead of examining the lion, say "The lion has sharp claws and a long mane. It is hurt, I stare at it intensely."
 
 The lion is either hurt or healthy. The lion is usually hurt [until healed].
 
