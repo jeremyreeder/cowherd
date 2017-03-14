@@ -237,15 +237,36 @@ Compliance rule:
 	report violations.
 
 Compliance rule:
+	let the minimum be one;
+	let the maximum be two;
+	name the rule "There should be [minimum] to [maximum] static stanzas in each poetic room.";
+	repeat with the place running through the poetic rooms:
+		let the static stanza count be the number of entries in the poem of the place;
+		if (static stanza count < minimum) or (static stanza count > maximum):
+			add the place to the violations;
+	report violations.
+
+Compliance rule:
+	let the limit be five;
+	name the rule "There should be no more than [limit] stanzas in each poetic room.";
+	repeat with the place running through the poetic rooms:
+		let the static stanza count be the number of entries in the poem of the place;
+		let the dynamic stanza count be the number of things in the place;
+		let the total stanza count be (static stanza count) + (dynamic stanza count);
+		if the total stanza count is greater than the limit:
+			add "[place] ([static stanza count] static + [dynamic stanza count] dynamic)" to the violation descriptions;
+	report violations.
+
+Compliance rule:
 	let the limit be four;
-	name the rule "There should be no more than [limit in words] prosaic rooms per chapter on average.";
+	name the rule "There should be no more than [limit] prosaic rooms per chapter on average.";
 	let the chapter count be three;
 	let the ratio be (number of prosaic rooms) / (chapter count);
 	if the ratio is greater than the limit:
 		add "[number of prosaic rooms] prosaic room[s]" to the violation descriptions;
 		add "[chapter count] chapter[s]" to the violation descriptions;
 		add "[ratio] prosaic room[s] per chapter" to the violation descriptions;
-		report violations.
+	report violations.
 
 Section 2 - Test Cases
 [For automated testing of dynamic state, combined with manual review of textual output]
