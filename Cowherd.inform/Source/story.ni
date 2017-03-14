@@ -220,8 +220,8 @@ Compliance rule:
 
 Compliance rule:
 	name the rule "All rooms should be reachable.";
-	repeat with the destination running through the rooms that are not A1:
-		if (best route from A1 to the destination, using doors) is nothing:
+	repeat with the destination running through the rooms that are not the location:
+		if (best route from location to destination, using doors) is nothing:
 			add the destination to the violations;
 	report violations.
 
