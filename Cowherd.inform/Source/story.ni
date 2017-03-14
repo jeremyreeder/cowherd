@@ -129,6 +129,7 @@ Every turn when the poem of the location is not empty during Poem Exploration:
 
 Significance relates various things to various things. The verb to signify means the significance relation. 
 
+[This rule isn't taking effect. TODO: fix it.]
 After the distinguished gentleman examining something, now the little girl carries a random thing signified by the noun.
 
 After the little girl dropping something:
@@ -329,7 +330,7 @@ A1 is a poetic room [about poverty]. The poem is {
 		Enwrought with golden and silver gleam,[line break]
 		The blue and the dim and the dark[line break]
 		Of night and half-light and light,",
-	"I would sell them for a meal and a place to sleep:[line break]
+	"I would sell those cloths for a meal and a place to sleep:[line break]
 		But I, being poor, have only my dreams;[line break]
 		Such cloths are not cheap,[line break]
 		Nor is shelter."
@@ -339,14 +340,17 @@ A backdrop called a dream is here. Understand "dreams" as the dream. The descrip
 		Of all the fine things that exist in the world,[line break]
 		Why must it all be so hard to acquire?[line break]
 		What can I do to make it mine?"
+The dream signifies a mysterious book.
 
-The sky is a backdrop which is everywhere. Understand "heaven" and "heavens" as the sky. Understand "cloth", "cloths", "clothes", and "clothing" as the sky when the location is a poetic room. The description is
+The sky is a backdrop in A1. Understand "heaven" and "heavens" as the sky. Understand "cloth", "cloths", "clothes", "clothing", "gleam", "gold", "golden", and "silver" as the sky when the location is a poetic room. The description is
 	"I pray to anyone up there[line break]
 		That I may end this life of misery,[line break]
 		Earn a living,[line break]
 		And eat a healthy meal."
 
-The poverty is a backdrop which is everywhere. Understand "poor", "world", "road", "dust", and "dusty road" as poverty.
+The poverty is a backdrop which is in A1. Understand "poor", "world", "road", "dust", and "dusty road" as poverty. The description is
+	"It sucks when you're[line break]
+	At desolation's door."
 
 The riches are a backdrop which is everywhere. Understand "riches", "money", and "job" as riches. Understand "cottage" and "shelter" as riches when the location is a poetic room. The description is "My, oh my!" 
 
@@ -375,7 +379,7 @@ The beauty is a backdrop that is everywhere. Understand "forest", "tresses", and
 
 The freedom is a backdrop that is everywhere. Understand "liberty", "air", "lofty air", "bird", "hawk", and "spotted hawk" as freedom. The description is "Oh, to be free!"
 
-God is a backdrop that is everywhere. Understand "god", "prayer", "sun god", "sun god's hair", and "god's hair" as God.
+The Sun God is a backdrop that is in B1. Understand "god", "prayer", "sun god", "sun god's hair", and "god's hair" as the Sun God.
 
 [A2 is a poetic room [about a road]. The poem is {
 	"AFOOT and light-hearted I take to the open road![line break]
@@ -394,7 +398,7 @@ B2 is a poetic room [about a town]. It is right of A2. The poem is {
 Section 2 - Prose about Finding Work
 [Prosaic map: Wandering the World → Dusty Road → Cottage] 
 
-Wandering the World is right of B1. Left of it is nowhere [because the door is one-way]. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east."
+Wandering the World is right of B1. Left of it is nowhere [because the door is one-way]. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east." The little girl is here.
 
 The Dusty Road is east of Wandering the World. "I've traveled far on this dusty road to escape a life of dependence. No more charity. I see a cottage to the east."
 
