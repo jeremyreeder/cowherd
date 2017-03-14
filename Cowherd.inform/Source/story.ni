@@ -83,7 +83,7 @@ Right is a direction. The opposite of right is left. Understand "right" or "r" a
 
 A poetic room is a kind of room. A poetic room has a list of texts called the poem.
 
-The distinguished gentleman is a man. The description is "As [one of]good-looking[or]handsome[or]beautiful[or]gorgeous[or]magnificent[in random order] as ever."
+The distinguished gentleman is a man. The description is "As [one of]good-looking[or]handsome[or]beautiful[or]gorgeous[or]magnificent[in random order] as ever." Understand "man" or "gentleman", or "distinguished" as the distinguished gentleman.
 
 The player is the distinguished gentleman.
 
@@ -110,6 +110,10 @@ Instead of examining an unexamined backdrop in a poetic room during Poem Explora
 Definition: A poetic room (called the place) is mostly unexplored if the poem of the place is not empty or the number of examined backdrops in the place is less than the number of unexamined backdrops in the place.
 
 Poem Exploration is a scene. Poem Exploration begins when the location is a mostly unexplored poetic room. Poem Exploration ends when the location is not a mostly unexplored poetic room.
+
+[The following rule is not taking effect, and I don't know why. I'm getting the default "You can't go that way" message instead.]
+Unsuccessful attempt by the distinguished gentleman going left when the reason the action failed is the can't go that way rule:
+		say "[italic type][one of]Oof! That's not natural.[or]This thing writes from left to right.[or]It's no use fighting the natural direction of the language.[or]When in Catalonia, do as the Catalonians do. Their language flows from left to right, as does this typewriter.[or]Still trying that, I see. The text of the poem flows to the right and down.[or]Whatevs.[stopping][roman type]".
 
 When Poem Exploration ends:
 	play the sound of the typewriter bell;
@@ -298,10 +302,12 @@ Test all with "test 1:2 / test 2:2 / test 3:2".
 Section 3 - Debugging
 [For manual, exploratory testing]
 
-Teleporting to is an action applying to one thing. Understand "teleport to/into [any room]" as teleporting to. Understand "orb to/into [any room]" as teleporting to.
+Becoming is an action applying to one thing. Understand "become [any person]" as becoming.
+Carry out becoming a person: now the player is the noun.
+A rule for reaching inside a room: allow access.
 
-Carry out teleporting to a room:
-	move the actor to the noun.
+Teleporting to is an action applying to one thing. Understand "teleport to/into [any room]" as teleporting to. Understand "orb to/into [any room]" as teleporting to.
+Carry out teleporting to a room: move the actor to the noun.
 
 
 Volume 2 - Story
