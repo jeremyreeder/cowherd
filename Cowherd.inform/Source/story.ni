@@ -41,6 +41,18 @@ The find what to enter rule is not listed in the for supplying a missing noun ru
 
 
 Section 2 - Definitions for the Poetic World
+[Poetic map:
+Chapter 1:	A1	B1
+Chapter 2:	C1	D1
+Chapter 3:	A2	B2
+Chapter 4:	C2	D2
+Intermission:	//	
+Chapter 5:	A3	B3
+Chapter 6:	C3	D3
+Chapter 7:	A4	B4
+Chapter 8:	C4	D4
+Chapter 9:	?
+]	
 
 Include version 1/100607 of Real-Time Delays by Erik Temple.
 
@@ -214,6 +226,17 @@ Compliance rule:
 			add the destination to the violations;
 	report violations.
 
+Compliance rule:
+	let the limit be two;
+	name the rule "There should be no more than [limit in words] poetic rooms per chapter on average.";
+	let the chapter count be three;
+	let ratio be (number of poetic rooms) / (chapter count);
+	if the ratio is greater than the limit:
+		add "[number of poetic rooms] poetic room[s]" to the violation descriptions;
+		add "[chapter count] chapter[s]" to the violation descriptions;
+		add "[ratio] poetic room[s] per chapter" to the violation descriptions;
+	report violations.
+
 Section 2 - Test Cases
 [For automated testing of dynamic state, combined with manual review of textual output]
 
@@ -250,7 +273,6 @@ Chapter 1 - Finding Work
 
 
 Section 1 - Poetry about Finding Work
-[Poetic map: A1 B1 // A2 B2]
 
 A1 is a poetic room [about poverty]. The poem is {
 	"With nothing to live on,[line break]
@@ -309,9 +331,7 @@ The freedom is a backdrop that is everywhere. Understand "liberty", "air", "loft
 
 God is a backdrop that is everywhere. Understand "god", "prayer", "sun god", "sun god's hair", and "god's hair" as God.
 
-A pause called the line-1 pause is right of B1 and left of A2.
- 
-A2 is a poetic room [about a road]. The poem is {
+[A2 is a poetic room [about a road]. The poem is {
 	"AFOOT and light-hearted I take to the open road![line break]
 	Healthy, free, the world before me![line break]
 	The long brown path before me, leading wherever I choose!"
@@ -322,13 +342,13 @@ B2 is a poetic room [about a town]. It is right of A2. The poem is {
 		Warmer it would be[line break]
 		Than this dusty road[line break]
 		[apostrophe]Cross whence I have come."
-}.
+}.]
 
 
 Section 2 - Prose about Finding Work
 [Prosaic map: Wandering the World → Dusty Road → Cottage] 
 
-Wandering the World is right of B2. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east." Left of Wandering the World is nowhere. [The way from the poetic world is one-way.]
+Wandering the World is right of B1. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east." Left of Wandering the World is nowhere. [The way from the poetic world is one-way.]
 
 The Dusty Road is east of Wandering the World. "I've traveled far on this dusty road to escape a life of dependence. No more charity. I see a cottage to the east."
 
@@ -404,18 +424,12 @@ After eating doda:
 	end the story
 
 Section 1 - Poetry about Herding Cows
-[Poetic map: C1 D1 // C2 D2]
 
 C1 is a poetic room [About cattle]. It is below A1. The poem is {
-"Cattle"
-}.
- Right of C1 is a poetic room called D1.
-
-C2 is a poetic room. Right of C2 is a poetic room called D2.  The poem of C2 is {
-"Cattle are loyal."
+	"Cattle are loyal."
 }.
 
-Right of D1 and left of C2 is a pause called the line-2 pause.
+Right of C1 is a poetic room called D1.
 
 
 Section 2 - Prose about Herding Cows
@@ -457,7 +471,7 @@ A fence is in the corral.
 Instead of examining the fence:
 	Say "The fence is white just like the gate.  It is conected to the gate to keep the amimals"
 
-The Corral is south of the Overgrown Field and right of D2. "There is a field that is worn from animals living on the land.  A gate is in front of me." Left of the Corral is nowhere. [The way from the poetic world is one-way.]
+The Corral is south of the Overgrown Field and right of D1. "There is a field that is worn from animals living on the land.  A gate is in front of me." Left of the Corral is nowhere. [The way from the poetic world is one-way.]
 
 The gate is an openable container in the corral. There are cows in the gate. The gate is closed.
 
@@ -466,8 +480,7 @@ After going from a room when the gate is open:
 	now the cows are in the noun.
 
 After opening the gate:
-	say "The cows are starving, I have to get them to the meadows. the forest surrounds the meadows, I have to go through the forest. the forest is to the west";
-	
+	say "The cows are starving, I have to get them to the meadows. the forest surrounds the meadows, I have to go through the forest. the forest is to the west";	
 
 The West Meadow is east of the Corral. "A corral is to the west.  A lion lies in front of me."
 
@@ -537,22 +550,17 @@ Chapter 3 - Herding Asses
 
 
 Section 1 - Poetry about Herding Asses
-[ A3 B3 // A4 B4 ]
 
-A3 is a poetic room. It is below C1. Right of A3 is a poetic room called B3.
+A2 is a poetic room. It is below C1. Right of A2 is a poetic room called B2.
 
-A4 is a poetic room. Right of A4 is a poetic room called B4.
-
-Right of B3 and left of A4 is a pause called the line-3 pause.
-
-The poem of A3 is {
+The poem of A2 is {
 	""
 }.
 
 
 Section 2 - Prose about Herding Asses
 
-The Stable is right of B4. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft. A rock is on the ground. The asses are standing, looking at me tiredly." Left of the Stable is nowhere. [The way from the poetic world is one-way.]
+The Stable is right of B2. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft. A rock is on the ground. The asses are standing, looking at me tiredly." Left of the Stable is nowhere. [The way from the poetic world is one-way.]
 
 The Loft is above the Stable. "Even less pleasant than the stable it self. It is very warm, humid, and putrid here. A ladder leads down to the stable. Some carrots are on the the floor."
 
