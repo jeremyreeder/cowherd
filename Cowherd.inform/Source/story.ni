@@ -237,6 +237,17 @@ Compliance rule:
 		add "[ratio] poetic room[s] per chapter" to the violation descriptions;
 	report violations.
 
+Compliance rule:
+	let the limit be four;
+	name the rule "There should be no more than [limit in words] prosaic rooms per chapter on average.";
+	let the chapter count be three;
+	let the ratio be (number of prosaic rooms) / (chapter count);
+	if the ratio is greater than the limit:
+		add "[number of prosaic rooms] prosaic room[s]" to the violation descriptions;
+		add "[chapter count] chapter[s]" to the violation descriptions;
+		add "[ratio] prosaic room[s] per chapter" to the violation descriptions;
+		report violations.
+
 Section 2 - Test Cases
 [For automated testing of dynamic state, combined with manual review of textual output]
 
