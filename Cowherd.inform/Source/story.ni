@@ -124,7 +124,6 @@ Every turn when the location is a poetic room:
 			remove the stanza from the poem of the location.
 
 Check taking a figurative object when the location is a poetic room:
-	remove the noun from play;
 	now the actor carries the noun.
 
 
