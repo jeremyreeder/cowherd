@@ -469,9 +469,7 @@ Before going down to a poetic room:
 	if glulx timekeeping is supported:
 		wait 500 milliseconds before continuing, strictly.
 
-After going down to a poetic room (called the destination):
-	if the poem of the destination is {"END OF POEM"}:
-		try going down.
+After going down to a poetic room that is not mostly unexplored, try going down [to get to the next unexplored one].
 
 Chapter 2 - Herding Cows
 
