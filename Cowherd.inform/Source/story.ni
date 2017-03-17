@@ -376,22 +376,22 @@ The poverty is a backdrop which is in A1. Understand "poor", "world", "road", "d
 The riches are a backdrop which is everywhere. Understand "riches", "money", and "job" as riches. Understand "cottage" and "shelter" as riches when the location is a poetic room. The description is "My, oh my!" 
 
 B1 is a poetic room [about dreams]. It is right of A1. Left of B1 is nowhere [because the door is one-way]. The poem is {
-	"Oh, If it be thy will I shall endure,[line break] 
-		And sell ambition at the common mart,[line break]
-		And let dull failure be my vestiture,[line break]
-		And sorrow dig its grave within my heart.", 
-	"Perchance it may be better so—at least[line break]
-		I have not made my heart a heart of stone,[line break]
-		Nor starved my girlhood of its goodly feast,[line break] 
-		Nor walked where Beauty is a thing unknown.",
-	"Many a man hath done so; sought to fence[line break]
-		In straitened bonds the soul that should be free,[line break] 
-		Trodden the dusty road of common sense,[line break]
-		While all the forest sang of liberty,",
-	"Not marking how the spotted hawk in flight[line break] 
-		Passed on wide pinion through the lofty air,[line break]
-		To where the steep untrodden mountain height[line break] 
-		Caught the last tresses of the Sun God’s hair."
+	"Oh, If it be thy will I shall endure,
+	[line break]And sell ambition at the common mart,
+	[line break]And let dull failure be my vestiture,
+	[line break]And sorrow dig its grave within my heart.", 
+	"Perchance it may be better so—at least
+	[line break]I have not made my heart a heart of stone,
+	[line break]Nor starved my girlhood of its goodly feast,
+	[line break]Nor walked where Beauty is a thing unknown.",
+	"Many a man hath done so; sought to fence
+	[line break]In straitened bonds the soul that should be free,
+	[line break]Trodden the dusty road of common sense,
+	[line break]While all the forest sang of liberty,",
+	"Not marking how the spotted hawk in flight
+	[line break]Passed on wide pinion through the lofty air,
+	[line break]To where the steep untrodden mountain height
+	[line break]Caught the last tresses of the Sun God’s hair."
 }.
 
 The B1 dreams are a backdrop which is in B1. Understand "dream", "dreams", "ambition", and "heart" as the B1 dreams when the location is B1. Understand "failure", "stone", and "bonds" as poverty. Understand "feast", "lofty air", and "air" as riches.
