@@ -25,11 +25,11 @@ Section 1 - General Definitions
 
 A thing can be examined or unexamined. A thing is usually unexamined.
 
-After examining an unexamined thing:
-	if the noun is not a person [which can always use further examination]:
-		now the noun is examined.
+After examining an unexamined figurative thing (this is the delete figurative descriptions upon examination rule):
+	now the description of the noun is "↑";
+	now the noun is examined.
 
-Instead of examining an examined thing, do nothing.
+Last after examining an unexamined thing, now the noun is examined.
 
 Understand the command "look" or "l" as something new.
 
@@ -64,11 +64,11 @@ To typewrite (message - some text):
 		repeat with N running from 1 to the number of lines in the message:
 			let the surrounding delay be 5 * (number of characters in line number N in message);
 			wait (surrounding delay) milliseconds before continuing, strictly;
-			say line number N in the message;
+			say "[italic type][line number N in message][roman type]";
 			wait (surrounding delay) milliseconds before continuing, strictly;
 		play the sound of silence;
 	otherwise:
-		say the message.
+		say "[italic type][message][roman type]".
 
 Setting typewriting speed to is an action applying to one speed. Understand "speed [a speed]" as setting typewriting speed to.
 Carry out setting typewriting speed to a speed (called the new speed):
@@ -82,6 +82,10 @@ Sound of a carriage return is the file "carriage_return.ogg".
 Left is a direction. The opposite of left is right. Understand "left" or "l" as left.
 
 Right is a direction. The opposite of right is left. Understand "right" or "r" as right.
+
+Scrolling back is an action applying to nothing. Understand "up" or "u" as scrolling back when the location is a poetic room.
+
+Instead of scrolling back, say "[one of]This typewriter can't go that way.[or]To see the text already typed, simply direct your eyes upward.[or]You're doing it wrong.[or]That's what the scrollback buffer is for.[or]I suggest you scroll back through the log of previously displayed text.[or]You're a tenacious one.[or]Your persistent refusal to accept the limits of this metatext are beyond my capacity to correct.[cycling]".
 
 A poetic room is a kind of room. A poetic room has a list of texts called the poem.
 
@@ -98,16 +102,17 @@ A pause is a kind of open door [for passage between poetic rooms].
 
 Rule for choosing notable locale objects for a room:
 	repeat with item running through things in the noun:
-		if the noun is a poetic room or the item is a pause:
+		if the item is figurative or the item is a pause:
 			set the locale priority of the item to zero. [It's not notable.]
 
 Before going down through a pause:
-	say "[bold type]//[roman type]".
+	say "[bold type]//[italic type]".
 
 Instead of examining an unexamined backdrop in a poetic room during Poem Exploration:
 	if the description of the noun is "":
 		now the description of the noun is "<insert stanza>";
-	add the description of the noun at entry one in the poem of the location.
+	add the description of the noun at entry one in the poem of the location;
+	follow the delete figurative descriptions upon examination rule.
 
 Definition: A poetic room (called the place) is mostly unexplored if the poem of the place is not empty or the number of examined backdrops in the place is less than the number of unexamined backdrops in the place.
 
@@ -115,7 +120,7 @@ Poem Exploration is a scene. Poem Exploration begins when the location is a most
 
 [The following rule is not taking effect, and I don't know why. I'm getting the default "You can't go that way" message instead.]
 Unsuccessful attempt by the distinguished gentleman going left when the reason the action failed is the can't go that way rule:
-		say "[italic type][one of]Oof! That's not natural.[or]This thing writes from left to right.[or]It's no use fighting the natural direction of the language.[or]When in Catalonia, do as the Catalonians do. Their language flows from left to right, as does this typewriter.[or]Still trying that, I see. The text of the poem flows to the right and down.[or]Whatevs.[stopping][roman type]".
+		say "[one of]Oof! That's not natural.[or]This thing writes from left to right.[or]It's no use fighting the natural direction of the language.[or]When in Catalonia, do as the Catalonians do. Their language flows from left to right, as does this typewriter.[or]Still trying that, I see. The text of the poem flows to the right and down.[or]Whatevs.[stopping]".
 
 When Poem Exploration ends when the location is a poetic room:
 	play the sound of the typewriter bell;
@@ -124,10 +129,9 @@ When Poem Exploration ends when the location is a poetic room:
 		remove the item from play.
 
 Every turn when the poem of the location is not empty during Poem Exploration:
-	if (a random number between one and two) is one:
-		let the stanza be entry one in the poem of the location;
-		typewrite the stanza;
-		remove the stanza from the poem of the location.
+	let the stanza be entry one in the poem of the location;
+	typewrite the stanza;
+	remove the stanza from the poem of the location.
 
 Significance relates various things to various things. The verb to signify means the significance relation. 
 
@@ -267,7 +271,7 @@ Compliance rule:
 	name the rule "There should be no more than [limit in words] stanzas in each poetic room.";
 	repeat with the place running through the poetic rooms:
 		let the static stanza count be the number of entries in the poem of the place;
-		let the dynamic stanza count be the number of things in the place;
+		let the dynamic stanza count be the number of figurative things in the place;
 		let the total stanza count be (static stanza count) + (dynamic stanza count);
 		if the total stanza count is greater than the limit:
 			add "[place] ([static stanza count] static + [dynamic stanza count] dynamic)" to the violation descriptions;
@@ -303,7 +307,7 @@ Section 2 - Test Cases
 [For automated testing of dynamic state, combined with manual review of textual output]
 
 Expecting is an action out of world applying to one scene. Understand "expect [scene]" as expecting.
-Carry out expecting a scene (called the expectation): say "[italic type][if expectation is happening]Success.[otherwise]Failure."
+Carry out expecting a scene (called the expectation): say "[if expectation is happening]Success.[otherwise]Failure."
 
 Test 1:2 [Chapter 1 prose] with "orb to B2 / r / e / e / n / x chair / x farmer / x shotgun / talk to farmer / s / n / talk to farmer / expect got a job".
 Got a Job is a scene. Got a Job begins when the player is employed.
@@ -390,7 +394,7 @@ B1 is a poetic room [about dreams]. It is right of A1. Left of B1 is nowhere [be
 		Caught the last tresses of the Sun God’s hair."
 }.
 
-The dreams are a backdrop which is everywhere. Understand "ambition", "heart" as dreams. Understand "failure", "stone", and "bonds" as poverty. Understand "feast", "lofty air", and "air" as riches.
+The B1 dreams are a backdrop which is in B1. Understand "dream", "dreams", "ambition", and "heart" as the B1 dreams when the location is B1. Understand "failure", "stone", and "bonds" as poverty. Understand "feast", "lofty air", and "air" as riches.
 
 The beauty is a backdrop that is everywhere. Understand "forest", "tresses", and "sun" as beauty. The description is "Astonishing!" 
 
