@@ -343,35 +343,35 @@ Chapter 1 - Finding Work
 Section 1 - Poetry about Finding Work
 
 A1 is a poetic room [about poverty]. The poem is {
-	"With nothing to live on,[line break]
-		I bow my head[line break]
-		And wander about the world.[line break]
-		For charity I beg.",
-	"Had I the heavens[apostrophe] embroidered cloths,[line break]
-		Enwrought with golden and silver gleam,[line break]
-		The blue and the dim and the dark[line break]
-		Of night and half-light and light,",
-	"I would sell those cloths for a meal and a place to sleep:[line break]
-		But I, being poor, have only my dreams;[line break]
-		Such cloths are not cheap,[line break]
-		Nor is shelter."
+	"With nothing to live on,
+	[line break]I bow my head
+	[line break]And wander about the world.
+	[line break]For charity I beg.",
+	"Had I the heavens[apostrophe] embroidered cloths,
+	[line break]Enwrought with golden and silver gleam,
+	[line break]The blue and the dim and the dark
+	[line break]Of night and half-light and light,",
+	"I would sell those cloths for a meal and a place to sleep:
+	[line break]But I, being poor, have only my dreams;
+	[line break]Such cloths are not cheap,
+	[line break]Nor is shelter."
 }.
 
-A backdrop called a dream is here. Understand "dreams" as the dream. The description of the dream is "My head is filled with wonder oft-times.[line break]
-		Of all the fine things that exist in the world,[line break]
-		Why must it all be so hard to acquire?[line break]
-		What can I do to make it mine?"
+A backdrop called a dream is here. Understand "dreams" as the dream. The description of the dream is "My head is filled with wonder oft-times.
+	[line break]Of all the fine things that exist in the world,
+	[line break]Why must it all be so hard to acquire?
+	[line break]What can I do to make it mine?"
 The dream signifies a mysterious book.
 
 The sky is a backdrop in A1. Understand "heaven" and "heavens" as the sky. Understand "cloth", "cloths", "clothes", "clothing", "gleam", "gold", "golden", and "silver" as the sky when the location is a poetic room. The description is
-	"I pray to anyone up there[line break]
-		That I may end this life of misery,[line break]
-		Earn a living,[line break]
-		And eat a healthy meal."
+	"I pray to anyone up there
+	[line break]That I may end this life of misery,
+	[line break]Earn a living,
+	[line break]And eat a healthy meal."
 
 The poverty is a backdrop which is in A1. Understand "poor", "world", "road", "dust", and "dusty road" as poverty. The description is
-	"It sucks when you're[line break]
-	At desolation's door."
+	"It sucks when you're
+	[line break]At desolation's door."
 
 The riches are a backdrop which is everywhere. Understand "riches", "money", and "job" as riches. Understand "cottage" and "shelter" as riches when the location is a poetic room. The description is "My, oh my!" 
 
