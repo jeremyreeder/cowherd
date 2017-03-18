@@ -89,13 +89,13 @@ Instead of scrolling back, say "[one of]This typewriter can't go that way.[or]To
 
 A poetic room is a kind of room. A poetic room has a list of texts called the poem.
 
-The distinguished gentleman is a man. The description is "As [one of]good-looking[or]handsome[or]beautiful[or]gorgeous[or]magnificent[in random order] as ever." Understand "man" or "gentleman", or "distinguished" as the distinguished gentleman.
+The poet is a man. The description is "As [one of]good-looking[or]handsome[or]beautiful[or]gorgeous[or]magnificent[in random order] as ever."
 
-The player is the distinguished gentleman.
+The player is the poet.
 
-Before going to a poetic room when the player is not the distinguished gentleman (this is the entry into the poetic world rule):
-	move the distinguished gentleman to the location;
-	now the player is the distinguished gentleman;
+Before going to a poetic room when the player is not the poet (this is the entry into the poetic world rule):
+	move the poet to the location;
+	now the player is the poet;
 	now the story viewpoint is the second person singular.
 
 A pause is a kind of open door [for passage between poetic rooms].
@@ -119,7 +119,7 @@ Definition: A poetic room (called the place) is mostly unexplored if the poem of
 Poem Exploration is a scene. Poem Exploration begins when the location is a mostly unexplored poetic room. Poem Exploration ends when the location is not a mostly unexplored poetic room.
 
 [The following rule is not taking effect, and I don't know why. I'm getting the default "You can't go that way" message instead.]
-Unsuccessful attempt by the distinguished gentleman going left when the reason the action failed is the can't go that way rule:
+Unsuccessful attempt by the poet going left when the reason the action failed is the can't go that way rule:
 		say "[one of]Oof! That's not natural.[or]This thing writes from left to right.[or]It's no use fighting the natural direction of the language.[or]When in Catalonia, do as the Catalonians do. Their language flows from left to right, as does this typewriter.[or]Still trying that, I see. The text of the poem flows to the right and down.[or]Whatevs.[stopping]".
 
 When Poem Exploration ends when the location is a poetic room:
@@ -136,9 +136,9 @@ Every turn when the poem of the location is not empty during Poem Exploration:
 Significance relates various things to various things. The verb to signify means the significance relation. 
 
 [This rule isn't taking effect. TODO: fix it.]
-After the distinguished gentleman examining something, now the little girl carries everything signified by the noun.
+After the poet examining something, now the girl carries everything signified by the noun.
 
-After the little girl dropping something:
+After the girl dropping something:
 	repeat with the signifier running through the things that signify the noun:
 		remove the signifier from play.
 
@@ -149,11 +149,11 @@ Definition: A thing (called the syntagma) is literal if the syntagma is not figu
 
 Definition: A room is prosaic if it is not a poetic room.
 
-The little girl is a woman.
+The girl is a woman.
 
-Before going to a prosaic room when the player is not the little girl (this is the entry into the prosaic world rule):
-	move the little girl to the location;
-	now the player is the little girl;
+Before going to a prosaic room when the player is not the girl (this is the entry into the prosaic world rule):
+	move the girl to the location;
+	now the player is the girl;
 	now the story viewpoint is the second person singular.
 
 Mood is a kind of value. The moods are angry and calm. A person has a mood. A person is usually calm.
@@ -419,7 +419,7 @@ B2 is a poetic room [about a town]. It is right of A2. The poem is {
 Section 2 - Prose about Finding Work
 [Prosaic map: Wandering the World → Dusty Road → Cottage] 
 
-Wandering the World is right of B1. Left of it is nowhere [because the door is one-way]. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east." The little girl is here.
+Wandering the World is right of B1. Left of it is nowhere [because the door is one-way]. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east." The girl is here.
 
 The Dusty Road is east of Wandering the World. "I've traveled far on this dusty road to escape a life of dependence. No more charity. I see a cottage to the east."
 
@@ -442,7 +442,7 @@ Instead of entering the chair when the farmer is on the chair:
 	say "'Get off me, dag nabbit!', says the farmer on whom I have sat. He expels me from the chair in disgust.";
 	now the farmer is angry.
 
-A person can be dirty or clean. A person is usually clean. The little girl is dirty. She is wearing some dirty clothes. Instead of examining a dirty little girl, say "I am covered in the excrement of the long, dusty road from whence I came."
+A person can be dirty or clean. A person is usually clean. The girl is dirty. She is wearing some dirty clothes. Instead of examining a dirty girl, say "I am covered in the excrement of the long, dusty road from whence I came."
 
 Talking to is an action applying to one thing. Understand "talk to [someone]" as talking to.
 
@@ -500,10 +500,10 @@ Right of C1 is a poetic room called D1. Left of D1 is nowhere [because the door 
 
 Section 2 - Prose about Herding Cows
 
-After the little girl entering the corral when the farmer is not angry,
+After the girl entering the corral when the farmer is not angry,
 	now the actor is employed.
 
-Instead of the little girl entering the Corral when the farmer is angry,
+Instead of the girl entering the Corral when the farmer is angry,
 	say "Oh, no, I bet the farmer will be mad at me."
 
 The cows are a herd. Understand "cow" as the cows.
@@ -557,7 +557,7 @@ The ditch is south of the Far East Meadow. "I scale the thing and decide to not 
 
 A lion called the majestic lion is in the Deep Ditch.
 
-After the little girl going to the Ditch when the majestic lion is in the Deep Ditch:
+After the girl going to the Ditch when the majestic lion is in the Deep Ditch:
 		say "I see the animal a bit farther down."
 		
 The bats are animals. The bats are in the Deep Ditch. Understand "bat" as bats.
