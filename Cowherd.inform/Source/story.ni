@@ -171,7 +171,7 @@ At 9:00 AM [after the first turn]: now the typewriting speed is fast.
 Section 1 - Compliance Rules
 [For automated testing of initial state]
 
-The compliance rules are a rulebook. When play begins, follow the compliance rules.
+The compliance rules are a rulebook. Testing compliance is an action out of world applying to nothing. Understand "compliance" as testing compliance. Carry out testing compliance: follow the compliance rules.
 
 The name of the compliance rule is a text that varies. The violations are a list of objects that varies. The violation descriptions are a list of texts that varies.
 
@@ -291,17 +291,36 @@ Compliance rule:
 Compliance rule:
 	name the rule "Each figurative thing should signify something.";
 	add (the list of figurative things that signify nothing) to the violations;
-	report the violations.
+	report violations.
 
 Compliance rule:
 	name the rule "All signifiers should be figurative.";
 	add (the list of literal things that signify something) to the violations;
-	report the violations.
+	report violations.
 
 Compliance rule:
 	name the rule "All signifieds should be literal.";
 	add (the list of figurative things that are signified by something) to the violations;
-	report the violations.
+	report violations.
+
+Compliance rule:
+	let the implemented words be "[list of rooms]; [list of things]";
+	repeat through the Table of Nouns of The Wounded Lion:
+		name the rule "All nouns of [italic type]The Wounded Lion[roman type] should be implemented. [bracket]Chapter [To Be Implemented in Chapter entry][close bracket]";
+		repeat with the required noun running through the Required Nouns entry:
+			if not (implemented words matches the text (required noun), case insensitively):
+				add the required noun to the violation descriptions; 
+		report violations.
+
+Table 1 - Nouns of The Wounded Lion
+To Be Implemented in Chapter	Required Nouns
+1	{ "girl", "nothing", "world", "charity", "cottage", "work", "farmer", "cowherd", "job", "place" }
+2	{ "morning", "cow", "meadow", "groan", "human", "noise", "lion", "ground", "pain", "thorn", "foot", "place", "hand", "thanks", "tongue", "home", "master", "ass" }
+3	{ "day", "wood", "year", "surprise", "ground", "wound", "face", "time", "fear", "herb", "manner", "flock", "nowhere", "home", "pig" }
+4	{ "day", "maiden", "friend", "death", "tree", "knee", "hour" }
+5	{ "tear", "sign", "seat", "branch", "eye", "dream", "rock", "furniture", "broom", "duster", "dinner", "shelf", "corner", "sun", "man", "path", "forest", "palace", "secret", "prince", "giant", "shape", "ox", "revenge", "kindness", "lock", "hair", "king", "cloak", "giant", "mountain", "city", "princess", "servant" }
+[TODO: add chapters 6-9 to this table]
+
 
 Section 2 - Test Cases
 [For automated testing of dynamic state, combined with manual review of textual output]
