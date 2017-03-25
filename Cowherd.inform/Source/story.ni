@@ -304,29 +304,21 @@ Compliance rule:
 	report violations.
 
 Compliance rule:
-	let the implemented words be "[list of rooms]; [list of things]";
-	repeat through the Table of Nouns of The Wounded Lion:
-		name the rule "All nouns of [italic type]The Wounded Lion[roman type] should be implemented. [bracket]Chapter [To Be Implemented in Chapter entry][close bracket]";
-		repeat with the required noun running through the Required Nouns entry:
-			if not (implemented words matches the text (required noun), case insensitively):
-				add the required noun to the violation descriptions; 
-		report violations.
-
-Table 1 - Nouns of The Wounded Lion
-To Be Implemented in Chapter	Required Nouns
-1	{ "girl", "nothing", "world", "charity", "cottage", "work", "farmer", "cowherd", "job", "place" }
-2	{ "morning", "cow", "meadow", "groan", "human", "noise", "lion", "ground", "pain", "thorn", "foot", "place", "hand", "thanks", "tongue", "home", "master", "ass" }
-3	{ "day", "wood", "year", "surprise", "ground", "wound", "face", "time", "fear", "herb", "manner", "flock", "nowhere", "home", "pig" }
-4	{ "day", "maiden", "friend", "death", "tree", "knee", "hour" }
-5	{ "tear", "sign", "seat", "branch", "eye", "dream", "rock", "furniture", "broom", "duster", "dinner", "shelf", "corner", "sun", "man", "path", "forest", "palace", "secret", "prince", "giant", "shape", "ox", "revenge", "kindness", "lock", "hair", "king", "cloak", "giant", "mountain", "city", "princess", "servant" }
-[TODO: add chapters 6-9 to this table]
+	name the rule "Everything should be somewhere.";
+	add (the list of things that are nowhere) to the violations;
+	remove (the last after examining an unexamined thing) from the violations;
+	report violations.
 
 
 Section 2 - Test Cases
 [For automated testing of dynamic state, combined with manual review of textual output]
 
+When play begins, say "Tests are available. Type '[bold type]test[roman type]' to list them."
+
 Expecting is an action out of world applying to one scene. Understand "expect [scene]" as expecting.
 Carry out expecting a scene (called the expectation): say "[if expectation is happening]Success.[otherwise]Failure."
+
+Test compliance with "compliance".
 
 Test 1:2 [Chapter 1 prose] with "orb to B2 / r / e / e / n / x chair / x farmer / x shotgun / talk to farmer / s / n / talk to farmer / expect got a job".
 Got a Job is a scene. Got a Job begins when the player is employed.
@@ -337,7 +329,7 @@ Got in Trouble for Losing a Cow is a scene.
 Test 3:2 [Chapter 3 prose] with "orb to B4 / r / expect got in trouble for losing an ass".
 Got in Trouble for Losing an Ass is a scene.
 
-Test all with "test 1:2 / test 2:2 / test 3:2".
+Test all with "test compliance / test 1:2 / test 2:2 / test 3:2".
 
 
 Section 3 - Debugging
@@ -357,6 +349,8 @@ Volume 2 - Story
 Chapter 1 - Finding Work
 
 [There was once a girl so poor that she had nothing to live on, and wandered about the world asking for charity. One day she arrived at a thatched cottage, and inquired if they could give her any work. The farmer said he wanted a cowherd, as his own had left him, and if the girl liked the place she might take it. So she became a cowherd.]
+
+The world, [nothing,] charity, the cottage, work, the cowherd, the job, and the place are things that are nowhere [because they have not yet been implemented].
 
 
 Section 1 - Poetry about Finding Work
@@ -496,16 +490,7 @@ Chapter 2 - Herding Cows
 	You can guess how frightened she was! But the lion seemed in such pain that she was sorry for him, and drew nearer and nearer till she saw he had a large thorn in one foot. She pulled out the thorn and bound up the place, and the lion was grateful, and licked her hand by way of thanks with his big rough tongue.
 	When the girl had finished she went back to find the cows, but they had gone, and though she hunted everywhere she never found them; and she had to return home and confess to her master, who scolded her bitterly, and afterwards beat her. Then he said, 'Now you will have to look after the asses.']
 
-A hand is a kind of edible thing. A hand is a part of every person.
-
-After eating a hand:
-	say "I now crave human flesh. My goal is to eat everyone!"
-
-A mob is a person. Understand "everyone" as the mob.
-
-After eating the mob:
-	say "I eat everyone and now I die alone with my own sad thoughts";
-	end the story.
+The morning, the cow, the meadow, the groan, the human, the noise, the ground, the pain, the thorn, the foot, the place, thanks, the tongue, the home, the master, and the ass are things that are nowhere [because they have not yet been implemented].
 
 
 Section 1 - Poetry about Herding Cows
@@ -518,6 +503,17 @@ Right of C1 is a poetic room called D1. Left of D1 is nowhere [because the door 
 
 
 Section 2 - Prose about Herding Cows
+
+A hand is a kind of edible thing. A hand is a part of every person.
+
+After eating a hand:
+	say "I now crave human flesh. My goal is to eat everyone!"
+
+A mob is a person. Understand "everyone" as the mob.
+
+After eating the mob:
+	say "I eat everyone and now I die alone with my own sad thoughts";
+	end the story.
 
 After the girl entering the corral when the farmer is not angry,
 	now the actor is employed.
@@ -609,6 +605,8 @@ Chapter 3 - Herding Asses
 	After that she returned to her flock, but they were nowhere to be seen. She searched here and she searched there, but they had vanished completely!
 	Then she had to go home and confess to her master, who first scolded her and afterwards beat her. 'Now go,' he ended, 'and look after the pigs!']
 
+The day, the wood, the year, surprise, the ground, the wound, the face, [the time,] the fear, the herb, the manner, the flock, and the pig are things that are nowhere [because they have not yet been implemented].
+
 
 Section 1 - Poetry about Herding Asses
 
@@ -686,6 +684,9 @@ Chapter 4 - Herding Pigs
 	So she ran to the place where she had left them, but they had vanished as if the earth had swallowed them up. She whistled and called, but only the birds answered her.
 	Then she sank down on the ground and wept bitterly, not daring to return home until some hours had passed away.]
 
+The day, the maiden, the friend, the death, the tree, the knee, and the hour are things that are nowhere [because they have not yet been implemented].
+
+
 Section 1 - Poetry about Herding Pigs
 
 
@@ -705,6 +706,8 @@ Chapter 5 - Solving the Mystery
 	And the girl asked him, 'What can I do to disenchant you?'
 	But he said he was afraid it was very difficult, because the only way was to get a lock of hair from the head of a king's daughter, to spin it, and to make from it a cloak for the giant, who lived up on the top of a high mountain.
 	'Very well,' answered the girl, 'I will go to the city, and knock at the door of the king's palace, and ask the princess to take me as a servant.']
+
+The tear, the sign, the seat, the branch, the eye, the rock, the furniture, the broom, the duster, the dinner, the shelf, the corner, the sun, the path, the palace, the secret, the prince, the giant, the shape, the ox, revenge, kindness, the lock of hair, the king, the cloak, the giant, the mountain, the city, the princess, and the servant are things that are nowhere [because they have not yet been implemented].
 
 
 Section 1 - Poetry about Solving the Mystery
