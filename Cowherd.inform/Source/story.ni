@@ -64,11 +64,11 @@ To typewrite (message - some text):
 		repeat with N running from 1 to the number of lines in the message:
 			let the surrounding delay be 5 * (number of characters in line number N in message);
 			wait (surrounding delay) milliseconds before continuing, strictly;
-			say "[italic type][line number N in message][roman type]";
+			say "[fixed letter spacing][line number N in message][variable letter spacing]";
 			wait (surrounding delay) milliseconds before continuing, strictly;
 		play the sound of silence;
 	otherwise:
-		say "[italic type][message][roman type]".
+		say "[fixed letter spacing][message][variable letter spacing]".
 
 Setting typewriting speed to is an action applying to one speed. Understand "speed [a speed]" as setting typewriting speed to.
 Carry out setting typewriting speed to a speed (called the new speed):
