@@ -173,7 +173,7 @@ Section 1 - Compliance Rules
 
 The compliance rules are a rulebook. Testing compliance is an action out of world applying to nothing. Understand "compliance" as testing compliance. Carry out testing compliance: follow the compliance rules.
 
-The name of the compliance rule is a text that varies. The violations are a list of objects that varies. The violation descriptions are a list of texts that varies.
+The name of the compliance rule is a text that varies. The violations are a list of objects that varies. The violation descriptions are a list of texts that varies. The violation tally is a number that varies. The violation tally is initially zero.
 
 To name the/-- rule (name - text): now the name of the compliance rule is (name).
 
@@ -187,12 +187,24 @@ To report the/-- violations:
 		say "Compliance rule: [bold type][Name of the compliance rule][roman type][line break]";
 		if the violations is not empty:
 			say "Violations: [the violations]";
+			now the violation tally is (violation tally) + (the number of entries in violations);
 		if the violation descriptions is not empty:
 			say "Violation descriptions: [the violation descriptions]";
-		say "[paragraph break]";
+			now the violation tally is (violation tally) + (number of entries in violation descriptions);
+		say "[paragraph break]"; 
 	initialize the state of the compliance rule.
 
 First compliance rule: initialize the state of the compliance rule.
+
+Last compliance rule:
+	if the violation tally is zero:
+		say "Fully compliant.";
+	otherwise:
+		let was-were be "was";
+		if the violation tally is not one:
+			let was-were be "were";
+		say "In total, [violation tally] compliance violation[s] [was-were] found.";
+	say "[paragraph break]".
 
 Compliance rule:
 	name the rule "Things should have non-blank descriptions.";
