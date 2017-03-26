@@ -742,6 +742,7 @@ Chapter 6 - Making a Coat for the Giant
 	So the maiden departed and climbed up the mountain, but before she reached the top the giant heard her footsteps, and rushed out breathing fire and flame, having a sword in one hand and a club in the other. But she cried loudly that she had brought him the coat, and then he grew quiet, and invited her to come into his house.
 	He tried on the coat, but it was too short, and he threw it off, and declared it was no use. And the girl picked it up sadly, and returned quite in despair to the king's palace.]
 
+The streets, the servant, [the people,] looks, waiting-maid, the scullion, the dishes, the comb, courage, pride, tress, patience, the bridegroom, the coat, the silk, the giant, the young man, the sword, the mountain, the mountaintop, the footsteps, the fire, the club, and the giant's house are things that are nowhere [because they have not yet been implemented].
 
 Section 1 - Poetry about Making a Coat for the Giant
 
@@ -757,6 +758,8 @@ Chapter 7 - Making the Coat Longer
 	For a long time the giant would not hear of it, but in the end he gave in, and told her exactly how it must all be done. She was to kill the lion herself and cut him up very small; then she must burn him, and cast his ashes into the water, and out of the water the prince would come free from enchantment for ever.
 	But the maiden went away weeping, lest the giant should have deceived her, and that after she had killed the lion she would find she had also slain the prince.]
 
+[TODO: define nouns]
+
 
 Section 1 - Poetry about Making the Coat Longer
 
@@ -770,6 +773,8 @@ Chapter 8 - Killing the Lion
 	And the maiden believed what the prince told her; and in the morning when he put on his lion's form she took a knife and slew him, and cut him up very small, and burnt him, and cast his ashes into the water, and out of the water came the prince, beautiful as the day, and as glad to look upon as the sun himself.
 	Then the young man thanked the maiden for all she had done for him, and said she should be his wife and none other. But the maiden only wept sore, and answered that that she could never be, for she had given her promise to the princess when she cut off her hair that the prince should wed her and her only.
 	But the prince replied, 'If it is the princess, we must go quickly. Come with me.']
+
+[TODO: define nouns]
 
 
 Section 1 - Poetry about Killing the Lion
