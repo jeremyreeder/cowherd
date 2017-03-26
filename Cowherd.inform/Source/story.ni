@@ -276,8 +276,8 @@ Compliance rule:
 	report violations.
 
 Compliance rule:
-	let the minimum be one;
-	let the maximum be two;
+	let the minimum be two;
+	let the maximum be four;
 	name the rule "There should be [minimum in words] to [maximum in words] static stanzas in each poetic room.";
 	repeat with the place running through the poetic rooms:
 		let the static stanza count be the number of entries in the poem of the place;
@@ -286,7 +286,7 @@ Compliance rule:
 	report violations.
 
 Compliance rule:
-	let the limit be five;
+	let the limit be seven;
 	name the rule "There should be no more than [limit in words] stanzas in each poetic room.";
 	repeat with the place running through the poetic rooms:
 		let the static stanza count be the number of entries in the poem of the place;
@@ -369,31 +369,12 @@ The world, [nothing,] charity, the cottage, work, the cowherd, the job, and the 
 Section 1 - Poetry about Finding Work
 
 A1 is a poetic room [about poverty]. The poem is {
-	"With nothing to live on,
-	[line break]I bow my head
-	[line break]And wander about the world.
-	[line break]For charity I beg.",
-	"Had I the heavens[apostrophe] embroidered cloths,
-	[line break]Enwrought with golden and silver gleam,
-	[line break]The blue and the dim and the dark
-	[line break]Of night and half-light and light,",
-	"I would sell those cloths for a meal and a place to sleep:
-	[line break]But I, being poor, have only my dreams;
-	[line break]Such cloths are not cheap,
-	[line break]Nor is shelter."
+	"Knapsack void of aliment,[line break]Roving 'neath sinister skies,[line break]For want of all, implores.",
+	"Seeking means to live,[line break]Repulsive being to kill.[line break]Oh, to overcome!",
+	"The lone child shivers.[line break]Cascading shadow flows,[line break]A leap toward the light."
 }.
 
-A backdrop called a dream is here. Understand "dreams" as the dream. The description of the dream is "My head is filled with wonder oft-times.
-	[line break]Of all the fine things that exist in the world,
-	[line break]Why must it all be so hard to acquire?
-	[line break]What can I do to make it mine?"
-The dream signifies a mysterious book.
-
-The sky is a backdrop in A1. Understand "heaven" and "heavens" as the sky. Understand "cloth", "cloths", "clothes", "clothing", "gleam", "gold", "golden", and "silver" as the sky when the location is a poetic room. The description is
-	"I pray to anyone up there
-	[line break]That I may end this life of misery,
-	[line break]Earn a living,
-	[line break]And eat a healthy meal."
+The A1 sky is a backdrop in A1. The description is "Had I the heavens['] embroidered cloths,[line break]Enwrought with golden and silver gleam,[line break]The blue and the dim and the dark[line break]Of night and half-light and light,[line break]I would sell those cloths for a good stew and a roof." Understand "sky", "skies", "sinister", "sinister sky", and "sinister skies" as the A1 sky when the location is A1.
 
 The poverty is a backdrop which is in A1. Understand "poor", "world", "road", "dust", and "dusty road" as poverty. The description is
 	"It sucks when you're
@@ -402,44 +383,10 @@ The poverty is a backdrop which is in A1. Understand "poor", "world", "road", "d
 The riches are a backdrop which is everywhere. Understand "riches", "money", and "job" as riches. Understand "cottage" and "shelter" as riches when the location is a poetic room. The description is "My, oh my!" 
 
 B1 is a poetic room [about dreams]. It is right of A1. Left of B1 is nowhere [because the door is one-way]. The poem is {
-	"Oh, If it be thy will I shall endure,
-	[line break]And sell ambition at the common mart,
-	[line break]And let dull failure be my vestiture,
-	[line break]And sorrow dig its grave within my heart.", 
-	"Perchance it may be better so—at least
-	[line break]I have not made my heart a heart of stone,
-	[line break]Nor starved my girlhood of its goodly feast,
-	[line break]Nor walked where Beauty is a thing unknown.",
-	"Many a man hath done so; sought to fence
-	[line break]In straitened bonds the soul that should be free,
-	[line break]Trodden the dusty road of common sense,
-	[line break]While all the forest sang of liberty,",
-	"Not marking how the spotted hawk in flight
-	[line break]Passed on wide pinion through the lofty air,
-	[line break]To where the steep untrodden mountain height
-	[line break]Caught the last tresses of the Sun God’s hair."
+	"Weakly, wind whispers[line break]For potent ears to hear,[line break]Whence to nourish self.",
+	"With pinions spread wide,[line break]A hawk into the sunrise[line break]Soars, drowning in flame.",
+	"A thatched cottage looms[line break]O'er the ruts of a dusty road.[line break]A roost cock crows."
 }.
-
-The B1 dreams are a backdrop which is in B1. Understand "dream", "dreams", "ambition", and "heart" as the B1 dreams when the location is B1. Understand "failure", "stone", and "bonds" as poverty. Understand "feast", "lofty air", and "air" as riches.
-
-The beauty is a backdrop that is everywhere. Understand "forest", "tresses", and "sun" as beauty. The description is "Astonishing!" 
-
-The freedom is a backdrop that is everywhere. Understand "liberty", "air", "lofty air", "bird", "hawk", and "spotted hawk" as freedom. The description is "Oh, to be free!"
-
-The Sun God is a backdrop that is in B1. Understand "god", "prayer", "sun god", "sun god's hair", and "god's hair" as the Sun God.
-
-[A2 is a poetic room [about a road]. The poem is {
-	"AFOOT and light-hearted I take to the open road![line break]
-	Healthy, free, the world before me![line break]
-	The long brown path before me, leading wherever I choose!"
-}.
-
-B2 is a poetic room [about a town]. It is right of A2. The poem is {
-	"I dream of a thatched cottage.[line break]
-		Warmer it would be[line break]
-		Than this dusty road[line break]
-		[apostrophe]Cross whence I have come."
-}.]
 
 
 Section 2 - Prose about Finding Work
