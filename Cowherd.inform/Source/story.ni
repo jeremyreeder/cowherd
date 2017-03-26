@@ -204,24 +204,31 @@ Last compliance rule:
 		if the violation tally is not one:
 			let was-were be "were";
 		say "In total, [violation tally] compliance violation[s] [was-were] found.";
-	say "[paragraph break]".
+	say "[paragraph break]";
+	now the violation tally is zero.
 
 Compliance rule:
-	name the rule "Things should have non-blank descriptions.";
+	name the rule "Everything should be somewhere.";
+	add (the list of things that are nowhere) to the violations;
+	remove (the last after examining an unexamined thing) from the violations;
+	report violations.
+
+Compliance rule:
+	name the rule "Everything should have a non-blank description.";
 	add the list of blankly described things to the violations;
 	report violations.
 
 Definition: A thing (called the item) is blankly described if the description of the item is "".
 
 Compliance rule:
-	name the rule "Poetic rooms should have poems.";
+	name the rule "Each poetic rooms should have a poem.";
 	add the list of poemless poetic rooms to the violations;
 	report violations.
 
 Definition: A poetic room (called the place) is poemless if the poem of the place is {}.
 
 Compliance rule:
-	name the rule "Prosaic room descriptions should be in the first person.";
+	name the rule "The description of every prosaic room should be in the first person.";
 	add the list of second-person prosaic rooms to the violations;
 	report violations.
 
@@ -251,7 +258,7 @@ Compliance rule:
 	report violations.
 
 Compliance rule:
-	name the rule "All rooms should be reachable.";
+	name the rule "Every room should be reachable.";
 	repeat with the destination running through the rooms that are not the location:
 		if (best route from location to destination, using doors) is nothing:
 			add the destination to the violations;
@@ -313,12 +320,6 @@ Compliance rule:
 Compliance rule:
 	name the rule "All signifieds should be literal.";
 	add (the list of figurative things that are signified by something) to the violations;
-	report violations.
-
-Compliance rule:
-	name the rule "Everything should be somewhere.";
-	add (the list of things that are nowhere) to the violations;
-	remove (the last after examining an unexamined thing) from the violations;
 	report violations.
 
 
