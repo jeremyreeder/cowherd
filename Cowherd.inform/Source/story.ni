@@ -7,7 +7,7 @@ The story creation year is 2017. The release number is 1.
 Volume 1 - Infrastructure
 
 
-Part 1 - Story Configuration
+Book 1.1 - Story Configuration
 
 The story headline is "A metapoetic fairy-tale adventure". The story genre is "Epic Poem".
 
@@ -18,10 +18,10 @@ Use the serial comma. Use no scoring. Use brief room descriptions.
 Release along with the source text, a library card, an introductory booklet, and a website.
 
 
-Part 2 - Definitions
+Book 1.2 - Definitions
 
 
-Section 1 - General Definitions
+Chapter 1.2.1 - General Definitions
 
 A thing can be examined or unexamined. A thing is usually unexamined.
 
@@ -38,7 +38,7 @@ The standard report waiting rule does nothing.
 The find what to enter rule is not listed in the for supplying a missing noun rulebook.
 
 
-Section 2 - Definitions for the Poetic World
+Chapter 1.2.2 - Definitions for the Poetic World
 [Poetic map:
 Chapter 1:	A1	B1
 Chapter 2:	C1	D1
@@ -143,7 +143,7 @@ After the girl dropping something:
 		remove the signifier from play.
 
 
-Section 3 - Definitions for the Prosaic World
+Chapter 1.2.3 - Definitions for the Prosaic World
 
 Definition: A thing (called the syntagma) is literal if the syntagma is not figurative. 
 
@@ -163,12 +163,12 @@ Employment is a kind of value. The employments are employed and unemployed. A pe
 A herd is a kind of animal.
 
 
-Part 3 - Testing (not for release)
+Book 1.3 - Testing (not for release)
 
 At 9:00 AM [after the first turn]: now the typewriting speed is fast.
 
 
-Section 1 - Compliance Rules
+Chapter 1.3.1 - Compliance Rules
 [For automated testing of initial state]
 
 The compliance rules are a rulebook. Testing compliance is an action out of world applying to nothing. Understand "compliance" as testing compliance. Carry out testing compliance: follow the compliance rules.
@@ -334,7 +334,7 @@ Compliance rule:
 	report violations.
 
 
-Section 2 - Test Cases
+Chapter 1.3.2 - Test Cases
 [For automated testing of dynamic state, combined with manual review of textual output]
 
 When play begins, say "Tests are available. Type '[bold type]test[roman type]' to list them."
@@ -356,7 +356,7 @@ Got in Trouble for Losing an Ass is a scene.
 Test all with "test compliance / test 1:2 / test 2:2 / test 3:2".
 
 
-Section 3 - Debugging
+Chapter 1.3.3 - Debugging
 [For manual, exploratory testing]
 
 Becoming is an action applying to one thing. Understand "become [any person]" as becoming.
@@ -370,14 +370,14 @@ Carry out teleporting to a room: move the actor to the noun.
 Volume 2 - Story
 
 
-Chapter 1 - Finding Work
+Book 2.1 - Finding Work
 
 [There was once a girl so poor that she had nothing to live on, and wandered about the world asking for charity. One day she arrived at a thatched cottage, and inquired if they could give her any work. The farmer said he wanted a cowherd, as his own had left him, and if the girl liked the place she might take it. So she became a cowherd.]
 
 The world, [nothing,] charity, the cottage, work, the cowherd, the job, and the place are things that are nowhere [because they have not yet been implemented].
 
 
-Section 1 - Poetry about Finding Work
+Chapter 2.1.1 - Poetry about Finding Work
 
 A1 is a poetic room [about poverty]. The poem is {
 	"Knapsack void of aliment,[line break]Roving 'neath sinister skies,[line break]For want of all, implores.",
@@ -400,7 +400,7 @@ B1 is a poetic room [about dreams]. It is right of A1. Left of B1 is nowhere [be
 }.
 
 
-Section 2 - Prose about Finding Work
+Chapter 2.1.2 - Prose about Finding Work
 [Prosaic map: Wandering the World → Dusty Road → Cottage] 
 
 Wandering the World is right of B1. Left of it is nowhere [because the door is one-way]. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east." The girl is here.
@@ -455,7 +455,7 @@ Before going down to a poetic room:
 
 After going down to a poetic room that is not mostly unexplored, try going down [to get to the next unexplored one].
 
-Chapter 2 - Herding Cows
+Book 2.2 - Herding Cows
 
 [One morning she was driving her cows through the meadows when she heard near by a loud groan that almost sounded human. She hastened to the spot from which the noise came, and found it proceeded from a lion who lay stretched upon the ground.
 	You can guess how frightened she was! But the lion seemed in such pain that she was sorry for him, and drew nearer and nearer till she saw he had a large thorn in one foot. She pulled out the thorn and bound up the place, and the lion was grateful, and licked her hand by way of thanks with his big rough tongue.
@@ -464,7 +464,7 @@ Chapter 2 - Herding Cows
 The morning, the cow, the meadow, the groan, the human, the noise, the ground, the pain, the thorn, the foot, the place, thanks, the tongue, the home, the master, and the ass are things that are nowhere [because they have not yet been implemented].
 
 
-Section 1 - Poetry about Herding Cows
+Chapter 2.2.1 - Poetry about Herding Cows
 
 C1 is a poetic room [about cattle]. It is below A1. Above C1 is nowhere [because the door is one-way]. The poem is {
 	"Cattle are loyal."
@@ -473,7 +473,7 @@ C1 is a poetic room [about cattle]. It is below A1. Above C1 is nowhere [because
 Right of C1 is a poetic room called D1. Left of D1 is nowhere [because the door is one-way].
 
 
-Section 2 - Prose about Herding Cows
+Chapter 2.2.2 - Prose about Herding Cows
 
 A hand is a kind of edible thing. A hand is a part of every person.
 
@@ -569,7 +569,7 @@ Instead of examining the lion, say "The lion has sharp claws and a long mane. It
 The lion is either hurt or healthy. The lion is usually hurt [until healed].
 
 
-Chapter 3 - Herding Asses
+Book 2.3 - Herding Asses
 
 [So every day she had to take the asses to the woods to feed, until one morning, exactly a year after she had found the lion, she heard a groan which sounded quite human. She went straight to the place from which the noise came, and, to her great surprise, beheld the same lion stretched on the ground with a deep wound across his face.
 	This time she was not afraid at all, and ran towards him, washing the wound and laying soothing herbs upon it; and when she had bound it up the lion thanked her in the same manner as before.
@@ -579,7 +579,7 @@ Chapter 3 - Herding Asses
 The day, the wood, the year, surprise, the ground, the wound, the face, [the time,] the fear, the herb, the manner, the flock, and the pig are things that are nowhere [because they have not yet been implemented].
 
 
-Section 1 - Poetry about Herding Asses
+Chapter 2.3.1 - Poetry about Herding Asses
 
 A2 is a poetic room. It is below C1. Above A2 is nowhere [because the door is one-way]. Right of A2 is a poetic room called B2. Left of B2 is nowhere [because the door is one-way].
 
@@ -588,7 +588,7 @@ The poem of A2 is {
 }.
 
 
-Section 2 - Prose about Herding Asses
+Chapter 2.3.2 - Prose about Herding Asses
 
 The Stable is right of B2. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft. A rock is on the ground. The asses are standing, looking at me tiredly." Left of the Stable is nowhere. [The way from the poetic world is one-way.]
 
@@ -647,7 +647,7 @@ After going from a room when the asses have the carrots:
 	say "The asses follow me, somewhat reluctantly.";
 	now the asses are in the noun.
 
-Chapter 4 - Herding Pigs
+Book 2.4 - Herding Pigs
 
 [So the next day she took out the pigs, and found them such good feeding grounds that they grew fatter every day.
 	Another year passed by, and one morning when the maiden was out with her pigs she heard a groan which sounded quite human. She ran to see what it was, and found her old friend the lion, wounded through and through, fast dying under a tree.
@@ -658,13 +658,13 @@ Chapter 4 - Herding Pigs
 The day, the maiden, the friend, the death, the tree, the knee, and the hour are things that are nowhere [because they have not yet been implemented].
 
 
-Section 1 - Poetry about Herding Pigs
+Chapter 2.4.1 - Poetry about Herding Pigs
 
 
-Section 2 - Prose about Herding Pigs
+Chapter 2.4.2 - Prose about Herding Pigs
 
 
-Chapter 5 - Solving the Mystery
+Book 2.5 - Solving the Mystery
 
 [And when she had had her cry out she got up and searched all up and down the wood. But it was no use; there was not a sign of the pigs.
 	At last she thought that perhaps if she climbed a tree she might see further. But no sooner was she seated on the highest branch than something happened which put the pigs quite out of her head. This was a handsome young man who was coming down the path; and when he had almost reached the tree he pulled aside a rock and disappeared behind it.
@@ -681,13 +681,13 @@ Chapter 5 - Solving the Mystery
 The tear, the sign, the seat, the branch, the eye, the rock, the furniture, the broom, the duster, the dinner, the shelf, the corner, the sun, the path, the palace, the secret, the prince, the giant, the shape, the ox, revenge, kindness, the lock of hair, the king, the cloak, the giant, the mountain, the city, the princess, and the servant are things that are nowhere [because they have not yet been implemented].
 
 
-Section 1 - Poetry about Solving the Mystery
+Chapter 2.5.1 - Poetry about Solving the Mystery
 
 
-Section 2 - Prose about Solving the Mystery
+Chapter 2.5.2 - Prose about Solving the Mystery
 
 
-Chapter 6 - Making a Coat for the Giant
+Book 2.6 - Making a Coat for the Giant
 
 [So they parted, and when she arrived at the city she walked about the streets crying, 'Who will hire me for a servant? Who will hire me for a servant?' But, though many people liked her looks, for she was clean and neat, the maiden would listen to none, and still continued crying, 'Who will hire me for a servant? Who will hire me for a servant?'
 	At last there came the waiting-maid of the princess.
@@ -702,13 +702,13 @@ Chapter 6 - Making a Coat for the Giant
 
 The streets, the servant, [the people,] looks, waiting-maid, the scullion, the dishes, the comb, courage, pride, tress, patience, the bridegroom, the coat, the silk, the giant, the young man, the sword, the mountain, the mountaintop, the footsteps, the fire, the club, and the giant's house are things that are nowhere [because they have not yet been implemented].
 
-Section 1 - Poetry about Making a Coat for the Giant
+Chapter 2.6.1 - Poetry about Making a Coat for the Giant
 
 
-Section 2 - Prose about Making a Coat for the Giant
+Chapter 2.6.2 - Prose about Making a Coat for the Giant
 
 
-Chapter 7 - Making the Coat Longer
+Book 2.7 - Making the Coat Longer
 
 [The next morning, when she was combing the princess's hair, she begged leave to cut off another lock. At first the princess said no, but the girl begged so hard that at length she gave in on condition that she should find her a prince as bridegroom.
 	The maiden told her that she had already found him, and spun the lock into shining stuff, and fastened it on to the end of the coat. And when it was finished she carried it to the giant.
@@ -719,13 +719,13 @@ Chapter 7 - Making the Coat Longer
 [TODO: define nouns]
 
 
-Section 1 - Poetry about Making the Coat Longer
+Chapter 2.7.1 - Poetry about Making the Coat Longer
 
 
-Section 2 - Prose about Making the Coat Longer
+Chapter 2.7.2 - Prose about Making the Coat Longer
 
 
-Chapter 8 - Killing the Lion
+Book 2.8 - Killing the Lion
 
 [Weeping she came down the mountain, and weeping she joined the prince, who was awaiting her at the bottom; and when he had heard her story he comforted her, and bade her be of good courage, and to do the bidding of the giant.
 	And the maiden believed what the prince told her; and in the morning when he put on his lion's form she took a knife and slew him, and cut him up very small, and burnt him, and cast his ashes into the water, and out of the water came the prince, beautiful as the day, and as glad to look upon as the sun himself.
@@ -735,19 +735,19 @@ Chapter 8 - Killing the Lion
 [TODO: define nouns]
 
 
-Section 1 - Poetry about Killing the Lion
+Chapter 2.8.1 - Poetry about Killing the Lion
 
 
-Section 2 - Prose about Killing the Lion
+Chapter 2.8.2 - Prose about Killing the Lion
 
 
-Chapter 9 - Getting the Prince Hitched
+Book 2.9 - Getting the Prince Hitched
 
 [So they went together to the king's palace. And when the king and queen and princess saw the young man a great joy filled their hearts, for they knew him for the eldest son, who had long ago been enchanted by a giant and lost to them.
 	And he asked his parents' consent that he might marry the girl who had saved him, and a great feast was made, and the maiden became a princess, and in due time a queen, and she richly deserved all the honours showered upon her.]
 
 
-Section 1 - Poetry about Getting the Prince Hitched
+Chapter 2.9.1 - Poetry about Getting the Prince Hitched
 
 
-Section 2 - Prose about Getting the Prince Hitched
+Chapter 2.9.2 - Prose about Getting the Prince Hitched
