@@ -221,11 +221,32 @@ Compliance rule:
 Definition: A thing (called the item) is blankly described if the description of the item is "".
 
 Compliance rule:
-	name the rule "Each poetic rooms should have a poem.";
-	add the list of poemless poetic rooms to the violations;
+	let the expected stanza count be three;
+	let the expected line count be three;
+	name the rule "The static poem of each poetic room should be a [expected stanza count in words]-stanza haiku.";
+	repeat with the place running through the poetic rooms:
+		if the number of entries in the poem of the place is not the expected stanza count:
+			add the place to the violations;
+		otherwise:
+			repeat with the stanza running through the poem of the place:
+				if the number of lines in the stanza is not the expected line count:
+					add the place to the violations;
+					next;
 	report violations.
 
-Definition: A poetic room (called the place) is poemless if the poem of the place is {}.
+Compliance rule:
+	name the rule "Every room in the poetic world should be described in the form of three haikus.";
+	add (the list of poetic rooms that are not tri-haiku) to the violations;
+	report violations.
+
+Definition: a poetic room (called the place) is tri-haiku if the number of entries in the poem of the place is three and the number of lines in "[poem of the place]" is seven [3 texts with 2 line breaks each: 3+2+2=7].
+
+Compliance rule:
+	name the rule "Every room in the prosaic world should be described in prosaic form.";
+	add (the list of prosaic rooms that are not prosaically described) to the violations;
+	report violations.
+
+Definition: A thing (called the item) is prosaically described if the number of lines in the description of the item is one.  
 
 Compliance rule:
 	name the rule "The description of every prosaic room should be in the first person.";
@@ -266,23 +287,13 @@ Compliance rule:
 
 Compliance rule:
 	let the expected ratio be two;
-	name the rule "There should be no exactly two poetic rooms per chapter.";
+	name the rule "There should be exactly [expected ratio] poetic rooms per chapter.";
 	let the chapter count be three;
 	let ratio be (number of poetic rooms) / (chapter count);
 	if the ratio is not the expected ratio:
 		add "[number of poetic rooms] poetic room[s]" to the violation descriptions;
 		add "[chapter count] chapter[s]" to the violation descriptions;
 		add "[ratio] poetic room[s] per chapter" to the violation descriptions;
-	report violations.
-
-Compliance rule:
-	let the minimum be two;
-	let the maximum be four;
-	name the rule "There should be [minimum in words] to [maximum in words] static stanzas in each poetic room.";
-	repeat with the place running through the poetic rooms:
-		let the static stanza count be the number of entries in the poem of the place;
-		if (static stanza count < minimum) or (static stanza count > maximum):
-			add the place to the violations;
 	report violations.
 
 Compliance rule:
