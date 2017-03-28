@@ -265,11 +265,11 @@ Compliance rule:
 	report violations.
 
 Compliance rule:
-	let the limit be two;
-	name the rule "There should be no more than [limit in words] poetic rooms per chapter on average.";
+	let the expected ratio be two;
+	name the rule "There should be no exactly two poetic rooms per chapter.";
 	let the chapter count be three;
 	let ratio be (number of poetic rooms) / (chapter count);
-	if the ratio is greater than the limit:
+	if the ratio is not the expected ratio:
 		add "[number of poetic rooms] poetic room[s]" to the violation descriptions;
 		add "[chapter count] chapter[s]" to the violation descriptions;
 		add "[ratio] poetic room[s] per chapter" to the violation descriptions;
