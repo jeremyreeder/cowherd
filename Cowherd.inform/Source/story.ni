@@ -612,12 +612,12 @@ Definition: a poetic room (called the place) is trihaikuic if the number of entr
 Compliance rule:
 	name the rule "Everything in the poetic world should be described in the form of a haiku.";
 	let the prior location be the location;
-	move the player to a random poetic room;
+	move the player to a random poetic room, without printing a room description;
 	repeat with the item running through the things in poetic rooms:
 		if not (the item is haikuically described):
 			add the item to the violations;
 	report violations;
-	move the player to the prior location.
+	move the player to the prior location, without printing a room description.
 
 To decide whether (item - a thing) is haikuically described:
 	if the number of characters in the description of the item is greater than 109, decide no;
