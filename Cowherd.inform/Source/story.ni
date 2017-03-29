@@ -41,7 +41,7 @@ The find what to enter rule is not listed in the for supplying a missing noun ru
 Section 2.2 - Definitions for the Poetic World
 
 [Poetic map:
-Chapter 1:	A1	B1
+Chapter 1:	Poverty	B1
 Chapter 2:	C1	D1
 Chapter 3:	A2	B2
 Chapter 4:	C2	D2
@@ -178,21 +178,15 @@ Section 1.1 - Poetry about Finding Work
 
 The Left Margin is a room. "You're in a blank space."
 
-A1 is a poetic room [about poverty]. It is right of the Left Margin. Left of A1 is nowhere. The poem is {
+Poverty is a poetic room. It is right of the Left Margin. Left of Poverty is nowhere. The poem is {
 	"Knapsack void of aliment,[line break]Roving 'neath sinister skies,[line break]For want of all, implores.",
 	"Seeking means to live,[line break]Repulsive being to kill.[line break]Oh, to overcome!",
 	"The lone child shivers.[line break]Cascading shadow flows,[line break]A leap toward the light."
 }.
 
-The A1 sky is a backdrop in A1. The description is "Had I the heavens['] embroidered cloths,[line break]Enwrought with golden and silver gleam,[line break]The blue and the dim and the dark[line break]Of night and half-light and light,[line break]I would sell those cloths for a good stew and a roof." Understand "sky", "skies", "sinister", "sinister sky", and "sinister skies" as the A1 sky when the location is A1.
+The Poverty sky is a backdrop in Poverty. The description is "Had I the heavens['] embroidered cloths,[line break]Enwrought with golden and silver gleam,[line break]The blue and the dim and the dark[line break]Of night and half-light and light,[line break]I would sell those cloths for a good stew and a roof." Understand "sky", "skies", "sinister", "sinister sky", and "sinister skies" as the Poverty sky when the location is Poverty.
 
-The poverty is a backdrop which is in A1. Understand "poor", "world", "road", "dust", and "dusty road" as poverty. The description is
-	"It sucks when you're
-	[line break]At desolation's door."
-
-The riches are a backdrop which is everywhere. Understand "riches", "money", and "job" as riches. Understand "cottage" and "shelter" as riches when the location is a poetic room. The description is "My, oh my!" 
-
-B1 is a poetic room [about dreams]. It is right of A1. Left of B1 is nowhere [because the door is one-way]. The poem is {
+Dream is a poetic room. It is right of Poverty. Left of Dream is nowhere [because the door is one-way]. The poem is {
 	"Weakly, wind whispers[line break]For potent ears to hear,[line break]Whence to nourish self.",
 	"With pinions spread wide,[line break]A hawk into the sunrise[line break]Soars, drowning in flame.",
 	"A thatched cottage looms[line break]O'er the ruts of a dusty road.[line break]A roost cock crows."
@@ -203,7 +197,7 @@ Section 1.2 - Prose about Finding Work
 
 [Prosaic map: Wandering the World → Dusty Road → Cottage] 
 
-Wandering the World is right of B1. Left of it is nowhere [because the door is one-way]. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east." The girl is here.
+Wandering the World is right of Dream. Left of it is nowhere [because the door is one-way]. "I've been wandering about the world for as long as I can remember. I now seek a life of providing for myself. A road leads east." The girl is here.
 
 The Dusty Road is east of Wandering the World. "I've traveled far on this dusty road to escape a life of dependence. No more charity. I see a cottage to the east."
 
@@ -244,7 +238,7 @@ After going from a room when the farmer has the shotgun:
 	now the farmer is calm;
 	try the farmer dropping the shotgun.
 
-An Overgrown Field is south of the Cottage Porch. "The grass is three feet tall. In it lies a small iron carriage, quite rusted and missing a wheel. The carriage door is ajar." An open, enterable container called the carriage is here. Understand "iron carriage" or "carriage door" as the carriage. Below the Overgrown Field is A1. Above A1 is nowhere [because the door is one-way].
+An Overgrown Field is south of the Cottage Porch. "The grass is three feet tall. In it lies a small iron carriage, quite rusted and missing a wheel. The carriage door is ajar." An open, enterable container called the carriage is here. Understand "iron carriage" or "carriage door" as the carriage. Below the Overgrown Field is Poverty. Above Poverty is nowhere [because the door is one-way].
 
 Instead of entering the carriage, try going down.
 
@@ -266,7 +260,7 @@ The morning, the cow, the meadow, the groan, the human, the noise, the ground, t
 
 Section 2.1 - Poetry about Herding Cows
 
-C1 is a poetic room [about cattle]. It is below A1. Above C1 is nowhere [because the door is one-way]. The poem is {
+C1 is a poetic room [about cattle]. It is below Poverty. Above C1 is nowhere [because the door is one-way]. The poem is {
 	"Cattle are loyal."
 }.
 
