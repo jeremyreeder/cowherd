@@ -42,7 +42,7 @@ Section 2.2 - Definitions for the Poetic World
 
 [Poetic map:
 Chapter 1:	Poverty	B1
-Chapter 2:	C1	D1
+Chapter 2:	Summer Wind	Beast
 Chapter 3:	A2	B2
 Chapter 4:	C2	D2
 Intermission:	//	
@@ -179,17 +179,17 @@ Section 1.1 - Poetry about Finding Work
 The Left Margin is a room. "You're in a blank space."
 
 Poverty is a poetic room. It is right of the Left Margin. Left of Poverty is nowhere. The poem is {
-	"Knapsack void of aliment,[line break]Roving 'neath sinister skies,[line break]For want of all, implores.",
-	"Seeking means to live,[line break]Repulsive being to kill.[line break]Oh, to overcome!",
-	"The lone child shivers.[line break]Cascading shadow flows,[line break]A leap toward the light."
+	"Knapsack void of aliment,[line break]roving 'neath sinister skies,[line break]for want of all, implores.",
+	"Seeking means to live,[line break]repulsive being to kill.[line break]Oh, to overcome!",
+	"The lone child shivers.[line break]Cascading shadow flows,[line break]a leap toward the light."
 }.
 
 The Poverty sky is a backdrop in Poverty. The description is "Had I the heavens['] embroidered cloths,[line break]Enwrought with golden and silver gleam,[line break]The blue and the dim and the dark[line break]Of night and half-light and light,[line break]I would sell those cloths for a good stew and a roof." Understand "sky", "skies", "sinister", "sinister sky", and "sinister skies" as the Poverty sky when the location is Poverty.
 
 Dream is a poetic room. It is right of Poverty. Left of Dream is nowhere [because the door is one-way]. The poem is {
-	"Weakly, wind whispers[line break]For potent ears to hear,[line break]Whence to nourish self.",
-	"With pinions spread wide,[line break]A hawk into the sunrise[line break]Soars, drowning in flame.",
-	"A thatched cottage looms[line break]O'er the ruts of a dusty road.[line break]A roost cock crows."
+	"Weakly, wind whispers[line break]for potent ears to hear,[line break]whence to nourish self.",
+	"With pinions spread wide,[line break]a hawk into the sunrise[line break]soars, drowning in flame.",
+	"A thatched cottage looms[line break]o'er the ruts of a dusty road.[line break]A roost cock crows."
 }.
 
 
@@ -260,11 +260,15 @@ The morning, the cow, the meadow, the groan, the human, the noise, the ground, t
 
 Section 2.1 - Poetry about Herding Cows
 
-C1 is a poetic room [about cattle]. It is below Poverty. Above C1 is nowhere [because the door is one-way]. The poem is {
-	"Cattle are loyal."
+Summer Wind is a poetic room. It is below Poverty. Above Summer Wind is nowhere [because the door is one-way]. The poem is {
+	"Lush, vivid branches,[line break]swaying in the summer breeze[line break]spread their velvet capes.",
+	"Dandelion seeds —[line break]Once adorned with gold florets,[line break]Now old, dead, soaring.",
+	"Looking back on[line break]that dusty road that brought her,[line break]which life is better?"
 }.
 
-Right of C1 is a poetic room called D1. Left of D1 is nowhere [because the door is one-way].
+Right of Summer Wind is a poetic room called Beast. Left of Beast is nowhere [because the door is one-way]. The poem is {
+	"Hide shimmering gold,[line break]It collapses with a cry[line break]Of death as night falls."
+}.
 
 
 Section 2.2 - Prose about Herding Cows
@@ -310,7 +314,7 @@ A fence is in the corral.
 
 Instead of examining the fence, say "The fence is white just like the gate. It keeps the cows in."
 
-The Corral is south of the Overgrown Field and right of D1. "There is a field that is worn from animals living on the land. A gate is in front of me." Left of the Corral is nowhere. [The way from the poetic world is one-way.]
+The Corral is south of the Overgrown Field and right of Beast. "There is a field that is worn from animals living on the land. A gate is in front of me." Left of the Corral is nowhere. [The way from the poetic world is one-way.]
 
 The gate is an openable container in the corral. There are cows in the gate. The gate is closed.
 
@@ -375,7 +379,7 @@ The day, the wood, the year, surprise, the ground, the wound, the face, [the tim
 
 Section 3.1 - Poetry about Herding Asses
 
-A2 is a poetic room. It is below C1. Above A2 is nowhere [because the door is one-way]. Right of A2 is a poetic room called B2. Left of B2 is nowhere [because the door is one-way].
+A2 is a poetic room. It is below Summer Wind. Above A2 is nowhere [because the door is one-way]. Right of A2 is a poetic room called B2. Left of B2 is nowhere [because the door is one-way].
 
 The poem of A2 is {
 	""
