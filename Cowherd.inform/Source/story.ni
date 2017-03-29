@@ -267,7 +267,9 @@ Summer Wind is a poetic room. It is below Poverty. Above Summer Wind is nowhere 
 }.
 
 Right of Summer Wind is a poetic room called Beast. Left of Beast is nowhere [because the door is one-way]. The poem is {
-	"Hide shimmering gold,[line break]It collapses with a cry[line break]Of death as night falls."
+	"In a green meadow[line break]at the edge of the valley,[line break]a wind tumbles through long grass.",
+	"Hide shimmering gold,[line break]it collapses with a cry[line break]of death as night falls.",
+	"Such a brute, that one[line break]who ravages this village,[line break]taking what's not his."
 }.
 
 
