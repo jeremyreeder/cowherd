@@ -178,7 +178,7 @@ Section 1.1 - Poetry about Finding Work
 
 The Left Margin is a room. "You're in a blank space."
 
-A1 is a poetic room [about poverty]. It is right of the Left Margin. The poem is {
+A1 is a poetic room [about poverty]. It is right of the Left Margin. Left of A1 is nowhere. The poem is {
 	"Knapsack void of aliment,[line break]Roving 'neath sinister skies,[line break]For want of all, implores.",
 	"Seeking means to live,[line break]Repulsive being to kill.[line break]Oh, to overcome!",
 	"The lone child shivers.[line break]Cascading shadow flows,[line break]A leap toward the light."
@@ -562,7 +562,7 @@ Part 1 - Compliance Rules [For automated testing of initial state]
 
 The compliance rules are a rulebook. Testing compliance is an action out of world applying to nothing. Understand "compliance" as testing compliance. Carry out testing compliance: follow the compliance rules.
 
-The name of the compliance rule is a text that varies. The violations are a list of objects that varies. The violation descriptions are a list of texts that varies. The violation tally is a number that varies. The violation tally is initially zero.
+The name of the compliance rule is a text that varies. The violations are a list of objects that varies. The violation descriptions are a list of texts that varies. The violation tally is a number that varies. The violation tally is initially zero. The compliance rule tally is initially zero. The violated rule tally is initially zero.
 
 To name the/-- rule (name - text): now the name of the compliance rule is (name).
 
@@ -572,7 +572,9 @@ To initialize the/-- state of the/-- compliance rule:
 	truncate the violation descriptions to zero entries.
 
 To report the/-- violations:
+	increment the compliance rule tally;
 	if the violations is not empty or the violation descriptions is not empty:
+		increment the violated rule tally;
 		say "Compliance rule: [bold type][Name of the compliance rule][roman type][line break]";
 		if the violations is not empty:
 			say "Violations: [the violations]";
@@ -592,9 +594,11 @@ Last compliance rule:
 		let was-were be "was";
 		if the violation tally is not one:
 			let was-were be "were";
-		say "In total, [violation tally] compliance violation[s] [was-were] found.";
+		say "In total, [violation tally] compliance violation[s] [was-were] found, for [violated rule tally] of [compliance rule tally] compliance rules.";
 	say "[paragraph break]";
-	now the violation tally is zero.
+	now the violation tally is zero;
+	now the compliance rule tally is zero;
+	now the violated rule tally is zero.
 
 Compliance rule:
 	name the rule "Everything should be somewhere.";
