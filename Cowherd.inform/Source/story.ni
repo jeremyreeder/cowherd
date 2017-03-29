@@ -148,7 +148,7 @@ Section 2.3 - Definitions for the Prosaic World
 
 Definition: A thing (called the syntagma) is literal if the syntagma is not figurative. 
 
-Definition: A room is prosaic if it is not a poetic room.
+Definition: A room is prosaic if it is not a poetic room and it is not the Left Margin.
 
 The girl is a woman.
 
@@ -176,7 +176,9 @@ The world, [nothing,] charity, the cottage, work, the cowherd, the job, and the 
 
 Section 1.1 - Poetry about Finding Work
 
-A1 is a poetic room [about poverty]. The poem is {
+The Left Margin is a room. "You're in a blank space."
+
+A1 is a poetic room [about poverty]. It is right of the Left Margin. The poem is {
 	"Knapsack void of aliment,[line break]Roving 'neath sinister skies,[line break]For want of all, implores.",
 	"Seeking means to live,[line break]Repulsive being to kill.[line break]Oh, to overcome!",
 	"The lone child shivers.[line break]Cascading shadow flows,[line break]A leap toward the light."
@@ -601,18 +603,26 @@ Compliance rule:
 	report violations.
 
 Compliance rule:
-	name the rule "Everything should have a non-blank description.";
-	add the list of blankly described things to the violations;
+	name the rule "Every room in the poetic world should be described in the form of three haikus.";
+	add (the list of poetic rooms that are not trihaikuic) to the violations;
 	report violations.
 
-Definition: A thing (called the item) is blankly described if the description of the item is "".
+Definition: a poetic room (called the place) is trihaikuic if the number of entries in the poem of the place is three and the number of lines in "[poem of the place]" is seven and the number of characters in "[poem of the place]" is no greater than 336.
 
 Compliance rule:
-	name the rule "Every room in the poetic world should be described in the form of three haikus.";
-	add (the list of poetic rooms that are not tri-haiku) to the violations;
-	report violations.
+	name the rule "Everything in the poetic world should be described in the form of a haiku.";
+	let the prior location be the location;
+	move the player to a random poetic room;
+	repeat with the item running through the things in poetic rooms:
+		if not (the item is haikuically described):
+			add the item to the violations;
+	report violations;
+	move the player to the prior location.
 
-Definition: a poetic room (called the place) is tri-haiku if the number of entries in the poem of the place is three and the number of lines in "[poem of the place]" is seven and the number of characters in "[poem of the place]" is no greater than 336.
+To decide whether (item - a thing) is haikuically described:
+	if the number of characters in the description of the item is greater than 109, decide no;
+	if the number of lines in the description of the item is not three, decide no;
+	decide yes.
 
 Compliance rule:
 	name the rule "Every room in the prosaic world should be described in prosaic form.";
@@ -667,17 +677,6 @@ Compliance rule:
 		add "[number of poetic rooms] poetic room[s]" to the violation descriptions;
 		add "[chapter count] chapter[s]" to the violation descriptions;
 		add "[ratio] poetic room[s] per chapter" to the violation descriptions;
-	report violations.
-
-Compliance rule:
-	let the limit be seven;
-	name the rule "There should be no more than [limit in words] stanzas in each poetic room.";
-	repeat with the place running through the poetic rooms:
-		let the static stanza count be the number of entries in the poem of the place;
-		let the dynamic stanza count be the number of figurative things in the place;
-		let the total stanza count be (static stanza count) + (dynamic stanza count);
-		if the total stanza count is greater than the limit:
-			add "[place] ([static stanza count] static + [dynamic stanza count] dynamic)" to the violation descriptions;
 	report violations.
 
 Compliance rule:
