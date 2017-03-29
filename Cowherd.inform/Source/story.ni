@@ -608,25 +608,11 @@ Compliance rule:
 Definition: A thing (called the item) is blankly described if the description of the item is "".
 
 Compliance rule:
-	let the expected stanza count be three;
-	let the expected line count be three;
-	name the rule "The static poem of each poetic room should be a [expected stanza count in words]-stanza haiku.";
-	repeat with the place running through the poetic rooms:
-		if the number of entries in the poem of the place is not the expected stanza count:
-			add the place to the violations;
-		otherwise:
-			repeat with the stanza running through the poem of the place:
-				if the number of lines in the stanza is not the expected line count:
-					add the place to the violations;
-					next;
-	report violations.
-
-Compliance rule:
 	name the rule "Every room in the poetic world should be described in the form of three haikus.";
 	add (the list of poetic rooms that are not tri-haiku) to the violations;
 	report violations.
 
-Definition: a poetic room (called the place) is tri-haiku if the number of entries in the poem of the place is three and the number of lines in "[poem of the place]" is seven [3 texts with 2 line breaks each: 3+2+2=7].
+Definition: a poetic room (called the place) is tri-haiku if the number of entries in the poem of the place is three and the number of lines in "[poem of the place]" is seven and the number of characters in "[poem of the place]" is no greater than 336.
 
 Compliance rule:
 	name the rule "Every room in the prosaic world should be described in prosaic form.";
