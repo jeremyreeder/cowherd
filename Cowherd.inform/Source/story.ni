@@ -382,10 +382,13 @@ The day, the wood, the year, surprise, the ground, the wound, the face, [the tim
 Section 3.1 - Poetry about Herding Asses
 
 Autumn Wind is a poetic room. It is below Summer Breeze. Above Autumn Wind is nowhere [because the door is one-way]. The poem is {
-	"An autumn wind blows,[line break]rustling red and golden leaves[line break]and piling them up."
+	"An autumn wind blows,[line break]rustling red and golden leaves[line break]and piling them up.",
+	"Allium senescens —[line break]pink-flower-topped garlic stalks,[line break]in full bloom today."
 }.
 
-Right of Autumn Wind is a poetic room called Wooded. Left of Wooded is nowhere [because the door is one-way].
+Right of Autumn Wind is a poetic room called Wooded. Left of Wooded is nowhere [because the door is one-way]. The poem is {
+	"A raging river,[line break]flanked by ripe almond trees,[line break]runs through the northern woods."
+}.
 
 
 Section 3.2 - Prose about Herding Asses
@@ -608,10 +611,16 @@ Compliance rule:
 
 Compliance rule:
 	name the rule "Every room in the poetic world should be described in the form of three haikus.";
-	add (the list of poetic rooms that are not trihaikuic) to the violations;
+	repeat with the place running through the poetic rooms:
+		if not (the place is trihaikuic):
+			add the place to the violations;
 	report violations.
 
-Definition: a poetic room (called the place) is trihaikuic if the number of entries in the poem of the place is three and the number of lines in "[poem of the place]" is seven and the number of characters in "[poem of the place]" is no greater than 336.
+To decide whether (place - a poetic room) is trihaikuic:
+	if the number of entries in the poem of the place is not three, decide no;
+	if the number of lines in "[poem of the place]" is not seven, decide no;
+	if the number of characters in "[poem of the place]" is greater than 336, decide no;
+	decide yes.
 
 Compliance rule:
 	name the rule "Everything in the poetic world should be described in the form of a haiku.";
