@@ -294,16 +294,25 @@ Instead of the girl entering the Corral when the farmer is angry,
 
 The cows are a herd. Understand "cow" as the cows.
 
+Instead of examining the cows,
+	say "They seem to be looking at me strangly.  Some are black, some are white, brown and so fourth, one I decided looks like a Jefery, I love Jefery.  I call him Jef"
+	
+Jefery is an animal. Jefery is part of the herd. Understand "Jef" as Jefery.
+
+Instead of examining Jefery,
+	say "I sure do love Jefery, he loves to play and snugle and see his friends, he is a special cow.  I love him the most"
+
 A lion is a kind of animal.
+
+Instead of examining Jefery when Jefery is nowhere,
+	say "He was the best friend I ever had!"
 
 The description of the cows is "Cows without a herd leader are useless [line break]
 	The farmer asked me to farm these cows."
 
 After examining the cows for the first time, say "I hear a loud groan that almost sounds human. [line break]
 	I must see what this is. [line break]
-	I heard the sound from the south. [line break]
-	He pays well and is kind, [line break]
-	but this groan I must find" [might be too cheesy].
+	I heard the sound from the south"
 	
 After examining the cows for the second time, say "These cows look hungry."
 	
@@ -313,7 +322,10 @@ Instead of examining the gate:
 After dropping the clothes, say "Scandalous!"
 
 A fence is in the corral.
-
+[
+After the actor enters the Middle Meadows,
+	remove Jefery from play.
+]
 Instead of examining the fence, say "The fence is white just like the gate. It keeps the cows in."
 
 The Corral is south of the Overgrown Field and right of Beast. "There is a field that is worn from animals living on the land. A gate is in front of me." Left of the Corral is nowhere. [The way from the poetic world is one-way.]
@@ -335,7 +347,7 @@ The Middle Meadow is east of the West Meadow. "I come back and see that my herd 
 
 The Deep Ditch is below the Ditch. "The cave is dark and damp. There are bats swarming all around me."
 
-The East Meadow is east of Middle Meadow. "I have been walking for 5 minutes, I realize that I have passed my destination."
+The East Meadow is east of Middle Meadow. "I have been walking for 5 minutes, But how I must keep going "
 
 The Far East Meadow is east of the East Meadow. "Deep in a ditch I see a shape of an animal. It's too shaded to see well from here."
 
@@ -355,6 +367,7 @@ Instead of taking the bats:
 Instead of examining the bats:
 	say "The bats are black. They hurt my ears with their squeals. They swirl away from the cave.";
 	remove the bats from play.
+	
 	
 [learn to do if lion is here and how to make cows go away]
 
