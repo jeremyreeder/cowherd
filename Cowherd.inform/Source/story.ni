@@ -42,8 +42,8 @@ Section 2.2 - Definitions for the Poetic World
 
 [Poetic map:
 Chapter 1:	Poverty	B1
-Chapter 2:	Summer Wind	Beast
-Chapter 3:	A2	B2
+Chapter 2:	Summer Breeze	Beast
+Chapter 3:	Autumn Wind	Wooded
 Chapter 4:	C2	D2
 Intermission:	//	
 Chapter 5:	A3	B3
@@ -121,7 +121,7 @@ Poem Exploration is a scene. Poem Exploration begins when the location is a most
 
 [The following rule is not taking effect, and I don't know why. I'm getting the default "You can't go that way" message instead.]
 Unsuccessful attempt by the poet going left when the reason the action failed is the can't go that way rule:
-		say "[one of]Oof! That's not natural.[or]This thing writes from left to right.[or]It's no use fighting the natural direction of the language.[or]When in Catalonia, do as the Catalonians do. Their language flows from left to right, as does this typewriter.[or]Still trying that, I see. The text of the poem flows to the right and down.[or]Whatevs.[stopping]".
+	say "[one of]Oof! That's not natural.[or]This thing writes from left to right.[or]It's no use fighting the natural direction of the language.[or]When in Catalonia, do as the Catalonians do. Their language flows from left to right, as does this typewriter.[or]Still trying that, I see. The text of the poem flows to the right and down.[or]Whatevs.[stopping]".
 
 When Poem Exploration ends when the location is a poetic room:
 	play the sound of the typewriter bell;
@@ -260,13 +260,13 @@ The morning, the cow, the meadow, the groan, the human, the noise, the ground, t
 
 Section 2.1 - Poetry about Herding Cows
 
-Summer Wind is a poetic room. It is below Poverty. Above Summer Wind is nowhere [because the door is one-way]. The poem is {
+Summer Breeze is a poetic room. It is below Poverty. Above Summer Breeze is nowhere [because the door is one-way]. The poem is {
 	"Lush, vivid branches,[line break]swaying in the summer breeze[line break]spread their velvet capes.",
 	"Dandelion seeds —[line break]Once adorned with gold florets,[line break]Now old, dead, soaring.",
 	"Looking back on[line break]that dusty road that brought her,[line break]which life is better?"
 }.
 
-Right of Summer Wind is a poetic room called Beast. Left of Beast is nowhere [because the door is one-way]. The poem is {
+Right of Summer Breeze is a poetic room called Beast. Left of Beast is nowhere [because the door is one-way]. The poem is {
 	"In a green meadow[line break]at the edge of the valley,[line break]a wind tumbles through long grass.",
 	"Hide shimmering gold,[line break]it collapses with a cry[line break]of death as night falls.",
 	"Such a brute, that one[line break]who ravages this village,[line break]taking what's not his."
@@ -381,16 +381,16 @@ The day, the wood, the year, surprise, the ground, the wound, the face, [the tim
 
 Section 3.1 - Poetry about Herding Asses
 
-A2 is a poetic room. It is below Summer Wind. Above A2 is nowhere [because the door is one-way]. Right of A2 is a poetic room called B2. Left of B2 is nowhere [because the door is one-way].
-
-The poem of A2 is {
-	""
+Autumn Wind is a poetic room. It is below Summer Breeze. Above Autumn Wind is nowhere [because the door is one-way]. The poem is {
+	"An autumn wind blows,[line break]rustling red and golden leaves[line break]and piling them up."
 }.
+
+Right of Autumn Wind is a poetic room called Wooded. Left of Wooded is nowhere [because the door is one-way].
 
 
 Section 3.2 - Prose about Herding Asses
 
-The Stable is right of B2. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft. A rock is on the ground. The asses are standing, looking at me tiredly." Left of the Stable is nowhere. [The way from the poetic world is one-way.]
+The Stable is right of Wooded. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft. A rock is on the ground. The asses are standing, looking at me tiredly." Left of the Stable is nowhere. [The way from the poetic world is one-way.]
 
 The Loft is above the Stable. "Even less pleasant than the stable it self. It is very warm, humid, and putrid here. A ladder leads down to the stable. Some carrots are on the the floor."
 
@@ -721,7 +721,7 @@ Carry out expecting a scene (called the expectation): say "[if expectation is ha
 
 Test compliance with "compliance".
 
-Test 1:2 [Chapter 1 prose] with "orb to B2 / r / e / e / n / x chair / x farmer / x shotgun / talk to farmer / s / n / talk to farmer / expect got a job".
+Test 1:2 [Chapter 1 prose] with "orb to Wooded / r / e / e / n / x chair / x farmer / x shotgun / talk to farmer / s / n / talk to farmer / expect got a job".
 Got a Job is a scene. Got a Job begins when the player is employed.
 
 Test 2:2 [Chapter 2 prose] with "orb to D2 / r / expect got in trouble for losing a cow".
