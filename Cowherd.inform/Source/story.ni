@@ -44,7 +44,7 @@ Section 2.2 - Definitions for the Poetic World
 Chapter 1:	Poverty	B1
 Chapter 2:	Summer Breeze	Beast
 Chapter 3:	Autumn Wind	Woodland
-Chapter 4:	C2	D2
+Chapter 4:	Winter Storm	Pigs in a Blanket
 Intermission:	//	
 Chapter 5:	A3	B3
 Chapter 6:	C3	D3
@@ -478,6 +478,14 @@ The day, the maiden, the friend, the death, the tree, the knee, and the hour are
 
 
 Section 4.1 - Poetry about Herding Pigs
+
+Winter Storm is a poetic room. It is below Autumn Wind. Above Winter Storm is nowhere. The poem is {
+	""
+}.
+
+Pigs in a Blanket is a poetic room. It is right of Winter Storm. Left of Pigs in a Blanket is nowhere. The poem is {
+	""
+}.
 
 
 Section 4.2 - Prose about Herding Pigs
