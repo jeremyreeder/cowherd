@@ -43,7 +43,7 @@ Section 2.2 - Definitions for the Poetic World
 [Poetic map:
 Chapter 1:	Poverty	B1
 Chapter 2:	Summer Breeze	Beast
-Chapter 3:	Autumn Wind	Wooded
+Chapter 3:	Autumn Wind	Woodland
 Chapter 4:	C2	D2
 Intermission:	//	
 Chapter 5:	A3	B3
@@ -396,17 +396,20 @@ Section 3.1 - Poetry about Herding Asses
 
 Autumn Wind is a poetic room. It is below Summer Breeze. Above Autumn Wind is nowhere [because the door is one-way]. The poem is {
 	"An autumn wind blows,[line break]rustling red and golden leaves[line break]and piling them up.",
-	"Allium senescens —[line break]pink-flower-topped garlic stalks,[line break]in full bloom today."
+	"Allium senescens —[line break]pink-flower-topped garlic stalks,[line break]in full bloom today.",
+	"Blades of verdure, now dehoned[line break]and bleached of the sun[line break], with varicose veins."
 }.
 
-Right of Autumn Wind is a poetic room called Wooded. Left of Wooded is nowhere [because the door is one-way]. The poem is {
-	"A raging river,[line break]flanked by ripe almond trees,[line break]runs through the northern woods."
+Right of Autumn Wind is a poetic room called Woodland. Left of Woodland is nowhere [because the door is one-way]. The poem is {
+	"A raging river,[line break]flanked by ripe almond trees,[line break]runs through the northern woods.",
+	"Elsewhere is crisp death[line break]for green'ry this season,[line break]but this fountain gives life.",
+	"A large Spanish fir[line break]reaches skyward in hopes of[line break]retrieving the sun."
 }.
 
 
 Section 3.2 - Prose about Herding Asses
 
-The Stable is right of Wooded. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft. A rock is on the ground. The asses are standing, looking at me tiredly." Left of the Stable is nowhere. [The way from the poetic world is one-way.]
+The Stable is right of Woodland. "After a brief intake of breath, I gagged. The smell of this place is wretched. All of [the asses] here have a sad glint in their eyes. It's not hard to see why. If I had to stay here most of the day and all night, I knew I would be sad too. A ladder leads up to the loft. A rock is on the ground. The asses are standing, looking at me tiredly." Left of the Stable is nowhere. [The way from the poetic world is one-way.]
 
 The Loft is above the Stable. "Even less pleasant than the stable it self. It is very warm, humid, and putrid here. A ladder leads down to the stable. Some carrots are on the the floor."
 
