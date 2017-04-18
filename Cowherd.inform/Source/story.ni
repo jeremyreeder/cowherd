@@ -479,12 +479,13 @@ The day, the maiden, the friend, the death, the tree, the knee, and the hour are
 
 Section 4.1 - Poetry about Herding Pigs
 
-Winter Storm is a poetic room. It is below Autumn Wind. Above Winter Storm is nowhere. The poem is {
-	""
+Winter Flurry is a poetic room. It is below Autumn Wind. Above Winter Flurry is nowhere [because the door is one-way]. The poem is {
+	"Crystalline structures,[line break]sparkling, tumbling, fluttering.[line break]Snowflakes fall to Earth."
 }.
 
-Pigs in a Blanket is a poetic room. It is right of Winter Storm. Left of Pigs in a Blanket is nowhere. The poem is {
-	""
+Pigs in a Blanket is a poetic room. It is right of Winter Flurry. Left of Pigs in a Blanket is nowhere [because the door is one-way]. The poem is {
+	"Moisture is frozen[line break]as quickly as it appears,[line break]as each swine exhales.",
+	"A blanket of frost,[line break]like a salty glaze on ham,[line break]envelops the herd."
 }.
 
 
